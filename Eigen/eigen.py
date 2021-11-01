@@ -13,8 +13,15 @@ def eigenValue(matrix):
 
         iMat  = iMat - matrix
         symMat = sym.Matrix(iMat)
-
-        print(symMat.det())
+        detPoly = sym.Poly(symMat.det())
+        detCoeff = detPoly.all_coeffs()
+        lambda_ = np.round(np.roots(detCoeff),2)
+        lambda_ = list(dict.fromkeys(lambda_))
+        print(detPoly)
+        print((detCoeff))
+        print(lambda_)
+        print(type(lambda_))
+        return lambda_
         
         
         
