@@ -7,6 +7,22 @@
         <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div class="frontpage-wrapper">
+            <div class="frontpage-detail">
+                <h1 class="title">Image Compression by SARboz</h1>
+                <p class="description">
+                    Image Compression menggunakan algoritma SVD (Singular Value Decomposition) untuk mengkompresi gambar.
+                </p>
+            </div>
+            <div class="frontpage-image">
+                <img src="static/images/logo.png">
+            </div>
+            <div class="upload-box">
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="uploaded-image" accept="image/*">
+                    <input type="submit" value="Submit Image">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
