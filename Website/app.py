@@ -1,12 +1,13 @@
+import cv2
 from flask import Flask, render_template, request
-from werkzeug.utils import redirect, secure_filename
-import os
-import sys
-
-UPLOAD_FOLDER = 'ImageFolder'
+from werkzeug.utils import redirect
+import numpy as np
+import io
+import cv2
+import sys # BUAT CONSOLE LOG CERITANYA
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['IMAGE_FILE'] = None
 
 @app.route('/', methods=['GET'])
 def front_page():
@@ -14,10 +15,18 @@ def front_page():
 
 @app.route('/upload', methods=['POST'])
 def upload_page():
-    img = request.files['uploaded-image']
-    img.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(img.filename)))
+
+    photo = request.files['uploaded-image']
+
+    inMemoryFile = io.BytesIO()
+    photo.save(inMemoryFile)
+    data = np.fromstring(inMemoryFile.getvalue(), dtype=np.uint8)
+    imageFile = cv2.imdecode(data, 1)
+
+    # cv2.imshow("img_decode", imageFile)
+    # cv2.waitKey()
+
     return redirect('/')
 
 if __name__ == '__main__':
-    print(os.getcwd(), file=sys.stdout)
     app.run(debug=True)
