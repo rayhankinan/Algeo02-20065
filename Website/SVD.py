@@ -1,104 +1,125 @@
+import os # ini nanti ilangin cm buat testing
+import cv2
 import numpy as np
-from numpy.linalg.linalg import eigvals
-import sympy as sym
+from Eigen import eigenValue, eigenVectorNorm
 
-'''
-Matriks A (m x n) dijadiin matriks U, Sigma, Vtrans
-
-U = Matriks orto m x m
-Sigma = Matriks m x n elemen diagonal utama adalah nilai singular (sqrt of eigen vals) 
-V = Matriks orto n x n
-
-FOR U
-1. A * Atrans
-2. find nilai eigen --> make matrix from tot of non-zero eigen vals
-3. find vektor eigen
-4. normalize vectors of eigenspace
-5. fill columns with vectors of eigenspace
-
-FOR V
-1. Atrans * A
-2. find nilai eigen --> make matrix from tot of ALL eigen vals
-3. find vektor eigen
-4. normalize vectors of eigenspace
-5. transpose
-
-FOR SIGMA
-1. check Atrans * A's nilai singular (sqrt of non-zero eigen vals)
-2. m x n matrix filled with 0
-3. fill main diagonal with singular values from Atrans * A (big to little)
-'''
-def getLeftSingular(matrix):
-    # initialization of u matrix (m x m) --> skarang gapake krn eigenVec tinggal transpose
-    # nanti sesuaiin aja sama output dari eigenVec dhika
-
+def getU(matrix): # left singular value
     # get eigen values and eigen vectors of a matrix
     a = np.dot(matrix, np.transpose(matrix))
-    eigenVal, eigenVec = np.linalg.eig(a) # ini hasilnya uda dinormalize
-    
-    # normalize vectors
-    # tambahin nanti
+    u = np.array(eigenVectorNorm(a)) # ini hasilnya uda dinormalize
+    return u
 
-    # fill matrix
-    u = np.transpose(eigenVec)
-
-    # check for values, nanti apus!!
-    print("Eigen vector:\n", eigenVec)
-    print("Eigen values: ", eigenVal)
-    print("Left Singular: \n", u)
-
-
-def getRightSingular(matrix):
-    # initialization of u matrix (m x m) --> skarang gapake krn eigenVec tinggal transpose
-    # nanti sesuaiin aja sama output dari eigenVec dhika
-
+def getVTranpose(matrix): # right singular value
+    matrix_t = matrix.T
     # get eigen values and eigen vectors of a matrix
     a = np.dot(np.transpose(matrix), matrix)
-    eigenVal, eigenVec = np.linalg.eig(a) # ini hasilnya uda dinormalize
-    
-    # normalize vectors
-    # tambahin nanti
+    vtrans = np.array(eigenVectorNorm(a)) # ini hasilnya uda dinormalize
+    return vtrans
 
-    # fill matrix
-    vtrans = eigenVec
-
-    # check for values, nanti apus!!
-    print("Eigen vector:\n", eigenVec)
-    print("Eigen values: ", eigenVal)
-    print("Right Singular: \n", vtrans)
-
-def getSingularValues(matrix):
-    #initialization of sigma matrix (m x n)
-    m = len(matrix)
-    n = len(matrix[0])
-    sigma = [[0 for i in range(n)] for j in range(m)]
-
-    # get eigen values and eigen vectors of matrix a
+def getSigma(matrix): # singular values
     a = np.dot(np.transpose(matrix), matrix)
-    eigenVal = np.linalg.eigvals(a)
+    eigenVal = np.array(eigenValue(a))
+    eigenVal[(eigenVal < 0)] = 0
+    eigenVal = eigenVal[(eigenVal != 0)]
 
     # get singular values from eigen values
-    singVal = []
-    for i in eigenVal:
-        if (i != 0):
-            singVal.append(np.math.sqrt(i))
-    singVal.sort(reverse=True)
+    singVal = (np.diag(np.sqrt(eigenVal)))
+    return singVal
 
-    # fill main diagonal
-    if (m < n):
-        end = m
+def svdCompress(matrix, k):
+    u = getU(matrix)
+    print("u done") #nnati apus
+    v = getVTranpose(matrix)
+    print("v done") #nanti apus
+    s = getSigma(matrix)
+    print("s done") #nanti apus
+    return (u[:, :k], s[:k, :k], v[:k, :])
+
+#for testing
+def svdResult(matrix):
+    u = getU(matrix)
+    v = getVTranpose(matrix)
+    sigma = getSigma(matrix)
+    svd = np.dot(u, np.dot(sigma, v))
+    return svd
+
+def compress(percentage): #add img as param later
+    # just for testing -- delete this part later
+    currDir = os.path.dirname(__file__)
+    path = os.path.join(currDir, './static/images/jvv_absen.jpg') # testing aja nnt apush
+    tes = cv2.imread(path)
+    img = np.array(tes)
+    cv2.imshow('BEFORE', img)
+    cv2.waitKey()
+    print(img.shape)
+    # delete until here
+
+    # initialize rgb
+    b = img[:, :, 0]
+    g = img[:, :, 1]
+    r = img[:, :, 2]
+
+    # make scale out of percentage
+    if (len(img) < len(img[0])):
+        k = round(percentage / 100 * len(img))
     else:
-        end = n
-    for i in range(end):
-        sigma[i][i] = singVal[i]
+        k = round(percentage / 100 * len(img[0]))
 
-    # check for values, nanti apus!!!
-    print("Eigen values: ", eigenVal)
-    print("Singular values: ", singVal)
-    print("Matriks sigma:\n", sigma)
+    # buat bandingin aja ini kalo pake linalg bawaan
+    '''
+    ur, sr, vr = np.linalg.svd(r)
+    ug, sg, vg = np.linalg.svd(g)
+    ub, sb, vb = np.linalg.svd(b)
+    ur, sr, vr = (ur[:, :k], np.diag(sr[:k]), vr[:k, :])
+    ug, sg, vg = (ug[:, :k], np.diag(sg[:k]), vg[:k, :])
+    ub, sb, vb = (ub[:, :k], np.diag(sb[:k]), vb[:k, :])
+    '''
+    # ini yang kita :V
+    ur, sr, vr = svdCompress(r, k)
+    print("\nred dapet\n")
+    ug, sg, vg = svdCompress(g, k)
+    print("\ngreen dapet\n")
+    ub, sb, vb = svdCompress(b, k)
+    print("\nblue dapet\n")
+    
+    # ini nanti apus
+    print(ur.shape)
+    print(sr.shape)
+    print(vr.shape) 
+
+    # make compressed r, g, b
+    rScaled = np.dot(ur, np.dot(sr, vr))
+    gScaled = np.dot(ug, np.dot(sg, vg))
+    bScaled = np.dot(ub, np.dot(sb, vb))
+
+    # insert compressed r, g, b to matrix
+    imgScaled = np.zeros(img.shape)
+    imgScaled[:, :, 0] = bScaled
+    imgScaled[:, :, 1] = gScaled
+    imgScaled[:, :, 2] = rScaled
+
+    # check for values outside of range of RGB (0-255)
+    imgScaled[imgScaled > 255] = 255
+    imgScaled[imgScaled < 0] = 0
+
+    imgScaled = imgScaled.astype(float) / 255
+    cv2.imshow("AFTER", imgScaled)
+    cv2.waitKey()
 
 # testing implementation
-matrix = [[3, 1, 1], [-1, 3, 1]]
-getSingularValues(matrix)
-getLeftSingular(matrix)
-getRightSingular(matrix)
+matrix = [[3,1,1], [-1,3,1]]
+mit = [[5, 5], [-1, 7]]
+'''
+tes = np.dot(np.transpose(mit), mit)
+
+eigval, eigvec = np.linalg.eig(tes)
+print("matriks\n", tes)
+print("eigval\n", eigval)
+print("eigval\n", eigvec)
+
+u, s, vt = np.linalg.svd(matrix)
+print("matriks u:\n", u)
+print("matriks sigma:\n", s)
+print("matriks vt:\n", vt)
+'''
+compress(2)
