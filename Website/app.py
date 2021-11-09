@@ -32,7 +32,10 @@ def upload_page():
     photo = request.files['uploaded-image']
     photoFileName, photoFileExtension = os.path.splitext(secure_filename(photo.filename))
 
-    compressionRate = int(request.form['compression-rate']) / 100
+    try:
+        compressionRate = int(request.form['compression-rate']) / 100
+    except:
+        compressionRate = 1
 
     inMemoryFile = io.BytesIO()
     photo.save(inMemoryFile)
@@ -67,12 +70,15 @@ def view_page():
 
 @app.route('/save', methods=['POST'])
 def save_image():
-    pass
+    return redirect('/')
+
+@app.route('/remove', methods=['POST'])
+def remove_image():
+    return redirect('/')
 
 @app.route('/compress', methods=['POST'])
 def compress_image():
-    pass
+    return redirect('/view')
 
 if __name__ == '__main__':
     app.run(debug=True)
-
