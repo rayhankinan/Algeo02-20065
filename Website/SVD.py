@@ -4,29 +4,45 @@ import numpy as np
 from Eigen import eigenValue, eigenVectorNorm
 
 def svd(matrix, k):
-    a = np.dot(np.transpose(matrix), matrix)
-    eigVal, vt = eigenValue(a), eigenVectorNorm(a)
-    #eigVal, vt = np.linalg.eig(a)
+    a = np.dot(np.transpose(matrix), matrix) # get A trans * A
+    #eigVal, eigVec = eigenValue(a), eigenVectorNorm(a) <-- ini kode kita, tp utk testing skrg pake library dulu
+    eigVal, eigVec = np.linalg.eigh(a) # find eig val and eig vec of A trans * A
 
-    singval = []
+    singval = [] 
     for i in eigVal:
-        if (i < 0):
-            i = 0
-        singval.append(np.sqrt(i))
-    singval = np.array(singval)
-    sigma = np.diag(singval)
+        singval.append(np.sqrt(np.abs(i))) # get singular values from eig val (if sing val is negative make it absolute value)
+    singval = np.array(singval) 
 
-    sigma = sigma[:k, :k]
-    vt = vt[:k, :]
+    # bagian di bawah ini apus aja kalo udah gapake library eigen
+    idx = singval.argsort()[::-1] # sort eigen value decreasing
+    singval = singval[idx]
+    vt = eigVec[:, idx] # sort eigen vec with corresponding eigen val, assign it as V Transpose (each eigen vector as row --> V Transpose)
 
-    v = np.transpose(vt)
-    u = np.dot(matrix, v[:, :k])
-    for i in range(k):
-        u[:, :i] * singval[i]
+    sigma = np.diag(singval) # get sigma (diagnolized matrix with singular value)
+
+    v = np.transpose(vt) # get v (each eigen vector as col --> V)
+    u = np.dot(matrix, v[:, :k]) # get ui = A * vi (v is sliced according to scale k, so that we get a sliced u matrix as well)
+
+    for i in range(k): # dividing ui (column) with sigma[i]
+        u[:, :i] / singval[i]
+        
+    sigma = sigma[:k, :k] # slice sigma according to scale k
+    vt = vt[:k, :] # slice vt according to scale k
+
+    # for testing
     print(u.shape)
     print(vt.shape)
     print(sigma.shape)
 
+    '''
+    THIS IS PART OF THE DEPRECATED SOURCE CODE (getU, getSigma, getVTranspose)
+    u = np.array(getU(matrix))
+    sigma, vt = np.array(getSigmaVT(matrix))
+
+    u = u[:, :k]
+    sigma = sigma[:k, :k]
+    vt = vt[:k, :]
+    '''
     return u, sigma, vt
 
 def compress(percentage): #add img as param later
@@ -46,12 +62,12 @@ def compress(percentage): #add img as param later
     r = img[:, :, 2]
 
     # make scale out of percentage
-    if (len(img) < len(img[0])):
+    if (img.shape[0] < img.shape[1]):
         k = round(percentage / 100 * len(img))
     else:
         k = round(percentage / 100 * len(img[0]))
 
-    # tes punya kita :V
+    # tes punya kita yang paling baru :V
     ub, sb, vb = svd(b, k)
     ug, sg, vg = svd(g, k)
     ur, sr, vr = svd(r, k)
@@ -75,7 +91,7 @@ def compress(percentage): #add img as param later
     cv2.imshow("AFTER", imgScaled)
     cv2.waitKey()
     '''
-    # buat bandingin aja ini kalo pake linalg bawaan
+# uncomment ini kalo mo bandingin jawaban pake svd linalg library
 
     ur, sr, vr = np.linalg.svd(r)
     ug, sg, vg = np.linalg.svd(g)
@@ -112,16 +128,27 @@ def compress(percentage): #add img as param later
 def getU(matrix): # left singular value
     # get eigen values and eigen vectors of a matrix
     a = np.dot(matrix, np.transpose(matrix))
-    u = np.array(eigenVectorNorm(a)) # ini hasilnya uda dinormalize
+    eigval, eigvec = np.linalg.eig(a)
+    idx = eigval.argsort()[::-1]
+    eigval = eigval[idx]
+    eigvec = eigvec[:, idx]
+    u = np.transpose(eigvec) # ini hasilnya uda dinormalize
     return u
 
-def getVTranpose(matrix): # right singular value
+def getSigmaVT(matrix): # right singular value
     # get eigen values and eigen vectors of a matrix
     a = np.dot(np.transpose(matrix), matrix)
-    vtrans = np.array(eigenVectorNorm(a)) # ini hasilnya uda dinormalize
-    return vtrans
+    eigval, eigvec = np.linalg.eig(a) # ini hasilnya uda dinormalize
+    idx = eigval.argsort()[::-1]
+    eigval = eigval[idx]
+    eigvec = eigvec[:, idx]
+    for i in eigval:
+        if (i < 0):
+            i = 0
+        i = np.sqrt(i)
+    sigma = np.diag(eigval)
+    return sigma, eigvec
 
-def getSigma(matrix): # singular values
     a = np.dot(np.transpose(matrix), matrix)
     eigenVal = np.array(eigenValue(a))
     eigenVal[(eigenVal < 0)] = 0
@@ -131,4 +158,4 @@ def getSigma(matrix): # singular values
     singVal = (np.diag(np.sqrt(eigenVal)))
     return singVal
 '''
-compress(30)
+compress(80)
