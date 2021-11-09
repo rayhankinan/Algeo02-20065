@@ -45,7 +45,7 @@ def eigenValue(A, iterations=1000):
     arrEigen = np.round(arrEigen,4)
     arrEigen = list(dict.fromkeys(arrEigen))
     arrEigen.sort(reverse=True)
-    print (arrEigen)
+    return arrEigen
 
         
 '''def eigenVector(matrix):
