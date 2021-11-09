@@ -24,6 +24,35 @@ h1 {
     font-weight: 600;
 }
 
+header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 5px solid #000000;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo {
+    margin-left: 45px;
+    line-height: 60px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-title {
+    font-size: 18px;
+    margin-left: 6px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
 /* FRONTPAGE */
 .frontpage-wrapper {
     max-width: 1200px;
@@ -44,6 +73,7 @@ h1 {
     font-size: 50px;
     line-height: 66px;
     letter-spacing: 2px;
+    margin-top: 24px;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -56,28 +86,18 @@ h1 {
     text-align: center;
 }
 
-.frontpage-image {
-    width: 40%;
-    text-align: center;
-    overflow: hidden;
-}
-
-.frontpage-image img {
-    width: 100%;
-}
-
-.upload-box {
+.image-processing-box .upload-box {
     margin: 20px auto 0 auto;
 }
 
-.upload-box form {
+.image-processing-box .upload-box form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
 }
 
-.upload-box input[type="file"] {
+.image-processing-box .upload-box input[type="file"] {
     width: 100%;
     height: 45px;
     margin-top: 5px;
@@ -85,11 +105,11 @@ h1 {
     font-size: 16px;
 }
 
-.upload-box input[type="file"]::file-selector-button {
+.image-processing-box .upload-box input[type="file"]::file-selector-button {
     cursor: pointer;
 }
 
-.upload-box input[type="submit"] {
+.image-processing-box .upload-box input[type="submit"] {
     width: 150px;
     height: 45px;
     margin-top: 5px;
@@ -103,7 +123,7 @@ h1 {
     border: 2px solid #000000;
 }
 
-.upload-box input[type="submit"]:hover {
+.image-processing-box .upload-box input[type="submit"]:hover {
     background-color: #ffffff;
     color: #000000;
     transition: all 0.3s ease;
