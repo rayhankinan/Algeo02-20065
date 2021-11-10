@@ -1,18 +1,22 @@
 import os # ini nanti ilangin cm buat testing
 import cv2
 import numpy as np
-from Eigen import eigenValue, eigenVectorNorm
+import time
+
+from numpy.linalg import eigvals
+from Eigen import eigenValue, eigenVectorNorm, simultaneous_power_iteration
 
 def svd(matrix, k):
     a = np.dot(np.transpose(matrix), matrix) # get A trans * A
-    eigVal, eigVec = eigenValue(a), eigenVectorNorm(a) #<-- ini kode kita, tp utk testing skrg pake library dulu
+    eigVal, eigVec = simultaneous_power_iteration(a, k) #<-- ini kode kita, tp utk testing skrg pake library dulu
     #eigVal, eigVec = np.linalg.eig(a) # find eig val and eig vec of A trans * A
     print("finish eigen value and vector")
-    
+    test,_= np.linalg.eig(a)
     singval = [] 
     for i in eigVal:
         singval.append(np.sqrt(np.abs(i))) # get singular values from eig val (if sing val is negative make it absolute value)
     singval = np.array(singval)
+    print(singval)
     
     # bagian di bawah ini apus aja kalo udah gapake library eigen
     idx = singval.argsort()[::-1] # sort eigen value decreasing
@@ -23,6 +27,9 @@ def svd(matrix, k):
     
     vt = np.transpose(v)
     sigma = np.diag(singval) # get sigma (diagnolized matrix with singular value)
+    print(eigVal)
+    print('----------------------------------')
+    print(test)
     u = np.dot(matrix, v)
 
     for i in range(singval.shape[0]): # dividing ui (column) with sigma[i]
@@ -41,8 +48,9 @@ def svd(matrix, k):
 
 def compress(percentage): #add img as param later
     # just for testing -- delete this part later
+    
     currDir = os.path.dirname(__file__)
-    path = os.path.join(currDir, './static/images/tes.jpg') # testing aja nnt apush
+    path = os.path.join(currDir, './static/images/bjir.jpg') # testing aja nnt apush
     tes = cv2.imread(path)
     img = tes.astype(np.float32)
     print(img.shape)
@@ -89,6 +97,7 @@ def compress(percentage): #add img as param later
 
     imgScaled = imgScaled.astype(float) / 255
     cv2.imshow("INI PAKE SVD KITA BOUSZ", imgScaled)
+    print("--- %s seconds ---" % (time.time() - start_time))
     cv2.waitKey()
 '''
 # uncomment ini kalo mo bandingin jawaban pake svd linalg library
@@ -123,7 +132,9 @@ def compress(percentage): #add img as param later
     cv2.imshow("INI PAKE SVD LIBRARY BOUSZ", imgScaled)
     cv2.waitKey()
 '''
-compress(20)
+start_time = time.time()
+compress(10)
+
 '''
 # ini buat ngetes SVD in general aja
 a = [[1.02650, 0.92840, 0.54947, 0.98317, 0.71226, 0.55847], [0.92889, 0.89021, 0.49605, 0.93776, 0.62066, 0.52473], [0.56184, 0.49148, 0.80378, 0.68346, 1.02731, 0.64579], [0.98074, 0.93973, 0.69170, 1.03432, 0.87043, 0.66371], [0.69890, 0.62694, 1.02294, 0.87822, 1.29713, 0.82905], [0.56636, 0.51884, 0.65096, 0.66109, 0.82531, 0.55098], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6]] #ganti jadi matrix apapun itu

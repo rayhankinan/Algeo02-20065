@@ -23,9 +23,9 @@ import time
         #print((detCoeff))
         #print(lambda_)
         #print(type(lambda_))
-        return lambda_'''
+        return lambda_
 
-def eigenValue(A, iterations=1000):
+def eigenValue(A, iterations=10):
     Ak = np.copy(A)
     n = Ak.shape[0]
     QQ = np.eye(n)
@@ -48,7 +48,7 @@ def eigenValue(A, iterations=1000):
     return arrEigen
 
         
-'''def eigenVector(matrix):
+def eigenVector(matrix):
     arrEigen = eigenValue(matrix)
     print(arrEigen)
     row = len(matrix)
@@ -67,25 +67,36 @@ def eigenValue(A, iterations=1000):
     print(b)
     print(np.linalg.lstsq(iMat,b,rcond=None))
     #subbed = symMat.subs(x,5)
-    #print(subbed)'''
+    #print(subbed)
 
 def eigenVectorNorm(A):
     Q, R = np.linalg.qr(A) 
     Qbef = np.empty(shape=Q.shape)
-    for i in range(100):
+    for i in range(10):
         Qbef[:] = Q
         X = np.matmul(A,Q)
         Q, R = np.linalg.qr(X)
         if np.allclose(Q, Qbef, atol=10e-4):
             break
-    return Q
+    return Q'''
+
+def simultaneous_power_iteration(A, k):
+    n, m = A.shape
+    Q = np.random.rand(n, k)
+    Q, _ = np.linalg.qr(Q)
+
+ 
+    for i in range(10):
+        Z = A.dot(Q)
+        Q, R = np.linalg.qr(Z)
+    return np.diag(R), Q
     
 start_time = time.time()
 A = np.array([[np.sqrt(12),0,0], [0,np.sqrt(10),0]])
 B = np.array([[10,0,2], [0,10,4] ,[2,4,2]])
 #A = np.random.random((100,100))
-eigenValue(B)
-print(eigenVectorNorm(B))
+#eigenValue(B)
+#print(eigenVectorNorm(B))
 #print("--- %s seconds ---" % (time.time() - start_time))
 #print(np.linalg.eigvals(A))
 
