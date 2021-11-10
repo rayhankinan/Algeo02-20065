@@ -93,27 +93,34 @@ header {
 .image-processing-box .upload-box form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+}
+
+.image-processing-box .upload-box .input-description {
+    font-size: 18px;
 }
 
 .image-processing-box .upload-box input[type="file"] {
-    width: 100%;
-    height: 45px;
-    margin-top: 5px;
-    padding: 12px 16px;
+    width: fit-content;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .image-processing-box .upload-box input[type="file"]::file-selector-button {
     cursor: pointer;
 }
 
+.image-processing-box .upload-box input[type="number"] {
+    width: 50px;
+    height: 24px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
 .image-processing-box .upload-box input[type="submit"] {
     width: 150px;
     height: 45px;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 20px;
     border-radius: 30px;
     font-weight: 600;
     background-color: #000000;
@@ -124,6 +131,93 @@ header {
 }
 
 .image-processing-box .upload-box input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-box .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.image-box .image-container .before-column {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.image-box .image-container img {
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2px;
+}
+
+.image-box .image-compressed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.image-box .image-compressed-container .after-column {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.image-box .image-compressed-container img {
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2px;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.output-container .output-state {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.output-container .output-state .pixel-difference, .compression-time {
+    font-size: 18px;
+}
+
+.output-container .save-remove-image {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.save-button input[type="submit"], .remove-button input[type="submit"] {
+    width: 150px;
+    height: 45px;
+    margin-top: 6px;
+    margin-right: 0px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #000000;
+}
+
+.save-button input[type="submit"]:hover, .remove-button input[type="submit"]:hover {
     background-color: #ffffff;
     color: #000000;
     transition: all 0.3s ease;

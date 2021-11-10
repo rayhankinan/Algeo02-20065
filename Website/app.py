@@ -1,7 +1,7 @@
 import cv2
-from flask import Flask, render_template, request
-from flask.helpers import url_for
+from flask import Flask, render_template, request, send_file
 from werkzeug.utils import redirect, secure_filename
+from PIL import Image
 import numpy as np
 import io
 import cv2
@@ -77,7 +77,9 @@ def save_image():
     global photoFileExtension
     global compressionRate
 
-    return redirect('/')
+    _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
+
+    return send_file(io.BytesIO(frameImageCompressed), download_name=photoFileName + photoFileExtension, mimetype="images/" + photoFileExtension[1:])
 
 @app.route('/remove', methods=['POST'])
 def remove_image():
@@ -88,8 +90,11 @@ def remove_image():
     global photoFileExtension
     global compressionRate
 
+    imageFile = None
+    imageFileCompressed = None
     photoFileName = None
     photoFileExtension = None
+    compressionRate = None
 
     return redirect('/')
 

@@ -19,15 +19,23 @@
                 </p>
             </div>
             <div class="image-processing-box">
-                <span class="input-column">Masukkan File Image</span>
                 <div class="upload-box">
                     <form action="/upload" method="POST" enctype="multipart/form-data">
                         {% if fileName == None %}
-                        <input type="file" name="uploaded-image" accept="image/*">
+                        <p>
+                            <span class="input-description">Masukkan file image:</span>
+                            <input type="file" name="uploaded-image" accept="image/*">
+                        </p>
                         {% else %}
-                        <p>File Image: {{ fileName }}</p>
+                        <p>
+                            <span class="input-description">File Image: {{ fileName }}</span>
+                        </p>
                         {% endif %}
-                        <p>Rate Kompresi Gambar: <input type="number" name="compression-rate" value="100"> %</p>
+                        <p>
+                            <span class="input-description">Rate kompresi gambar:</span>
+                            <input type="number" name="compression-rate" value="100">
+                            <span class="input-description">%</span>
+                        </p>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
@@ -51,9 +59,22 @@
                 </div>
                 <div class="output-container">
                     {% if byteImageCompressed != None %}
-                    <span class="pixel-difference">Persentase perbedaan piksel kompresi gambar: <b>{{ pixelDifference }} %</b></span>
-                    <span class="compression-time">Waktu eksekusi algoritma kompresi gambar: <b>{{ waktuEksekusi }} detik</b></span>
-                    <button></button>
+                    <div class="output-state">
+                        <span class="pixel-difference">Persentase perbedaan piksel kompresi gambar: <b>{{ pixelDifference }} %</b></span>
+                        <span class="compression-time">Waktu eksekusi algoritma kompresi gambar: <b>{{ compressionTime }} detik</b></span>
+                    </div>
+                    <div class="safe-remove-image">
+                        <div class="save-button">
+                            <form action="/save" method="POST">
+                                <input type="submit" value="Save Image">
+                            </form>
+                        </div>
+                        <div class="remove-button">
+                            <form action="/remove" method="POST">
+                                <input type="submit" value="Remove Image">
+                            </form>
+                        </div>
+                    </div>
                     {% endif %}
                 </div>
             </div>
