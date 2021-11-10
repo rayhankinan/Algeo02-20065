@@ -1,7 +1,6 @@
 import cv2
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import redirect, secure_filename
-from PIL import Image
 import numpy as np
 import io
 import cv2
