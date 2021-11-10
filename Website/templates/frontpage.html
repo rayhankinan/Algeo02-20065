@@ -7,6 +7,10 @@
         <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
     </head>
     <body>
+        <header>
+            <a href="/" class="header-logo"><img src="{{ url_for('static', filename='images/logoSmall.png') }}"></a>
+            <h3 class="header-title">Image Compression by SARboz</h3>
+        </header>
         <div class="frontpage-wrapper">
             <div class="frontpage-detail">
                 <h1 class="title">Image Compression by SARboz</h1>
@@ -14,14 +18,65 @@
                     Image Compression menggunakan algoritma SVD (Singular Value Decomposition) untuk mengkompresi gambar.
                 </p>
             </div>
-            <div class="frontpage-image">
-                <img src="static/images/logo.png">
-            </div>
-            <div class="upload-box">
-                <form action="/upload" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="uploaded-image" accept="image/*">
-                    <input type="submit" value="Submit Image">
-                </form>
+            <div class="image-processing-box">
+                <div class="upload-box">
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        {% if fileName == None %}
+                        <p>
+                            <span class="input-description">Masukkan file image:</span>
+                            <input type="file" name="uploaded-image" accept="image/*">
+                        </p>
+                        {% else %}
+                        <p>
+                            <span class="input-description">File Image: {{ fileName }}</span>
+                        </p>
+                        {% endif %}
+                        <p>
+                            <span class="input-description">Rate kompresi gambar:</span>
+                            <input type="number" name="compression-rate" value="100">
+                            <span class="input-description">%</span>
+                        </p>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="image-box">
+                    <div class="image-container">
+                        <span class="before-column">Sebelum</span>
+                        {% if byteImage != None %}
+                        <img src="{{ byteImage }}">
+                        {% else %}
+                        <img src="{{ url_for('static', filename='images/imageNotAvailable.png') }}">
+                        {% endif %}
+                    </div>
+                    <div class="image-compressed-container">
+                        <span class="after-column">Sesudah</span>
+                        {% if byteImageCompressed != None %}
+                        <img src="{{ byteImageCompressed }}">
+                        {% else %}
+                        <img src="{{ url_for('static', filename='images/imageNotAvailable.png') }}">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="output-container">
+                    {% if byteImageCompressed != None %}
+                    <div class="output-state">
+                        <span class="pixel-difference">Persentase perbedaan piksel kompresi gambar: <b>{{ pixelDifference }} %</b></span>
+                        <span class="compression-time">Waktu eksekusi algoritma kompresi gambar: <b>{{ compressionTime }} detik</b></span>
+                    </div>
+                    <div class="safe-remove-image">
+                        <div class="save-button">
+                            <form action="/save" method="POST">
+                                <input type="submit" value="Save Image">
+                            </form>
+                        </div>
+                        <div class="remove-button">
+                            <form action="/remove" method="POST">
+                                <input type="submit" value="Remove Image">
+                            </form>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </body>
