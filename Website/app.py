@@ -113,11 +113,8 @@ def compress_image():
     global executionTime
 
     startTime = time.time()
-    imageFileCompressed = compress(imageFile, compressionRate) # INI NANTI DIUBAH
-    executionTime = round(time.time() - startTime, 2) # INI NANTI DIUBAH DENGAN WAKTU EKSEKUSI
-
-    print(type(imageFile), file=sys.stdout)
-    print(type(imageFileCompressed), file=sys.stdout)
+    imageFileCompressed = compress(imageFile, compressionRate)
+    executionTime = round(time.time() - startTime, 2)
 
     return redirect('/view')
 
