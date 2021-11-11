@@ -1,11 +1,11 @@
 import os # ini nanti ilangin cm buat testing
 import cv2
 import numpy as np
-from Eigen import eigenValue, eigenVectorNorm
+from Eigen import simultaneous_power_iteration
 
 def svd(matrix, k):
     a = np.dot(np.transpose(matrix), matrix) # get A trans * A
-    eigVal, eigVec = eigenValue(a), eigenVectorNorm(a) #<-- ini kode kita, tp utk testing skrg pake library dulu
+    eigVal, eigVec = simultaneous_power_iteration(a, k) #<-- ini kode kita, tp utk testing skrg pake library dulu
     #eigVal, eigVec = np.linalg.eig(a) # find eig val and eig vec of A trans * A
     
     singval = [] 

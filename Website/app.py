@@ -1,11 +1,13 @@
 import cv2
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import redirect, secure_filename
+from SVD import compress
 import numpy as np
 import io
 import cv2
 import os
 import base64
+import time
 import sys # BUAT CONSOLE LOG CERITANYA
 
 app = Flask(__name__)
@@ -14,6 +16,7 @@ imageFileCompressed = None
 photoFileName = None
 photoFileExtension = None
 compressionRate = None
+executionTime = None
 
 @app.route('/', methods=['GET'])
 def front_page():
@@ -27,6 +30,7 @@ def upload_page():
     global photoFileName
     global photoFileExtension
     global compressionRate
+    global executionTime
 
     try:
         photo = request.files['uploaded-image']
@@ -42,9 +46,9 @@ def upload_page():
     imageFileCompressed = None
 
     try:
-        compressionRate = int(request.form['compression-rate']) / 100
+        compressionRate = int(request.form['compression-rate'])
     except:
-        compressionRate = 1
+        compressionRate = 100
 
     return redirect('/compress')
 
@@ -56,16 +60,15 @@ def view_page():
     global photoFileName
     global photoFileExtension
     global compressionRate
+    global executionTime
     
     _, frameImage = cv2.imencode(photoFileExtension, imageFile)
     _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
 
-    delta = cv2.absdiff(imageFile, imageFileCompressed).astype(np.uint8)
+    delta = cv2.absdiff(imageFile.astype(np.float32), imageFileCompressed.astype(np.float32))
     percentage = round((np.count_nonzero(delta) * 100) / delta.size, 2)
 
-    waktuEksekusi = 0 # INI NANTI DIUBAH DENGAN WAKTU EKSEKUSI
-
-    return render_template('frontpage.html', byteImage = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImage).decode('utf-8'), byteImageCompressed = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImageCompressed).decode('utf-8'), pixelDifference = percentage, compressionTime = waktuEksekusi, fileName = photoFileName + photoFileExtension)
+    return render_template('frontpage.html', byteImage = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImage).decode('utf-8'), byteImageCompressed = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImageCompressed).decode('utf-8'), pixelDifference = percentage, compressionTime = executionTime, fileName = photoFileName + photoFileExtension, persenKompresi = compressionRate)
 
 @app.route('/save', methods=['POST'])
 def save_image():
@@ -75,6 +78,7 @@ def save_image():
     global photoFileName
     global photoFileExtension
     global compressionRate
+    global executionTime
 
     _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
 
@@ -88,6 +92,7 @@ def remove_image():
     global photoFileName
     global photoFileExtension
     global compressionRate
+    global executionTime
 
     imageFile = None
     imageFileCompressed = None
@@ -105,8 +110,14 @@ def compress_image():
     global photoFileName
     global photoFileExtension
     global compressionRate
+    global executionTime
 
-    imageFileCompressed = imageFile # INI NANTI DIUBAH
+    startTime = time.time()
+    imageFileCompressed = compress(imageFile, compressionRate) # INI NANTI DIUBAH
+    executionTime = round(time.time() - startTime, 2) # INI NANTI DIUBAH DENGAN WAKTU EKSEKUSI
+
+    print(type(imageFile), file=sys.stdout)
+    print(type(imageFileCompressed), file=sys.stdout)
 
     return redirect('/view')
 
