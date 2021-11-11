@@ -2,6 +2,7 @@ import os # ini nanti ilangin cm buat testing
 import cv2
 import numpy as np
 from Eigen import simultaneous_power_iteration
+import math
 
 def svd(matrix, k):
     a = np.dot(np.transpose(matrix), matrix) # get A trans * A
@@ -37,7 +38,7 @@ def svd(matrix, k):
 def compress(img, percentage): #add img as param later
     # just for testing -- delete this part later
     #currDir = os.path.dirname(__file__)
-    #path = os.path.join(currDir, './static/images/yoyoi.jpg') # testing aja nnt apush
+    #path = os.path.join(currDir, './static/images/bjir.jpg') # testing aja nnt apush
     #tes = cv2.imread(path, cv2.IMREAD_UNCHANGED)
     #cv2.imshow("yey", tes)
     #cv2.waitKey()
@@ -56,7 +57,7 @@ def compress(img, percentage): #add img as param later
         k = round(percentage / 100 * len(img))
     else:
         k = round(percentage / 100 * len(img[0]))
-    
+
     # k = KALO MAU K MANUAL INPUT DISINI
     # tes punya kita yang paling baru :V
     ub, sb, vb = svd(b, k)
@@ -74,19 +75,17 @@ def compress(img, percentage): #add img as param later
     #aScaled = np.dot(ua, np.dot(sa, va))
 
     # insert compressed r, g, b to matrix
-    imgScaled = np.zeros(img.shape)
-    imgScaled[:, :, 0] = bScaled
-    imgScaled[:, :, 1] = gScaled
-    imgScaled[:, :, 2] = rScaled
+    imgScaled = cv2.merge((bScaled, gScaled, rScaled))
     #imgScaled[:, :, 3] = aScaled
 
     # check for values outside of range of RGB (0-255)
     imgScaled[imgScaled > 255] = 255
     imgScaled[imgScaled < 0] = 0
-    return imgScaled
+    return (imgScaled.astype(np.uint8))
     #imgScaled = imgScaled.astype(float) / 255
     #cv2.imshow("INI PAKE SVD KITA BOUSZ", imgScaled)
     #cv2.waitKey()
+    #cv2.imwrite("lol.jpg", imgScaled)
 '''
 # uncomment ini kalo mo bandingin jawaban pake svd linalg library
     ur, sr, vr = np.linalg.svd(r)
@@ -118,7 +117,7 @@ def compress(img, percentage): #add img as param later
     #cv2.imshow("INI PAKE SVD LIBRARY BOUSZ", imgScaled)
     #cv2.waitKey()
 '''
-#compress(25)
+#compress(3)
 '''
 # ini buat ngetes SVD in general aja
 a = [[1.02650, 0.92840, 0.54947, 0.98317, 0.71226, 0.55847], [0.92889, 0.89021, 0.49605, 0.93776, 0.62066, 0.52473], [0.56184, 0.49148, 0.80378, 0.68346, 1.02731, 0.64579], [0.98074, 0.93973, 0.69170, 1.03432, 0.87043, 0.66371], [0.69890, 0.62694, 1.02294, 0.87822, 1.29713, 0.82905], [0.56636, 0.51884, 0.65096, 0.66109, 0.82531, 0.55098], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6]] #ganti jadi matrix apapun itu
