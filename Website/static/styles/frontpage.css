@@ -5,15 +5,15 @@
 
 html {
     font-size: 100%;
-    font-family: 'Garamond', serif;
+    font-family: 'Helvetica', sans-serif;
     line-height: 1.7;
     letter-spacing: 1px;
 }
 
 body {
     margin: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-image: linear-gradient(to bottom right, #4b2e76, #362c5f, #0f575b, #0f5067);
+    color: #FEFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -29,27 +29,29 @@ header {
     height: 60px;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
-    border-bottom: 5px solid #000000;
+    background-color: #111111;
+    color: #FEFFFF;
+    border-top: 5px solid #111111;
+    border-bottom: 5px solid #111111;
     display: flex;
     flex-direction: row;
 }
 
 .header-logo {
-    margin-left: 45px;
-    line-height: 60px;
+    margin-left: 30px;
+    line-height: 90px;
     width: fit-content;
     height: fit-content;
 }
 
 .header-logo img {
-    width: 100%;
+    width: 60%;
 }
 
 .header-title {
-    font-size: 18px;
-    margin-left: 6px;
-    margin-top: 12px;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-top: 16px;
     font-weight: 600;
 }
 
@@ -72,14 +74,14 @@ header {
 .frontpage-detail .title {
     font-size: 50px;
     line-height: 66px;
-    letter-spacing: 2px;
-    margin-top: 24px;
+    letter-spacing: 1.5px;
+    margin-top: 80px;
     margin-bottom: 24px;
     text-align: center;
 }
 
 .frontpage-detail .description {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 30px;
     letter-spacing: 0.5px;
     margin-bottom: 40px;
@@ -96,7 +98,7 @@ header {
 }
 
 .image-processing-box .upload-box .input-description {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .image-processing-box .upload-box input[type="file"] {
@@ -112,9 +114,9 @@ header {
 .image-processing-box .upload-box input[type="number"] {
     width: 50px;
     height: 24px;
-    border: 1px solid #000000;
+    border: 1px solid #111111;
     border-radius: 2px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .image-processing-box .upload-box input[type="submit"] {
@@ -123,16 +125,16 @@ header {
     margin-top: 20px;
     border-radius: 30px;
     font-weight: 600;
-    background-color: #000000;
+    background-color: #111111;
     color: #ffffff;
     cursor: pointer;
     outline: none;
-    border: 2px solid #000000;
+    border: 2px solid #111111;
 }
 
 .image-processing-box .upload-box input[type="submit"]:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #111111;
     transition: all 0.3s ease;
 }
 
@@ -150,15 +152,17 @@ header {
 
 .image-box .image-container .before-column {
     font-size: 20px;
+    font-weight: 550;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 15px;
 }
 
 .image-box .image-container img {
-    width: 100%;
+    width: 70%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 2px;
+    background-color: #E2E0E5;
 }
 
 .image-box .image-compressed-container {
@@ -170,15 +174,18 @@ header {
 
 .image-box .image-compressed-container .after-column {
     font-size: 20px;
+    font-weight: 550;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 15px;
 }
 
 .image-box .image-compressed-container img {
-    width: 100%;
+    width: 70%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 2px;
+    background-color: #E2E0E5;
+
 }
 
 .output-container {
@@ -194,7 +201,7 @@ header {
 }
 
 .output-container .output-state .pixel-difference, .compression-time {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .output-container .save-remove-image {
@@ -210,15 +217,15 @@ header {
     margin-right: 0px;
     border-radius: 30px;
     font-weight: 600;
-    background-color: #000000;
+    background-color: #111111;
     color: #ffffff;
     cursor: pointer;
     outline: none;
-    border: 2px solid #000000;
+    border: 2px solid #111111;
 }
 
 .save-button input[type="submit"]:hover, .remove-button input[type="submit"]:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #111111;
     transition: all 0.3s ease;
 }
