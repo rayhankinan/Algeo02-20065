@@ -1,4 +1,3 @@
-import cv2
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import redirect, secure_filename
 from SVD import compress
@@ -39,7 +38,7 @@ def upload_page():
         inMemoryFile = io.BytesIO()
         photo.save(inMemoryFile)
         data = np.frombuffer(inMemoryFile.getvalue(), dtype=np.uint8)
-        imageFile = cv2.imdecode(data, 1)
+        imageFile = cv2.imdecode(data, cv2.IMREAD_UNCHANGED)
     except:
         pass
 
