@@ -33,7 +33,7 @@
                         {% endif %}
                         <p>
                             <span class="input-description">Rate kompresi gambar:</span>
-                            <input type="number" name="compression-rate" value="{{ persenKompresi }}">
+                            <input type="number" name="compression-rate" value="{{ persenKompresi }}" min="0" max="100">
                             <span class="input-description">%</span>
                         </p>
                         <input type="submit" value="Submit">
