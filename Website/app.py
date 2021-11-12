@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 from werkzeug.utils import redirect, secure_filename
 from SVD import compress
+from PIL import Image
 import numpy as np
 import io
 import cv2
@@ -10,10 +11,12 @@ import time
 import sys # BUAT CONSOLE LOG CERITANYA
 
 app = Flask(__name__)
+
 imageFile = None
 imageFileCompressed = None
 photoFileName = None
 photoFileExtension = None
+photoFileMode = None
 compressionRate = None
 executionTime = None
 
@@ -28,15 +31,20 @@ def upload_page():
     global imageFileCompressed
     global photoFileName
     global photoFileExtension
+    global photoFileMode
     global compressionRate
     global executionTime
-
+    
     try:
         photo = request.files['uploaded-image']
         photoFileName, photoFileExtension = os.path.splitext(secure_filename(photo.filename))
 
         inMemoryFile = io.BytesIO()
         photo.save(inMemoryFile)
+
+        photoFileMode = Image.open(inMemoryFile).mode
+        # print(photoFileMode, file=sys.stdout) # NANTI HAPUS INI
+
         data = np.frombuffer(inMemoryFile.getvalue(), dtype=np.uint8)
         imageFile = cv2.imdecode(data, cv2.IMREAD_UNCHANGED)
     except:
@@ -58,6 +66,7 @@ def view_page():
     global imageFileCompressed
     global photoFileName
     global photoFileExtension
+    global photoFileMode
     global compressionRate
     global executionTime
     
@@ -76,10 +85,14 @@ def save_image():
     global imageFileCompressed
     global photoFileName
     global photoFileExtension
+    global photoFileMode
     global compressionRate
     global executionTime
 
-    _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
+    imageFileCompressedSaved = np.asarray(Image.fromarray(imageFileCompressed, mode=Image.fromarray(imageFileCompressed).mode).convert(photoFileMode))
+    # print(Image.fromarray(imageFileCompressedSaved, mode=photoFileMode).mode, file=sys.stdout) # NANTI HAPUS INI
+
+    _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressedSaved)
 
     return send_file(io.BytesIO(frameImageCompressed), download_name=photoFileName + photoFileExtension, mimetype="images/" + photoFileExtension[1:])
 
@@ -90,6 +103,7 @@ def remove_image():
     global imageFileCompressed
     global photoFileName
     global photoFileExtension
+    global photoFileMode
     global compressionRate
     global executionTime
 
@@ -108,6 +122,7 @@ def compress_image():
     global imageFileCompressed
     global photoFileName
     global photoFileExtension
+    global photoFileMode
     global compressionRate
     global executionTime
 
