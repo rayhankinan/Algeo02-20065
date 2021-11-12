@@ -89,7 +89,8 @@ header {
 }
 
 .image-processing-box .upload-box {
-    margin: 20px auto 0 auto;
+    max-width: 85%;
+    margin: 25px auto 0 auto;
 }
 
 .image-processing-box .upload-box form {
@@ -154,15 +155,15 @@ header {
     font-size: 20px;
     font-weight: 550;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 15px;
 }
 
 .image-box .image-container img {
     width: 70%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 2px;
-    background-color: #E2E0E5;
+    border-radius: 15px;
+    background-color: #e2e0e530;
 }
 
 .image-box .image-compressed-container {
@@ -176,22 +177,21 @@ header {
     font-size: 20px;
     font-weight: 550;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 15px;
 }
 
 .image-box .image-compressed-container img {
     width: 70%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 2px;
-    background-color: #E2E0E5;
-
+    border-radius: 15px;
+    background-color: #e2e0e530;
 }
 
 .output-container {
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .output-container .output-state {
