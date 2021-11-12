@@ -36,7 +36,7 @@ def svd(matrix, k):
 
     return u, sigma, vt
 
-def compress(img,percentage): #add img as param later
+def compress(img, percentage): #add img as param later
     # just for testing -- delete this part later
     #currDir = os.path.dirname(__file__)
     #path = os.path.join(currDir, './static/images/jvv absen.jpg') # testing aja nnt apush
@@ -79,26 +79,25 @@ def compress(img,percentage): #add img as param later
     except: pass
 
     # insert compressed r, g, b to matrix
+    redImg = (Image.fromarray(rScaled)).convert("L")
+    greenImg = (Image.fromarray(gScaled)).convert("L")
+    blueImg = (Image.fromarray(bScaled)).convert("L")
     try: 
-        redImg = (Image.fromarray(rScaled)).convert("L")
-        greenImg = (Image.fromarray(gScaled)).convert("L")
-        blueImg = (Image.fromarray(bScaled)).convert("L")
         alphaImg = (Image.fromarray(aScaled)).convert("L")
-        imgScaled = Image.merge("RGB" ,(redImg,greenImg,blueImg, alphaImg))
+        imgScaled = Image.merge("RGBA" ,(redImg,greenImg,blueImg, alphaImg))
+        opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGBA2BGRA)
     except: 
-        redImg = (Image.fromarray(rScaled)).convert("L")
-        greenImg = (Image.fromarray(gScaled)).convert("L")
-        blueImg = (Image.fromarray(bScaled)).convert("L")
         imgScaled = Image.merge("RGB" ,(redImg,greenImg,blueImg))
-    #imgScaled[:, :, 3] = aScaled
+        opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGB2BGR)
 
     # check for values outside of range of RGB (0-255)
-    imgScaled[imgScaled > 255] = 255
-    imgScaled[imgScaled < 0] = 0
-    #cv2.imwrite("yayoyo.jpg", imgScaled)
-    return (imgScaled)
-    #imgScaled = imgScaled.astype(float) / 255
-    #cv2.imshow("INI PAKE SVD KITA BOUSZ", imgScaled)
+    #imgScaled[imgScaled > 255] = 255
+    #imgScaled[imgScaled < 0] = 0
+
+    #cv2.imwrite("yayoyo.png", opencvimg)
+    return (opencvimg)
+    #opencvimg = opencvimg.astype(float) / 255
+    #cv2.imshow("INI PAKE SVD KITA BOUSZ", opencvimg)
     #cv2.waitKey()
 '''
 # uncomment ini kalo mo bandingin jawaban pake svd linalg library
