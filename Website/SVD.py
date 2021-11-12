@@ -39,7 +39,7 @@ def svd(matrix, k):
 def compress(img, percentage): #add img as param later
     # just for testing -- delete this part later
     #currDir = os.path.dirname(__file__)
-    #path = os.path.join(currDir, './static/images/475669.png') # testing aja nnt apush
+    #path = os.path.join(currDir, './static/images/bnw.jpg') # testing aja nnt apush
     #tes = cv2.imread(path, cv2.IMREAD_UNCHANGED)
     #cv2.imshow("yey", tes)
     #cv2.waitKey()
@@ -62,40 +62,38 @@ def compress(img, percentage): #add img as param later
 
     # k = KALO MAU K MANUAL INPUT DISINI
     # tes punya kita yang paling baru :V
-    zerob = not np.any(b)
-    zerog = not np.any(g)
-    zeror = not np.any(r)
-
-    if (not(zerob or zerog or zeror)):
+    try: 
         ub, sb, vb = svd(b, k)
-        ug, sg, vg = svd(g, k)
-        ur, sr, vr = svd(r, k)
-        try: ua, sa, va = svd(a, k)
-        except: pass
-        #print(ub.shape)
-        #print(sb.shape)
-        #print(vb.shape)
-
-        # make compressed r, g, b
-        rScaled = np.dot(ur, np.dot(sr, vr))
-        gScaled = np.dot(ug, np.dot(sg, vg))
         bScaled = np.dot(ub, np.dot(sb, vb))
-        try: aScaled = np.dot(ua, np.dot(sa, va))
-        except: pass
+    except: bScaled = b
+    try: 
+        ug, sg, vg = svd(g, k)
+        gScaled = np.dot(ug, np.dot(sg, vg))
+    except: gScaled = g
+    try: 
+        ur, sr, vr = svd(r, k)
+        rScaled = np.dot(ur, np.dot(sr, vr))
+    except: rScaled = r
 
-        # insert compressed r, g, b to matrix
-        redImg = (Image.fromarray(rScaled)).convert("L")
-        greenImg = (Image.fromarray(gScaled)).convert("L")
-        blueImg = (Image.fromarray(bScaled)).convert("L")
-        try: 
-            alphaImg = (Image.fromarray(aScaled)).convert("L")
-            imgScaled = Image.merge("RGBA" ,(redImg,greenImg,blueImg, alphaImg))
-            opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGBA2BGRA)
-        except: 
-            imgScaled = Image.merge("RGB" ,(redImg,greenImg,blueImg))
-            opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGB2BGR)
-    else:
-        opencvimg = img
+    try: 
+        ua, sa, va = svd(a, k)
+        aScaled = np.dot(ua, np.dot(sa, va))
+    except: pass
+    #print(ub.shape)
+    #print(sb.shape)
+    #print(vb.shape)
+
+    # insert compressed r, g, b to matrix
+    redImg = (Image.fromarray(rScaled)).convert("L")
+    greenImg = (Image.fromarray(gScaled)).convert("L")
+    blueImg = (Image.fromarray(bScaled)).convert("L")
+    try: 
+        alphaImg = (Image.fromarray(aScaled)).convert("L")
+        imgScaled = Image.merge("RGBA" ,(redImg,greenImg,blueImg, alphaImg))
+        opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGBA2BGRA)
+    except: 
+        imgScaled = Image.merge("RGB" ,(redImg,greenImg,blueImg))
+        opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGB2BGR)
 
     # check for values outside of range of RGB (0-255)
     #imgScaled[imgScaled > 255] = 255
