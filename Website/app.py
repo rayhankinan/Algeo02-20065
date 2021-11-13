@@ -67,14 +67,17 @@ def view_page():
     global photoFileMode
     global compressionRate
     global executionTime
-    
-    _, frameImage = cv2.imencode(photoFileExtension, imageFile)
-    _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
 
-    delta = cv2.absdiff(imageFile.astype(np.float32), imageFileCompressed.astype(np.float32))
-    percentage = round((np.count_nonzero(delta) * 100) / delta.size, 2)
+    if photoFileName != "":
+        _, frameImage = cv2.imencode(photoFileExtension, imageFile)
+        _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressed)
 
-    return render_template('frontpage.html', byteImage = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImage).decode('utf-8'), byteImageCompressed = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImageCompressed).decode('utf-8'), pixelDifference = percentage, compressionTime = executionTime, fileName = photoFileName + photoFileExtension, persenKompresi = compressionRate)
+        delta = cv2.absdiff(imageFile.astype(np.float32), imageFileCompressed.astype(np.float32))
+        percentage = round((np.count_nonzero(delta) * 100) / delta.size, 2)
+
+        return render_template('frontpage.html', byteImage = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImage).decode('utf-8'), byteImageCompressed = "data:image/" + photoFileExtension[1:] + ";base64," + base64.b64encode(frameImageCompressed).decode('utf-8'), pixelDifference = percentage, compressionTime = executionTime, fileName = photoFileName + photoFileExtension, persenKompresi = compressionRate)
+    else:
+        return redirect('/')
 
 @app.route('/save', methods=['POST'])
 def save_image():
@@ -123,9 +126,10 @@ def compress_image():
     global compressionRate
     global executionTime
 
-    startTime = time.time()
-    imageFileCompressed = compress(imageFile, compressionRate)
-    executionTime = round(time.time() - startTime, 2)
+    if photoFileName != "":
+        startTime = time.time()
+        imageFileCompressed = compress(imageFile, compressionRate)
+        executionTime = round(time.time() - startTime, 2)
 
     return redirect('/view')
 
