@@ -55,10 +55,10 @@ def compress(img, percentage): #add img as param later
     except: pass
     
     # make scale out of percentage
-    if (img.shape[0] < img.shape[1]):
-        k = round(percentage / 100 * len(img))
-    else:
-        k = round(percentage / 100 * len(img[0]))
+    m = img.shape[0]
+    n = img.shape[1]
+    percent = percentage / 100
+    k = round((m * n) * percent / (m + n + 1))
 
     # k = KALO MAU K MANUAL INPUT DISINI
     # tes punya kita yang paling baru :V
