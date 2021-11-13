@@ -2,12 +2,13 @@
 Website for image compression using SVD (Singular Value Decomposition) algorithm.
 
 ## Table of Contents
-[General Information](#general-information)
-[Technologies Used](#technologies-used)
-[Features](#features)
-[Structures](#structures)
-[Setup](#setup)
-[Usage](#usage)
+* [General Information](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Structures](#structures)
+* [Setup](#setup)
+* [Usage](#usage)
 
 ## General Information
 Image compression is a type of data compression that applied to digital image. Using image compression, we can reduce the file size of an image to significant levels without decreasing the quality of the image itself. There are numerous algorithm that are used for image compression, for example SVD (Singular Value Decomposition), DCT (Discrete Cosine Transform), and LZW (Lempel–Ziv–Welch). In this case, we used SVD for the algorithm that we used in this program.
