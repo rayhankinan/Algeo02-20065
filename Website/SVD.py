@@ -1,9 +1,7 @@
-import os # ini nanti ilangin cm buat testing
 import cv2
 import numpy as np
 from PIL import Image
 from Eigen import simultaneous_power_iteration
-import math
 
 def svd(matrix, k):
     a = np.dot(np.transpose(matrix), matrix) # get A trans * A

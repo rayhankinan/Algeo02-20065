@@ -8,7 +8,6 @@ import cv2
 import os
 import base64
 import time
-import sys # BUAT CONSOLE LOG CERITANYA
 
 app = Flask(__name__)
 
@@ -43,7 +42,6 @@ def upload_page():
         photo.save(inMemoryFile)
 
         photoFileMode = Image.open(inMemoryFile).mode
-        # print(photoFileMode, file=sys.stdout) # NANTI HAPUS INI
 
         data = np.frombuffer(inMemoryFile.getvalue(), dtype=np.uint8)
         imageFile = cv2.imdecode(data, cv2.IMREAD_UNCHANGED)
@@ -90,7 +88,6 @@ def save_image():
     global executionTime
 
     imageFileCompressedSaved = np.asarray(Image.fromarray(imageFileCompressed, mode=Image.fromarray(imageFileCompressed).mode).convert(photoFileMode))
-    # print(Image.fromarray(imageFileCompressedSaved, mode=photoFileMode).mode, file=sys.stdout) # NANTI HAPUS INI
 
     _, frameImageCompressed = cv2.imencode(photoFileExtension, imageFileCompressedSaved)
 

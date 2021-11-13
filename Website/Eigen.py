@@ -1,7 +1,5 @@
 import numpy as np
-import sympy as sym
 import time
-
 
 '''def eigenValue(matrix):
         row = len(matrix)
