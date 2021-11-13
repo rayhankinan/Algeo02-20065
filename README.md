@@ -17,24 +17,24 @@ Pillow - 8.4.0 <br />
 
 ## Structures
 ```bash
-|   output.txt
-|   README.md
-|   requirement.txt
-|   
-\---Website
-    |   app.py
-    |   Eigen.py
-    |   SVD.py
-    |   
-    +---static
-    |   +---images
-    |   |       imageNotAvailable.png
-    |   |       logo.png
-    |   |       logoSmall.png
-    |   |       
-    |   \---styles
-    |           frontpage.css
-    |           
-    \---templates
+.
+│   README.md
+│   requirement.txt
+│   
+└───Website
+    │   app.py
+    │   Eigen.py
+    │   SVD.py
+    │
+    ├───static
+    │   ├───images
+    │   │       imageNotAvailable.png
+    │   │       logo.png
+    │   │       logoSmall.png
+    │   │
+    │   └───styles
+    │           frontpage.css
+    │
+    └───templates
             frontpage.html
 ```
