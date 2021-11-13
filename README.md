@@ -24,8 +24,8 @@ SVD is a method for factoring matrix into three submatrix (orthogonal matrix U, 
 * Lossless image saving
 
 ## Screenshots
-[Gambar 1. Tampilan Front Page](./screenshots/1.png)
-[Gambar 2. Tampilan View Page](./screenshots/2.png)
+![Gambar 1. Tampilan Front Page](./screenshots/1.png)
+![Gambar 2. Tampilan View Page](./screenshots/2.png)
 
 ## Structures
 ```bash
