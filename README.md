@@ -14,14 +14,18 @@ Image compression is a type of data compression that applied to digital image. U
 SVD is a method for factoring matrix into three submatrix (orthogonal matrix U, diagonal matrix Σ, and transpose of orthogonal matrix V). The method in SVD itself is a generalization from eigendecomposition of a square matrix.
 
 ## Technologies Used
-Flask - version 2.0.2
-opencv - version 4.5.48
-Pillow - 8.4.0
+* Flask - version 2.0.2
+* opencv - version 4.5.48
+* Pillow - 8.4.0
 
 ## Features
 * Image compression with user input compression percentage
 * Compressed image preview
 * Lossless image saving
+
+## Screenshots
+[Gambar 1. Tampilan Front Page](./screenshots/1.png)
+[Gambar 2. Tampilan View Page](./screenshots/2.png)
 
 ## Structures
 ```bash
