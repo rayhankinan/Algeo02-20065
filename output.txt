@@ -1,0 +1,3660 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is 44D6-50BB
+C:.
+|   output.txt
+|   README.md
+|   requirement.txt
+|   
++---venv
+|   |   .gitignore
+|   |   pyvenv.cfg
+|   |   
+|   +---Lib
+|   |   \---site-packages
+|   |       |   distutils-precedence.pth
+|   |       |   pip-21.3.1.virtualenv
+|   |       |   setuptools-58.3.0.virtualenv
+|   |       |   wheel-0.37.0.virtualenv
+|   |       |   _virtualenv.pth
+|   |       |   _virtualenv.py
+|   |       |   
+|   |       +---click
+|   |       |   |   core.py
+|   |       |   |   decorators.py
+|   |       |   |   exceptions.py
+|   |       |   |   formatting.py
+|   |       |   |   globals.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   shell_completion.py
+|   |       |   |   termui.py
+|   |       |   |   testing.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   _compat.py
+|   |       |   |   _termui_impl.py
+|   |       |   |   _textwrap.py
+|   |       |   |   _unicodefun.py
+|   |       |   |   _winconsole.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-39.pyc
+|   |       |           decorators.cpython-39.pyc
+|   |       |           exceptions.cpython-39.pyc
+|   |       |           formatting.cpython-39.pyc
+|   |       |           globals.cpython-39.pyc
+|   |       |           parser.cpython-39.pyc
+|   |       |           shell_completion.cpython-39.pyc
+|   |       |           termui.cpython-39.pyc
+|   |       |           testing.cpython-39.pyc
+|   |       |           types.cpython-39.pyc
+|   |       |           utils.cpython-39.pyc
+|   |       |           _compat.cpython-39.pyc
+|   |       |           _termui_impl.cpython-39.pyc
+|   |       |           _textwrap.cpython-39.pyc
+|   |       |           _unicodefun.cpython-39.pyc
+|   |       |           _winconsole.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---click-8.0.3.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---colorama
+|   |       |   |   ansi.py
+|   |       |   |   ansitowin32.py
+|   |       |   |   initialise.py
+|   |       |   |   win32.py
+|   |       |   |   winterm.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           ansi.cpython-39.pyc
+|   |       |           ansitowin32.cpython-39.pyc
+|   |       |           initialise.cpython-39.pyc
+|   |       |           win32.cpython-39.pyc
+|   |       |           winterm.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---colorama-0.4.4.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE.txt
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---cv2
+|   |       |   |   config-3.9.py
+|   |       |   |   config.py
+|   |       |   |   cv2.cp39-win_amd64.pyd
+|   |       |   |   LICENSE-3RD-PARTY.txt
+|   |       |   |   LICENSE.txt
+|   |       |   |   load_config_py2.py
+|   |       |   |   load_config_py3.py
+|   |       |   |   opencv_videoio_ffmpeg454_64.dll
+|   |       |   |   version.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---data
+|   |       |   |   |   haarcascade_eye.xml
+|   |       |   |   |   haarcascade_eye_tree_eyeglasses.xml
+|   |       |   |   |   haarcascade_frontalcatface.xml
+|   |       |   |   |   haarcascade_frontalcatface_extended.xml
+|   |       |   |   |   haarcascade_frontalface_alt.xml
+|   |       |   |   |   haarcascade_frontalface_alt2.xml
+|   |       |   |   |   haarcascade_frontalface_alt_tree.xml
+|   |       |   |   |   haarcascade_frontalface_default.xml
+|   |       |   |   |   haarcascade_fullbody.xml
+|   |       |   |   |   haarcascade_lefteye_2splits.xml
+|   |       |   |   |   haarcascade_licence_plate_rus_16stages.xml
+|   |       |   |   |   haarcascade_lowerbody.xml
+|   |       |   |   |   haarcascade_profileface.xml
+|   |       |   |   |   haarcascade_righteye_2splits.xml
+|   |       |   |   |   haarcascade_russian_plate_number.xml
+|   |       |   |   |   haarcascade_smile.xml
+|   |       |   |   |   haarcascade_upperbody.xml
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---gapi
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---mat_wrapper
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---misc
+|   |       |   |   |   version.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           version.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---utils
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           config-3.9.cpython-39.pyc
+|   |       |           config.cpython-39.pyc
+|   |       |           load_config_py2.cpython-39.pyc
+|   |       |           load_config_py3.cpython-39.pyc
+|   |       |           version.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---flask
+|   |       |   |   app.py
+|   |       |   |   blueprints.py
+|   |       |   |   cli.py
+|   |       |   |   config.py
+|   |       |   |   ctx.py
+|   |       |   |   debughelpers.py
+|   |       |   |   globals.py
+|   |       |   |   helpers.py
+|   |       |   |   logging.py
+|   |       |   |   py.typed
+|   |       |   |   scaffold.py
+|   |       |   |   sessions.py
+|   |       |   |   signals.py
+|   |       |   |   templating.py
+|   |       |   |   testing.py
+|   |       |   |   typing.py
+|   |       |   |   views.py
+|   |       |   |   wrappers.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---json
+|   |       |   |   |   tag.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           tag.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           app.cpython-39.pyc
+|   |       |           blueprints.cpython-39.pyc
+|   |       |           cli.cpython-39.pyc
+|   |       |           config.cpython-39.pyc
+|   |       |           ctx.cpython-39.pyc
+|   |       |           debughelpers.cpython-39.pyc
+|   |       |           globals.cpython-39.pyc
+|   |       |           helpers.cpython-39.pyc
+|   |       |           logging.cpython-39.pyc
+|   |       |           scaffold.cpython-39.pyc
+|   |       |           sessions.cpython-39.pyc
+|   |       |           signals.cpython-39.pyc
+|   |       |           templating.cpython-39.pyc
+|   |       |           testing.cpython-39.pyc
+|   |       |           typing.cpython-39.pyc
+|   |       |           views.cpython-39.pyc
+|   |       |           wrappers.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           __main__.cpython-39.pyc
+|   |       |           
+|   |       +---Flask-2.0.2.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       REQUESTED
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---itsdangerous
+|   |       |   |   encoding.py
+|   |       |   |   exc.py
+|   |       |   |   jws.py
+|   |       |   |   py.typed
+|   |       |   |   serializer.py
+|   |       |   |   signer.py
+|   |       |   |   timed.py
+|   |       |   |   url_safe.py
+|   |       |   |   _json.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           encoding.cpython-39.pyc
+|   |       |           exc.cpython-39.pyc
+|   |       |           jws.cpython-39.pyc
+|   |       |           serializer.cpython-39.pyc
+|   |       |           signer.cpython-39.pyc
+|   |       |           timed.cpython-39.pyc
+|   |       |           url_safe.cpython-39.pyc
+|   |       |           _json.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---itsdangerous-2.0.1.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---jinja2
+|   |       |   |   async_utils.py
+|   |       |   |   bccache.py
+|   |       |   |   compiler.py
+|   |       |   |   constants.py
+|   |       |   |   debug.py
+|   |       |   |   defaults.py
+|   |       |   |   environment.py
+|   |       |   |   exceptions.py
+|   |       |   |   ext.py
+|   |       |   |   filters.py
+|   |       |   |   idtracking.py
+|   |       |   |   lexer.py
+|   |       |   |   loaders.py
+|   |       |   |   meta.py
+|   |       |   |   nativetypes.py
+|   |       |   |   nodes.py
+|   |       |   |   optimizer.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   runtime.py
+|   |       |   |   sandbox.py
+|   |       |   |   tests.py
+|   |       |   |   utils.py
+|   |       |   |   visitor.py
+|   |       |   |   _identifier.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           async_utils.cpython-39.pyc
+|   |       |           bccache.cpython-39.pyc
+|   |       |           compiler.cpython-39.pyc
+|   |       |           constants.cpython-39.pyc
+|   |       |           debug.cpython-39.pyc
+|   |       |           defaults.cpython-39.pyc
+|   |       |           environment.cpython-39.pyc
+|   |       |           exceptions.cpython-39.pyc
+|   |       |           ext.cpython-39.pyc
+|   |       |           filters.cpython-39.pyc
+|   |       |           idtracking.cpython-39.pyc
+|   |       |           lexer.cpython-39.pyc
+|   |       |           loaders.cpython-39.pyc
+|   |       |           meta.cpython-39.pyc
+|   |       |           nativetypes.cpython-39.pyc
+|   |       |           nodes.cpython-39.pyc
+|   |       |           optimizer.cpython-39.pyc
+|   |       |           parser.cpython-39.pyc
+|   |       |           runtime.cpython-39.pyc
+|   |       |           sandbox.cpython-39.pyc
+|   |       |           tests.cpython-39.pyc
+|   |       |           utils.cpython-39.pyc
+|   |       |           visitor.cpython-39.pyc
+|   |       |           _identifier.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---Jinja2-3.0.2.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---markupsafe
+|   |       |   |   py.typed
+|   |       |   |   _native.py
+|   |       |   |   _speedups.cp39-win_amd64.pyd
+|   |       |   |   _speedups.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           _native.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---MarkupSafe-2.0.1.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---mpmath
+|   |       |   |   ctx_base.py
+|   |       |   |   ctx_fp.py
+|   |       |   |   ctx_iv.py
+|   |       |   |   ctx_mp.py
+|   |       |   |   ctx_mp_python.py
+|   |       |   |   function_docs.py
+|   |       |   |   identification.py
+|   |       |   |   math2.py
+|   |       |   |   rational.py
+|   |       |   |   usertools.py
+|   |       |   |   visualization.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---calculus
+|   |       |   |   |   approximation.py
+|   |       |   |   |   calculus.py
+|   |       |   |   |   differentiation.py
+|   |       |   |   |   extrapolation.py
+|   |       |   |   |   inverselaplace.py
+|   |       |   |   |   odes.py
+|   |       |   |   |   optimization.py
+|   |       |   |   |   polynomials.py
+|   |       |   |   |   quadrature.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           approximation.cpython-39.pyc
+|   |       |   |           calculus.cpython-39.pyc
+|   |       |   |           differentiation.cpython-39.pyc
+|   |       |   |           extrapolation.cpython-39.pyc
+|   |       |   |           inverselaplace.cpython-39.pyc
+|   |       |   |           odes.cpython-39.pyc
+|   |       |   |           optimization.cpython-39.pyc
+|   |       |   |           polynomials.cpython-39.pyc
+|   |       |   |           quadrature.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---functions
+|   |       |   |   |   bessel.py
+|   |       |   |   |   elliptic.py
+|   |       |   |   |   expintegrals.py
+|   |       |   |   |   factorials.py
+|   |       |   |   |   functions.py
+|   |       |   |   |   hypergeometric.py
+|   |       |   |   |   orthogonal.py
+|   |       |   |   |   qfunctions.py
+|   |       |   |   |   rszeta.py
+|   |       |   |   |   theta.py
+|   |       |   |   |   zeta.py
+|   |       |   |   |   zetazeros.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           bessel.cpython-39.pyc
+|   |       |   |           elliptic.cpython-39.pyc
+|   |       |   |           expintegrals.cpython-39.pyc
+|   |       |   |           factorials.cpython-39.pyc
+|   |       |   |           functions.cpython-39.pyc
+|   |       |   |           hypergeometric.cpython-39.pyc
+|   |       |   |           orthogonal.cpython-39.pyc
+|   |       |   |           qfunctions.cpython-39.pyc
+|   |       |   |           rszeta.cpython-39.pyc
+|   |       |   |           theta.cpython-39.pyc
+|   |       |   |           zeta.cpython-39.pyc
+|   |       |   |           zetazeros.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---libmp
+|   |       |   |   |   backend.py
+|   |       |   |   |   gammazeta.py
+|   |       |   |   |   libelefun.py
+|   |       |   |   |   libhyper.py
+|   |       |   |   |   libintmath.py
+|   |       |   |   |   libmpc.py
+|   |       |   |   |   libmpf.py
+|   |       |   |   |   libmpi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           backend.cpython-39.pyc
+|   |       |   |           gammazeta.cpython-39.pyc
+|   |       |   |           libelefun.cpython-39.pyc
+|   |       |   |           libhyper.cpython-39.pyc
+|   |       |   |           libintmath.cpython-39.pyc
+|   |       |   |           libmpc.cpython-39.pyc
+|   |       |   |           libmpf.cpython-39.pyc
+|   |       |   |           libmpi.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---matrices
+|   |       |   |   |   calculus.py
+|   |       |   |   |   eigen.py
+|   |       |   |   |   eigen_symmetric.py
+|   |       |   |   |   linalg.py
+|   |       |   |   |   matrices.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           calculus.cpython-39.pyc
+|   |       |   |           eigen.cpython-39.pyc
+|   |       |   |           eigen_symmetric.cpython-39.pyc
+|   |       |   |           linalg.cpython-39.pyc
+|   |       |   |           matrices.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---tests
+|   |       |   |   |   extratest_gamma.py
+|   |       |   |   |   extratest_zeta.py
+|   |       |   |   |   runtests.py
+|   |       |   |   |   test_basic_ops.py
+|   |       |   |   |   test_bitwise.py
+|   |       |   |   |   test_calculus.py
+|   |       |   |   |   test_compatibility.py
+|   |       |   |   |   test_convert.py
+|   |       |   |   |   test_diff.py
+|   |       |   |   |   test_division.py
+|   |       |   |   |   test_eigen.py
+|   |       |   |   |   test_eigen_symmetric.py
+|   |       |   |   |   test_elliptic.py
+|   |       |   |   |   test_fp.py
+|   |       |   |   |   test_functions.py
+|   |       |   |   |   test_functions2.py
+|   |       |   |   |   test_gammazeta.py
+|   |       |   |   |   test_hp.py
+|   |       |   |   |   test_identify.py
+|   |       |   |   |   test_interval.py
+|   |       |   |   |   test_levin.py
+|   |       |   |   |   test_linalg.py
+|   |       |   |   |   test_matrices.py
+|   |       |   |   |   test_mpmath.py
+|   |       |   |   |   test_ode.py
+|   |       |   |   |   test_pickle.py
+|   |       |   |   |   test_power.py
+|   |       |   |   |   test_quad.py
+|   |       |   |   |   test_rootfinding.py
+|   |       |   |   |   test_special.py
+|   |       |   |   |   test_str.py
+|   |       |   |   |   test_summation.py
+|   |       |   |   |   test_trig.py
+|   |       |   |   |   test_visualization.py
+|   |       |   |   |   torture.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           extratest_gamma.cpython-39.pyc
+|   |       |   |           extratest_zeta.cpython-39.pyc
+|   |       |   |           runtests.cpython-39.pyc
+|   |       |   |           test_basic_ops.cpython-39.pyc
+|   |       |   |           test_bitwise.cpython-39.pyc
+|   |       |   |           test_calculus.cpython-39.pyc
+|   |       |   |           test_compatibility.cpython-39.pyc
+|   |       |   |           test_convert.cpython-39.pyc
+|   |       |   |           test_diff.cpython-39.pyc
+|   |       |   |           test_division.cpython-39.pyc
+|   |       |   |           test_eigen.cpython-39.pyc
+|   |       |   |           test_eigen_symmetric.cpython-39.pyc
+|   |       |   |           test_elliptic.cpython-39.pyc
+|   |       |   |           test_fp.cpython-39.pyc
+|   |       |   |           test_functions.cpython-39.pyc
+|   |       |   |           test_functions2.cpython-39.pyc
+|   |       |   |           test_gammazeta.cpython-39.pyc
+|   |       |   |           test_hp.cpython-39.pyc
+|   |       |   |           test_identify.cpython-39.pyc
+|   |       |   |           test_interval.cpython-39.pyc
+|   |       |   |           test_levin.cpython-39.pyc
+|   |       |   |           test_linalg.cpython-39.pyc
+|   |       |   |           test_matrices.cpython-39.pyc
+|   |       |   |           test_mpmath.cpython-39.pyc
+|   |       |   |           test_ode.cpython-39.pyc
+|   |       |   |           test_pickle.cpython-39.pyc
+|   |       |   |           test_power.cpython-39.pyc
+|   |       |   |           test_quad.cpython-39.pyc
+|   |       |   |           test_rootfinding.cpython-39.pyc
+|   |       |   |           test_special.cpython-39.pyc
+|   |       |   |           test_str.cpython-39.pyc
+|   |       |   |           test_summation.cpython-39.pyc
+|   |       |   |           test_trig.cpython-39.pyc
+|   |       |   |           test_visualization.cpython-39.pyc
+|   |       |   |           torture.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           ctx_base.cpython-39.pyc
+|   |       |           ctx_fp.cpython-39.pyc
+|   |       |           ctx_iv.cpython-39.pyc
+|   |       |           ctx_mp.cpython-39.pyc
+|   |       |           ctx_mp_python.cpython-39.pyc
+|   |       |           function_docs.cpython-39.pyc
+|   |       |           identification.cpython-39.pyc
+|   |       |           math2.cpython-39.pyc
+|   |       |           rational.cpython-39.pyc
+|   |       |           usertools.cpython-39.pyc
+|   |       |           visualization.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---mpmath-1.2.1.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---numpy
+|   |       |   |   char.pyi
+|   |       |   |   conftest.py
+|   |       |   |   ctypeslib.py
+|   |       |   |   ctypeslib.pyi
+|   |       |   |   dual.py
+|   |       |   |   LICENSE.txt
+|   |       |   |   matlib.py
+|   |       |   |   py.typed
+|   |       |   |   rec.pyi
+|   |       |   |   setup.py
+|   |       |   |   version.py
+|   |       |   |   _distributor_init.py
+|   |       |   |   _globals.py
+|   |       |   |   _pytesttester.py
+|   |       |   |   _version.py
+|   |       |   |   __config__.py
+|   |       |   |   __init__.cython-30.pxd
+|   |       |   |   __init__.pxd
+|   |       |   |   __init__.py
+|   |       |   |   __init__.pyi
+|   |       |   |   
+|   |       |   +---.libs
+|   |       |   |       libopenblas.XWYDX2IKJW2NMTWSFYNGFUWKQU3LYTCZ.gfortran-win_amd64.dll
+|   |       |   |       
+|   |       |   +---compat
+|   |       |   |   |   py3k.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   _inspect.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_compat.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_compat.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           py3k.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           _inspect.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---core
+|   |       |   |   |   arrayprint.py
+|   |       |   |   |   arrayprint.pyi
+|   |       |   |   |   cversions.py
+|   |       |   |   |   defchararray.py
+|   |       |   |   |   einsumfunc.py
+|   |       |   |   |   einsumfunc.pyi
+|   |       |   |   |   fromnumeric.py
+|   |       |   |   |   fromnumeric.pyi
+|   |       |   |   |   function_base.py
+|   |       |   |   |   function_base.pyi
+|   |       |   |   |   generate_numpy_api.py
+|   |       |   |   |   getlimits.py
+|   |       |   |   |   machar.py
+|   |       |   |   |   memmap.py
+|   |       |   |   |   multiarray.py
+|   |       |   |   |   numeric.py
+|   |       |   |   |   numeric.pyi
+|   |       |   |   |   numerictypes.py
+|   |       |   |   |   numerictypes.pyi
+|   |       |   |   |   overrides.py
+|   |       |   |   |   records.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   setup_common.py
+|   |       |   |   |   shape_base.py
+|   |       |   |   |   shape_base.pyi
+|   |       |   |   |   umath.py
+|   |       |   |   |   umath_tests.py
+|   |       |   |   |   _add_newdocs.py
+|   |       |   |   |   _add_newdocs_scalars.py
+|   |       |   |   |   _asarray.py
+|   |       |   |   |   _asarray.pyi
+|   |       |   |   |   _dtype.py
+|   |       |   |   |   _dtype_ctypes.py
+|   |       |   |   |   _exceptions.py
+|   |       |   |   |   _internal.py
+|   |       |   |   |   _internal.pyi
+|   |       |   |   |   _methods.py
+|   |       |   |   |   _multiarray_tests.cp39-win_amd64.pyd
+|   |       |   |   |   _multiarray_umath.cp39-win_amd64.pyd
+|   |       |   |   |   _operand_flag_tests.cp39-win_amd64.pyd
+|   |       |   |   |   _rational_tests.cp39-win_amd64.pyd
+|   |       |   |   |   _simd.cp39-win_amd64.pyd
+|   |       |   |   |   _string_helpers.py
+|   |       |   |   |   _struct_ufunc_tests.cp39-win_amd64.pyd
+|   |       |   |   |   _type_aliases.py
+|   |       |   |   |   _type_aliases.pyi
+|   |       |   |   |   _ufunc_config.py
+|   |       |   |   |   _ufunc_config.pyi
+|   |       |   |   |   _umath_tests.cp39-win_amd64.pyd
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---include
+|   |       |   |   |   \---numpy
+|   |       |   |   |       |   arrayobject.h
+|   |       |   |   |       |   arrayscalars.h
+|   |       |   |   |       |   halffloat.h
+|   |       |   |   |       |   multiarray_api.txt
+|   |       |   |   |       |   ndarrayobject.h
+|   |       |   |   |       |   ndarraytypes.h
+|   |       |   |   |       |   noprefix.h
+|   |       |   |   |       |   npy_1_7_deprecated_api.h
+|   |       |   |   |       |   npy_3kcompat.h
+|   |       |   |   |       |   npy_common.h
+|   |       |   |   |       |   npy_cpu.h
+|   |       |   |   |       |   npy_endian.h
+|   |       |   |   |       |   npy_interrupt.h
+|   |       |   |   |       |   npy_math.h
+|   |       |   |   |       |   npy_no_deprecated_api.h
+|   |       |   |   |       |   npy_os.h
+|   |       |   |   |       |   numpyconfig.h
+|   |       |   |   |       |   oldnumeric.h
+|   |       |   |   |       |   old_defines.h
+|   |       |   |   |       |   ufuncobject.h
+|   |       |   |   |       |   ufunc_api.txt
+|   |       |   |   |       |   utils.h
+|   |       |   |   |       |   _neighborhood_iterator_imp.h
+|   |       |   |   |       |   _numpyconfig.h
+|   |       |   |   |       |   __multiarray_api.h
+|   |       |   |   |       |   __ufunc_api.h
+|   |       |   |   |       |   
+|   |       |   |   |       +---libdivide
+|   |       |   |   |       |       libdivide.h
+|   |       |   |   |       |       LICENSE.txt
+|   |       |   |   |       |       
+|   |       |   |   |       \---random
+|   |       |   |   |               bitgen.h
+|   |       |   |   |               distributions.h
+|   |       |   |   |               
+|   |       |   |   +---lib
+|   |       |   |   |   |   npymath.lib
+|   |       |   |   |   |   
+|   |       |   |   |   \---npy-pkg-config
+|   |       |   |   |           mlib.ini
+|   |       |   |   |           npymath.ini
+|   |       |   |   |           
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_abc.py
+|   |       |   |   |   |   test_api.py
+|   |       |   |   |   |   test_argparse.py
+|   |       |   |   |   |   test_arraymethod.py
+|   |       |   |   |   |   test_arrayprint.py
+|   |       |   |   |   |   test_array_coercion.py
+|   |       |   |   |   |   test_casting_unittests.py
+|   |       |   |   |   |   test_conversion_utils.py
+|   |       |   |   |   |   test_cpu_dispatcher.py
+|   |       |   |   |   |   test_cpu_features.py
+|   |       |   |   |   |   test_cython.py
+|   |       |   |   |   |   test_datetime.py
+|   |       |   |   |   |   test_defchararray.py
+|   |       |   |   |   |   test_deprecations.py
+|   |       |   |   |   |   test_dtype.py
+|   |       |   |   |   |   test_einsum.py
+|   |       |   |   |   |   test_errstate.py
+|   |       |   |   |   |   test_extint128.py
+|   |       |   |   |   |   test_function_base.py
+|   |       |   |   |   |   test_getlimits.py
+|   |       |   |   |   |   test_half.py
+|   |       |   |   |   |   test_indexerrors.py
+|   |       |   |   |   |   test_indexing.py
+|   |       |   |   |   |   test_item_selection.py
+|   |       |   |   |   |   test_longdouble.py
+|   |       |   |   |   |   test_machar.py
+|   |       |   |   |   |   test_memmap.py
+|   |       |   |   |   |   test_mem_overlap.py
+|   |       |   |   |   |   test_multiarray.py
+|   |       |   |   |   |   test_nditer.py
+|   |       |   |   |   |   test_numeric.py
+|   |       |   |   |   |   test_numerictypes.py
+|   |       |   |   |   |   test_overrides.py
+|   |       |   |   |   |   test_print.py
+|   |       |   |   |   |   test_protocols.py
+|   |       |   |   |   |   test_records.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   test_scalarbuffer.py
+|   |       |   |   |   |   test_scalarinherit.py
+|   |       |   |   |   |   test_scalarmath.py
+|   |       |   |   |   |   test_scalarprint.py
+|   |       |   |   |   |   test_scalar_ctors.py
+|   |       |   |   |   |   test_scalar_methods.py
+|   |       |   |   |   |   test_shape_base.py
+|   |       |   |   |   |   test_simd.py
+|   |       |   |   |   |   test_simd_module.py
+|   |       |   |   |   |   test_ufunc.py
+|   |       |   |   |   |   test_umath.py
+|   |       |   |   |   |   test_umath_accuracy.py
+|   |       |   |   |   |   test_umath_complex.py
+|   |       |   |   |   |   test_unicode.py
+|   |       |   |   |   |   test__exceptions.py
+|   |       |   |   |   |   _locales.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---data
+|   |       |   |   |   |       astype_copy.pkl
+|   |       |   |   |   |       recarray_from_file.fits
+|   |       |   |   |   |       umath-validation-set-cos.csv
+|   |       |   |   |   |       umath-validation-set-exp.csv
+|   |       |   |   |   |       umath-validation-set-log.csv
+|   |       |   |   |   |       umath-validation-set-README.txt
+|   |       |   |   |   |       umath-validation-set-sin.csv
+|   |       |   |   |   |       
+|   |       |   |   |   +---examples
+|   |       |   |   |   |   |   checks.pyx
+|   |       |   |   |   |   |   setup.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           setup.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_abc.cpython-39.pyc
+|   |       |   |   |           test_api.cpython-39.pyc
+|   |       |   |   |           test_argparse.cpython-39.pyc
+|   |       |   |   |           test_arraymethod.cpython-39.pyc
+|   |       |   |   |           test_arrayprint.cpython-39.pyc
+|   |       |   |   |           test_array_coercion.cpython-39.pyc
+|   |       |   |   |           test_casting_unittests.cpython-39.pyc
+|   |       |   |   |           test_conversion_utils.cpython-39.pyc
+|   |       |   |   |           test_cpu_dispatcher.cpython-39.pyc
+|   |       |   |   |           test_cpu_features.cpython-39.pyc
+|   |       |   |   |           test_cython.cpython-39.pyc
+|   |       |   |   |           test_datetime.cpython-39.pyc
+|   |       |   |   |           test_defchararray.cpython-39.pyc
+|   |       |   |   |           test_deprecations.cpython-39.pyc
+|   |       |   |   |           test_dtype.cpython-39.pyc
+|   |       |   |   |           test_einsum.cpython-39.pyc
+|   |       |   |   |           test_errstate.cpython-39.pyc
+|   |       |   |   |           test_extint128.cpython-39.pyc
+|   |       |   |   |           test_function_base.cpython-39.pyc
+|   |       |   |   |           test_getlimits.cpython-39.pyc
+|   |       |   |   |           test_half.cpython-39.pyc
+|   |       |   |   |           test_indexerrors.cpython-39.pyc
+|   |       |   |   |           test_indexing.cpython-39.pyc
+|   |       |   |   |           test_item_selection.cpython-39.pyc
+|   |       |   |   |           test_longdouble.cpython-39.pyc
+|   |       |   |   |           test_machar.cpython-39.pyc
+|   |       |   |   |           test_memmap.cpython-39.pyc
+|   |       |   |   |           test_mem_overlap.cpython-39.pyc
+|   |       |   |   |           test_multiarray.cpython-39.pyc
+|   |       |   |   |           test_nditer.cpython-39.pyc
+|   |       |   |   |           test_numeric.cpython-39.pyc
+|   |       |   |   |           test_numerictypes.cpython-39.pyc
+|   |       |   |   |           test_overrides.cpython-39.pyc
+|   |       |   |   |           test_print.cpython-39.pyc
+|   |       |   |   |           test_protocols.cpython-39.pyc
+|   |       |   |   |           test_records.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           test_scalarbuffer.cpython-39.pyc
+|   |       |   |   |           test_scalarinherit.cpython-39.pyc
+|   |       |   |   |           test_scalarmath.cpython-39.pyc
+|   |       |   |   |           test_scalarprint.cpython-39.pyc
+|   |       |   |   |           test_scalar_ctors.cpython-39.pyc
+|   |       |   |   |           test_scalar_methods.cpython-39.pyc
+|   |       |   |   |           test_shape_base.cpython-39.pyc
+|   |       |   |   |           test_simd.cpython-39.pyc
+|   |       |   |   |           test_simd_module.cpython-39.pyc
+|   |       |   |   |           test_ufunc.cpython-39.pyc
+|   |       |   |   |           test_umath.cpython-39.pyc
+|   |       |   |   |           test_umath_accuracy.cpython-39.pyc
+|   |       |   |   |           test_umath_complex.cpython-39.pyc
+|   |       |   |   |           test_unicode.cpython-39.pyc
+|   |       |   |   |           test__exceptions.cpython-39.pyc
+|   |       |   |   |           _locales.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           arrayprint.cpython-39.pyc
+|   |       |   |           cversions.cpython-39.pyc
+|   |       |   |           defchararray.cpython-39.pyc
+|   |       |   |           einsumfunc.cpython-39.pyc
+|   |       |   |           fromnumeric.cpython-39.pyc
+|   |       |   |           function_base.cpython-39.pyc
+|   |       |   |           generate_numpy_api.cpython-39.pyc
+|   |       |   |           getlimits.cpython-39.pyc
+|   |       |   |           machar.cpython-39.pyc
+|   |       |   |           memmap.cpython-39.pyc
+|   |       |   |           multiarray.cpython-39.pyc
+|   |       |   |           numeric.cpython-39.pyc
+|   |       |   |           numerictypes.cpython-39.pyc
+|   |       |   |           overrides.cpython-39.pyc
+|   |       |   |           records.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           setup_common.cpython-39.pyc
+|   |       |   |           shape_base.cpython-39.pyc
+|   |       |   |           umath.cpython-39.pyc
+|   |       |   |           umath_tests.cpython-39.pyc
+|   |       |   |           _add_newdocs.cpython-39.pyc
+|   |       |   |           _add_newdocs_scalars.cpython-39.pyc
+|   |       |   |           _asarray.cpython-39.pyc
+|   |       |   |           _dtype.cpython-39.pyc
+|   |       |   |           _dtype_ctypes.cpython-39.pyc
+|   |       |   |           _exceptions.cpython-39.pyc
+|   |       |   |           _internal.cpython-39.pyc
+|   |       |   |           _methods.cpython-39.pyc
+|   |       |   |           _string_helpers.cpython-39.pyc
+|   |       |   |           _type_aliases.cpython-39.pyc
+|   |       |   |           _ufunc_config.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---distutils
+|   |       |   |   |   ccompiler.py
+|   |       |   |   |   ccompiler_opt.py
+|   |       |   |   |   conv_template.py
+|   |       |   |   |   core.py
+|   |       |   |   |   cpuinfo.py
+|   |       |   |   |   exec_command.py
+|   |       |   |   |   extension.py
+|   |       |   |   |   from_template.py
+|   |       |   |   |   intelccompiler.py
+|   |       |   |   |   lib2def.py
+|   |       |   |   |   line_endings.py
+|   |       |   |   |   log.py
+|   |       |   |   |   mingw32ccompiler.py
+|   |       |   |   |   misc_util.py
+|   |       |   |   |   msvc9compiler.py
+|   |       |   |   |   msvccompiler.py
+|   |       |   |   |   npy_pkg_config.py
+|   |       |   |   |   numpy_distribution.py
+|   |       |   |   |   pathccompiler.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   system_info.py
+|   |       |   |   |   unixccompiler.py
+|   |       |   |   |   _shell_utils.py
+|   |       |   |   |   __config__.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---checks
+|   |       |   |   |       cpu_asimd.c
+|   |       |   |   |       cpu_asimddp.c
+|   |       |   |   |       cpu_asimdfhm.c
+|   |       |   |   |       cpu_asimdhp.c
+|   |       |   |   |       cpu_avx.c
+|   |       |   |   |       cpu_avx2.c
+|   |       |   |   |       cpu_avx512cd.c
+|   |       |   |   |       cpu_avx512f.c
+|   |       |   |   |       cpu_avx512_clx.c
+|   |       |   |   |       cpu_avx512_cnl.c
+|   |       |   |   |       cpu_avx512_icl.c
+|   |       |   |   |       cpu_avx512_knl.c
+|   |       |   |   |       cpu_avx512_knm.c
+|   |       |   |   |       cpu_avx512_skx.c
+|   |       |   |   |       cpu_f16c.c
+|   |       |   |   |       cpu_fma3.c
+|   |       |   |   |       cpu_fma4.c
+|   |       |   |   |       cpu_neon.c
+|   |       |   |   |       cpu_neon_fp16.c
+|   |       |   |   |       cpu_neon_vfpv4.c
+|   |       |   |   |       cpu_popcnt.c
+|   |       |   |   |       cpu_sse.c
+|   |       |   |   |       cpu_sse2.c
+|   |       |   |   |       cpu_sse3.c
+|   |       |   |   |       cpu_sse41.c
+|   |       |   |   |       cpu_sse42.c
+|   |       |   |   |       cpu_ssse3.c
+|   |       |   |   |       cpu_vsx.c
+|   |       |   |   |       cpu_vsx2.c
+|   |       |   |   |       cpu_vsx3.c
+|   |       |   |   |       cpu_xop.c
+|   |       |   |   |       extra_avx512bw_mask.c
+|   |       |   |   |       extra_avx512dq_mask.c
+|   |       |   |   |       extra_avx512f_reduce.c
+|   |       |   |   |       extra_vsx_asm.c
+|   |       |   |   |       test_flags.c
+|   |       |   |   |       
+|   |       |   |   +---command
+|   |       |   |   |   |   autodist.py
+|   |       |   |   |   |   bdist_rpm.py
+|   |       |   |   |   |   build.py
+|   |       |   |   |   |   build_clib.py
+|   |       |   |   |   |   build_ext.py
+|   |       |   |   |   |   build_py.py
+|   |       |   |   |   |   build_scripts.py
+|   |       |   |   |   |   build_src.py
+|   |       |   |   |   |   config.py
+|   |       |   |   |   |   config_compiler.py
+|   |       |   |   |   |   develop.py
+|   |       |   |   |   |   egg_info.py
+|   |       |   |   |   |   install.py
+|   |       |   |   |   |   install_clib.py
+|   |       |   |   |   |   install_data.py
+|   |       |   |   |   |   install_headers.py
+|   |       |   |   |   |   sdist.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           autodist.cpython-39.pyc
+|   |       |   |   |           bdist_rpm.cpython-39.pyc
+|   |       |   |   |           build.cpython-39.pyc
+|   |       |   |   |           build_clib.cpython-39.pyc
+|   |       |   |   |           build_ext.cpython-39.pyc
+|   |       |   |   |           build_py.cpython-39.pyc
+|   |       |   |   |           build_scripts.cpython-39.pyc
+|   |       |   |   |           build_src.cpython-39.pyc
+|   |       |   |   |           config.cpython-39.pyc
+|   |       |   |   |           config_compiler.cpython-39.pyc
+|   |       |   |   |           develop.cpython-39.pyc
+|   |       |   |   |           egg_info.cpython-39.pyc
+|   |       |   |   |           install.cpython-39.pyc
+|   |       |   |   |           install_clib.cpython-39.pyc
+|   |       |   |   |           install_data.cpython-39.pyc
+|   |       |   |   |           install_headers.cpython-39.pyc
+|   |       |   |   |           sdist.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---fcompiler
+|   |       |   |   |   |   absoft.py
+|   |       |   |   |   |   compaq.py
+|   |       |   |   |   |   environment.py
+|   |       |   |   |   |   fujitsu.py
+|   |       |   |   |   |   g95.py
+|   |       |   |   |   |   gnu.py
+|   |       |   |   |   |   hpux.py
+|   |       |   |   |   |   ibm.py
+|   |       |   |   |   |   intel.py
+|   |       |   |   |   |   lahey.py
+|   |       |   |   |   |   mips.py
+|   |       |   |   |   |   nag.py
+|   |       |   |   |   |   none.py
+|   |       |   |   |   |   nv.py
+|   |       |   |   |   |   pathf95.py
+|   |       |   |   |   |   pg.py
+|   |       |   |   |   |   sun.py
+|   |       |   |   |   |   vast.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           absoft.cpython-39.pyc
+|   |       |   |   |           compaq.cpython-39.pyc
+|   |       |   |   |           environment.cpython-39.pyc
+|   |       |   |   |           fujitsu.cpython-39.pyc
+|   |       |   |   |           g95.cpython-39.pyc
+|   |       |   |   |           gnu.cpython-39.pyc
+|   |       |   |   |           hpux.cpython-39.pyc
+|   |       |   |   |           ibm.cpython-39.pyc
+|   |       |   |   |           intel.cpython-39.pyc
+|   |       |   |   |           lahey.cpython-39.pyc
+|   |       |   |   |           mips.cpython-39.pyc
+|   |       |   |   |           nag.cpython-39.pyc
+|   |       |   |   |           none.cpython-39.pyc
+|   |       |   |   |           nv.cpython-39.pyc
+|   |       |   |   |           pathf95.cpython-39.pyc
+|   |       |   |   |           pg.cpython-39.pyc
+|   |       |   |   |           sun.cpython-39.pyc
+|   |       |   |   |           vast.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---mingw
+|   |       |   |   |       gfortran_vs2003_hack.c
+|   |       |   |   |       
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_build_ext.py
+|   |       |   |   |   |   test_ccompiler_opt.py
+|   |       |   |   |   |   test_ccompiler_opt_conf.py
+|   |       |   |   |   |   test_exec_command.py
+|   |       |   |   |   |   test_fcompiler.py
+|   |       |   |   |   |   test_fcompiler_gnu.py
+|   |       |   |   |   |   test_fcompiler_intel.py
+|   |       |   |   |   |   test_fcompiler_nagfor.py
+|   |       |   |   |   |   test_from_template.py
+|   |       |   |   |   |   test_mingw32ccompiler.py
+|   |       |   |   |   |   test_misc_util.py
+|   |       |   |   |   |   test_npy_pkg_config.py
+|   |       |   |   |   |   test_shell_utils.py
+|   |       |   |   |   |   test_system_info.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_build_ext.cpython-39.pyc
+|   |       |   |   |           test_ccompiler_opt.cpython-39.pyc
+|   |       |   |   |           test_ccompiler_opt_conf.cpython-39.pyc
+|   |       |   |   |           test_exec_command.cpython-39.pyc
+|   |       |   |   |           test_fcompiler.cpython-39.pyc
+|   |       |   |   |           test_fcompiler_gnu.cpython-39.pyc
+|   |       |   |   |           test_fcompiler_intel.cpython-39.pyc
+|   |       |   |   |           test_fcompiler_nagfor.cpython-39.pyc
+|   |       |   |   |           test_from_template.cpython-39.pyc
+|   |       |   |   |           test_mingw32ccompiler.cpython-39.pyc
+|   |       |   |   |           test_misc_util.cpython-39.pyc
+|   |       |   |   |           test_npy_pkg_config.cpython-39.pyc
+|   |       |   |   |           test_shell_utils.cpython-39.pyc
+|   |       |   |   |           test_system_info.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           ccompiler.cpython-39.pyc
+|   |       |   |           ccompiler_opt.cpython-39.pyc
+|   |       |   |           conv_template.cpython-39.pyc
+|   |       |   |           core.cpython-39.pyc
+|   |       |   |           cpuinfo.cpython-39.pyc
+|   |       |   |           exec_command.cpython-39.pyc
+|   |       |   |           extension.cpython-39.pyc
+|   |       |   |           from_template.cpython-39.pyc
+|   |       |   |           intelccompiler.cpython-39.pyc
+|   |       |   |           lib2def.cpython-39.pyc
+|   |       |   |           line_endings.cpython-39.pyc
+|   |       |   |           log.cpython-39.pyc
+|   |       |   |           mingw32ccompiler.cpython-39.pyc
+|   |       |   |           misc_util.cpython-39.pyc
+|   |       |   |           msvc9compiler.cpython-39.pyc
+|   |       |   |           msvccompiler.cpython-39.pyc
+|   |       |   |           npy_pkg_config.cpython-39.pyc
+|   |       |   |           numpy_distribution.cpython-39.pyc
+|   |       |   |           pathccompiler.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           system_info.cpython-39.pyc
+|   |       |   |           unixccompiler.cpython-39.pyc
+|   |       |   |           _shell_utils.cpython-39.pyc
+|   |       |   |           __config__.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---doc
+|   |       |   |   |   constants.py
+|   |       |   |   |   ufuncs.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           constants.cpython-39.pyc
+|   |       |   |           ufuncs.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---f2py
+|   |       |   |   |   auxfuncs.py
+|   |       |   |   |   capi_maps.py
+|   |       |   |   |   cb_rules.py
+|   |       |   |   |   cfuncs.py
+|   |       |   |   |   common_rules.py
+|   |       |   |   |   crackfortran.py
+|   |       |   |   |   diagnose.py
+|   |       |   |   |   f2py2e.py
+|   |       |   |   |   f2py_testing.py
+|   |       |   |   |   f90mod_rules.py
+|   |       |   |   |   func2subr.py
+|   |       |   |   |   rules.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   use_rules.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   __main__.py
+|   |       |   |   |   __version__.py
+|   |       |   |   |   
+|   |       |   |   +---src
+|   |       |   |   |       fortranobject.c
+|   |       |   |   |       fortranobject.h
+|   |       |   |   |       
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_abstract_interface.py
+|   |       |   |   |   |   test_array_from_pyobj.py
+|   |       |   |   |   |   test_assumed_shape.py
+|   |       |   |   |   |   test_block_docstring.py
+|   |       |   |   |   |   test_callback.py
+|   |       |   |   |   |   test_common.py
+|   |       |   |   |   |   test_compile_function.py
+|   |       |   |   |   |   test_crackfortran.py
+|   |       |   |   |   |   test_kind.py
+|   |       |   |   |   |   test_mixed.py
+|   |       |   |   |   |   test_module_doc.py
+|   |       |   |   |   |   test_parameter.py
+|   |       |   |   |   |   test_quoted_character.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   test_return_character.py
+|   |       |   |   |   |   test_return_complex.py
+|   |       |   |   |   |   test_return_integer.py
+|   |       |   |   |   |   test_return_logical.py
+|   |       |   |   |   |   test_return_real.py
+|   |       |   |   |   |   test_semicolon_split.py
+|   |       |   |   |   |   test_size.py
+|   |       |   |   |   |   test_string.py
+|   |       |   |   |   |   util.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---src
+|   |       |   |   |   |   +---array_from_pyobj
+|   |       |   |   |   |   |       wrapmodule.c
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---assumed_shape
+|   |       |   |   |   |   |       .f2py_f2cmap
+|   |       |   |   |   |   |       foo_free.f90
+|   |       |   |   |   |   |       foo_mod.f90
+|   |       |   |   |   |   |       foo_use.f90
+|   |       |   |   |   |   |       precision.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---common
+|   |       |   |   |   |   |       block.f
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---kind
+|   |       |   |   |   |   |       foo.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---mixed
+|   |       |   |   |   |   |       foo.f
+|   |       |   |   |   |   |       foo_fixed.f90
+|   |       |   |   |   |   |       foo_free.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---module_data
+|   |       |   |   |   |   |       mod.mod
+|   |       |   |   |   |   |       module_data_docstring.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---parameter
+|   |       |   |   |   |   |       constant_both.f90
+|   |       |   |   |   |   |       constant_compound.f90
+|   |       |   |   |   |   |       constant_integer.f90
+|   |       |   |   |   |   |       constant_non_compound.f90
+|   |       |   |   |   |   |       constant_real.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---regression
+|   |       |   |   |   |   |       inout.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---size
+|   |       |   |   |   |   |       foo.f90
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   \---string
+|   |       |   |   |   |           char.f90
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_abstract_interface.cpython-39.pyc
+|   |       |   |   |           test_array_from_pyobj.cpython-39.pyc
+|   |       |   |   |           test_assumed_shape.cpython-39.pyc
+|   |       |   |   |           test_block_docstring.cpython-39.pyc
+|   |       |   |   |           test_callback.cpython-39.pyc
+|   |       |   |   |           test_common.cpython-39.pyc
+|   |       |   |   |           test_compile_function.cpython-39.pyc
+|   |       |   |   |           test_crackfortran.cpython-39.pyc
+|   |       |   |   |           test_kind.cpython-39.pyc
+|   |       |   |   |           test_mixed.cpython-39.pyc
+|   |       |   |   |           test_module_doc.cpython-39.pyc
+|   |       |   |   |           test_parameter.cpython-39.pyc
+|   |       |   |   |           test_quoted_character.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           test_return_character.cpython-39.pyc
+|   |       |   |   |           test_return_complex.cpython-39.pyc
+|   |       |   |   |           test_return_integer.cpython-39.pyc
+|   |       |   |   |           test_return_logical.cpython-39.pyc
+|   |       |   |   |           test_return_real.cpython-39.pyc
+|   |       |   |   |           test_semicolon_split.cpython-39.pyc
+|   |       |   |   |           test_size.cpython-39.pyc
+|   |       |   |   |           test_string.cpython-39.pyc
+|   |       |   |   |           util.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           auxfuncs.cpython-39.pyc
+|   |       |   |           capi_maps.cpython-39.pyc
+|   |       |   |           cb_rules.cpython-39.pyc
+|   |       |   |           cfuncs.cpython-39.pyc
+|   |       |   |           common_rules.cpython-39.pyc
+|   |       |   |           crackfortran.cpython-39.pyc
+|   |       |   |           diagnose.cpython-39.pyc
+|   |       |   |           f2py2e.cpython-39.pyc
+|   |       |   |           f2py_testing.cpython-39.pyc
+|   |       |   |           f90mod_rules.cpython-39.pyc
+|   |       |   |           func2subr.cpython-39.pyc
+|   |       |   |           rules.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           use_rules.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           __main__.cpython-39.pyc
+|   |       |   |           __version__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---fft
+|   |       |   |   |   helper.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   _pocketfft.py
+|   |       |   |   |   _pocketfft_internal.cp39-win_amd64.pyd
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_helper.py
+|   |       |   |   |   |   test_pocketfft.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_helper.cpython-39.pyc
+|   |       |   |   |           test_pocketfft.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           helper.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           _pocketfft.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---lib
+|   |       |   |   |   arraypad.py
+|   |       |   |   |   arraypad.pyi
+|   |       |   |   |   arraysetops.py
+|   |       |   |   |   arraysetops.pyi
+|   |       |   |   |   arrayterator.py
+|   |       |   |   |   arrayterator.pyi
+|   |       |   |   |   format.py
+|   |       |   |   |   format.pyi
+|   |       |   |   |   function_base.py
+|   |       |   |   |   function_base.pyi
+|   |       |   |   |   histograms.py
+|   |       |   |   |   histograms.pyi
+|   |       |   |   |   index_tricks.py
+|   |       |   |   |   index_tricks.pyi
+|   |       |   |   |   mixins.py
+|   |       |   |   |   mixins.pyi
+|   |       |   |   |   nanfunctions.py
+|   |       |   |   |   nanfunctions.pyi
+|   |       |   |   |   npyio.py
+|   |       |   |   |   npyio.pyi
+|   |       |   |   |   polynomial.py
+|   |       |   |   |   polynomial.pyi
+|   |       |   |   |   recfunctions.py
+|   |       |   |   |   scimath.py
+|   |       |   |   |   scimath.pyi
+|   |       |   |   |   setup.py
+|   |       |   |   |   shape_base.py
+|   |       |   |   |   shape_base.pyi
+|   |       |   |   |   stride_tricks.py
+|   |       |   |   |   stride_tricks.pyi
+|   |       |   |   |   twodim_base.py
+|   |       |   |   |   twodim_base.pyi
+|   |       |   |   |   type_check.py
+|   |       |   |   |   type_check.pyi
+|   |       |   |   |   ufunclike.py
+|   |       |   |   |   ufunclike.pyi
+|   |       |   |   |   user_array.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   utils.pyi
+|   |       |   |   |   _datasource.py
+|   |       |   |   |   _iotools.py
+|   |       |   |   |   _version.py
+|   |       |   |   |   _version.pyi
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_arraypad.py
+|   |       |   |   |   |   test_arraysetops.py
+|   |       |   |   |   |   test_arrayterator.py
+|   |       |   |   |   |   test_financial_expired.py
+|   |       |   |   |   |   test_format.py
+|   |       |   |   |   |   test_function_base.py
+|   |       |   |   |   |   test_histograms.py
+|   |       |   |   |   |   test_index_tricks.py
+|   |       |   |   |   |   test_io.py
+|   |       |   |   |   |   test_mixins.py
+|   |       |   |   |   |   test_nanfunctions.py
+|   |       |   |   |   |   test_packbits.py
+|   |       |   |   |   |   test_polynomial.py
+|   |       |   |   |   |   test_recfunctions.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   test_shape_base.py
+|   |       |   |   |   |   test_stride_tricks.py
+|   |       |   |   |   |   test_twodim_base.py
+|   |       |   |   |   |   test_type_check.py
+|   |       |   |   |   |   test_ufunclike.py
+|   |       |   |   |   |   test_utils.py
+|   |       |   |   |   |   test__datasource.py
+|   |       |   |   |   |   test__iotools.py
+|   |       |   |   |   |   test__version.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---data
+|   |       |   |   |   |       py2-objarr.npy
+|   |       |   |   |   |       py2-objarr.npz
+|   |       |   |   |   |       py3-objarr.npy
+|   |       |   |   |   |       py3-objarr.npz
+|   |       |   |   |   |       python3.npy
+|   |       |   |   |   |       win64python2.npy
+|   |       |   |   |   |       
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_arraypad.cpython-39.pyc
+|   |       |   |   |           test_arraysetops.cpython-39.pyc
+|   |       |   |   |           test_arrayterator.cpython-39.pyc
+|   |       |   |   |           test_financial_expired.cpython-39.pyc
+|   |       |   |   |           test_format.cpython-39.pyc
+|   |       |   |   |           test_function_base.cpython-39.pyc
+|   |       |   |   |           test_histograms.cpython-39.pyc
+|   |       |   |   |           test_index_tricks.cpython-39.pyc
+|   |       |   |   |           test_io.cpython-39.pyc
+|   |       |   |   |           test_mixins.cpython-39.pyc
+|   |       |   |   |           test_nanfunctions.cpython-39.pyc
+|   |       |   |   |           test_packbits.cpython-39.pyc
+|   |       |   |   |           test_polynomial.cpython-39.pyc
+|   |       |   |   |           test_recfunctions.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           test_shape_base.cpython-39.pyc
+|   |       |   |   |           test_stride_tricks.cpython-39.pyc
+|   |       |   |   |           test_twodim_base.cpython-39.pyc
+|   |       |   |   |           test_type_check.cpython-39.pyc
+|   |       |   |   |           test_ufunclike.cpython-39.pyc
+|   |       |   |   |           test_utils.cpython-39.pyc
+|   |       |   |   |           test__datasource.cpython-39.pyc
+|   |       |   |   |           test__iotools.cpython-39.pyc
+|   |       |   |   |           test__version.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           arraypad.cpython-39.pyc
+|   |       |   |           arraysetops.cpython-39.pyc
+|   |       |   |           arrayterator.cpython-39.pyc
+|   |       |   |           format.cpython-39.pyc
+|   |       |   |           function_base.cpython-39.pyc
+|   |       |   |           histograms.cpython-39.pyc
+|   |       |   |           index_tricks.cpython-39.pyc
+|   |       |   |           mixins.cpython-39.pyc
+|   |       |   |           nanfunctions.cpython-39.pyc
+|   |       |   |           npyio.cpython-39.pyc
+|   |       |   |           polynomial.cpython-39.pyc
+|   |       |   |           recfunctions.cpython-39.pyc
+|   |       |   |           scimath.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           shape_base.cpython-39.pyc
+|   |       |   |           stride_tricks.cpython-39.pyc
+|   |       |   |           twodim_base.cpython-39.pyc
+|   |       |   |           type_check.cpython-39.pyc
+|   |       |   |           ufunclike.cpython-39.pyc
+|   |       |   |           user_array.cpython-39.pyc
+|   |       |   |           utils.cpython-39.pyc
+|   |       |   |           _datasource.cpython-39.pyc
+|   |       |   |           _iotools.cpython-39.pyc
+|   |       |   |           _version.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---linalg
+|   |       |   |   |   lapack_lite.cp39-win_amd64.pyd
+|   |       |   |   |   linalg.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   _umath_linalg.cp39-win_amd64.pyd
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_build.py
+|   |       |   |   |   |   test_deprecations.py
+|   |       |   |   |   |   test_linalg.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_build.cpython-39.pyc
+|   |       |   |   |           test_deprecations.cpython-39.pyc
+|   |       |   |   |           test_linalg.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           linalg.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---ma
+|   |       |   |   |   bench.py
+|   |       |   |   |   core.py
+|   |       |   |   |   core.pyi
+|   |       |   |   |   extras.py
+|   |       |   |   |   extras.pyi
+|   |       |   |   |   mrecords.py
+|   |       |   |   |   mrecords.pyi
+|   |       |   |   |   setup.py
+|   |       |   |   |   testutils.py
+|   |       |   |   |   timer_comparison.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_core.py
+|   |       |   |   |   |   test_deprecations.py
+|   |       |   |   |   |   test_extras.py
+|   |       |   |   |   |   test_mrecords.py
+|   |       |   |   |   |   test_old_ma.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   test_subclassing.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_core.cpython-39.pyc
+|   |       |   |   |           test_deprecations.cpython-39.pyc
+|   |       |   |   |           test_extras.cpython-39.pyc
+|   |       |   |   |           test_mrecords.cpython-39.pyc
+|   |       |   |   |           test_old_ma.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           test_subclassing.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           bench.cpython-39.pyc
+|   |       |   |           core.cpython-39.pyc
+|   |       |   |           extras.cpython-39.pyc
+|   |       |   |           mrecords.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           testutils.cpython-39.pyc
+|   |       |   |           timer_comparison.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---matrixlib
+|   |       |   |   |   defmatrix.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_defmatrix.py
+|   |       |   |   |   |   test_interaction.py
+|   |       |   |   |   |   test_masked_matrix.py
+|   |       |   |   |   |   test_matrix_linalg.py
+|   |       |   |   |   |   test_multiarray.py
+|   |       |   |   |   |   test_numeric.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_defmatrix.cpython-39.pyc
+|   |       |   |   |           test_interaction.cpython-39.pyc
+|   |       |   |   |           test_masked_matrix.cpython-39.pyc
+|   |       |   |   |           test_matrix_linalg.cpython-39.pyc
+|   |       |   |   |           test_multiarray.cpython-39.pyc
+|   |       |   |   |           test_numeric.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           defmatrix.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---polynomial
+|   |       |   |   |   chebyshev.py
+|   |       |   |   |   chebyshev.pyi
+|   |       |   |   |   hermite.py
+|   |       |   |   |   hermite.pyi
+|   |       |   |   |   hermite_e.py
+|   |       |   |   |   hermite_e.pyi
+|   |       |   |   |   laguerre.py
+|   |       |   |   |   laguerre.pyi
+|   |       |   |   |   legendre.py
+|   |       |   |   |   legendre.pyi
+|   |       |   |   |   polynomial.py
+|   |       |   |   |   polynomial.pyi
+|   |       |   |   |   polyutils.py
+|   |       |   |   |   polyutils.pyi
+|   |       |   |   |   setup.py
+|   |       |   |   |   _polybase.py
+|   |       |   |   |   _polybase.pyi
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_chebyshev.py
+|   |       |   |   |   |   test_classes.py
+|   |       |   |   |   |   test_hermite.py
+|   |       |   |   |   |   test_hermite_e.py
+|   |       |   |   |   |   test_laguerre.py
+|   |       |   |   |   |   test_legendre.py
+|   |       |   |   |   |   test_polynomial.py
+|   |       |   |   |   |   test_polyutils.py
+|   |       |   |   |   |   test_printing.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_chebyshev.cpython-39.pyc
+|   |       |   |   |           test_classes.cpython-39.pyc
+|   |       |   |   |           test_hermite.cpython-39.pyc
+|   |       |   |   |           test_hermite_e.cpython-39.pyc
+|   |       |   |   |           test_laguerre.cpython-39.pyc
+|   |       |   |   |           test_legendre.cpython-39.pyc
+|   |       |   |   |           test_polynomial.cpython-39.pyc
+|   |       |   |   |           test_polyutils.cpython-39.pyc
+|   |       |   |   |           test_printing.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           chebyshev.cpython-39.pyc
+|   |       |   |           hermite.cpython-39.pyc
+|   |       |   |           hermite_e.cpython-39.pyc
+|   |       |   |           laguerre.cpython-39.pyc
+|   |       |   |           legendre.cpython-39.pyc
+|   |       |   |           polynomial.cpython-39.pyc
+|   |       |   |           polyutils.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           _polybase.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---random
+|   |       |   |   |   bit_generator.cp39-win_amd64.pyd
+|   |       |   |   |   bit_generator.pxd
+|   |       |   |   |   bit_generator.pyi
+|   |       |   |   |   c_distributions.pxd
+|   |       |   |   |   mtrand.cp39-win_amd64.pyd
+|   |       |   |   |   mtrand.pyi
+|   |       |   |   |   setup.py
+|   |       |   |   |   _bounded_integers.cp39-win_amd64.pyd
+|   |       |   |   |   _bounded_integers.pxd
+|   |       |   |   |   _common.cp39-win_amd64.pyd
+|   |       |   |   |   _common.pxd
+|   |       |   |   |   _generator.cp39-win_amd64.pyd
+|   |       |   |   |   _generator.pyi
+|   |       |   |   |   _mt19937.cp39-win_amd64.pyd
+|   |       |   |   |   _mt19937.pyi
+|   |       |   |   |   _pcg64.cp39-win_amd64.pyd
+|   |       |   |   |   _pcg64.pyi
+|   |       |   |   |   _philox.cp39-win_amd64.pyd
+|   |       |   |   |   _philox.pyi
+|   |       |   |   |   _pickle.py
+|   |       |   |   |   _sfc64.cp39-win_amd64.pyd
+|   |       |   |   |   _sfc64.pyi
+|   |       |   |   |   __init__.pxd
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---lib
+|   |       |   |   |       npyrandom.lib
+|   |       |   |   |       
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_direct.py
+|   |       |   |   |   |   test_extending.py
+|   |       |   |   |   |   test_generator_mt19937.py
+|   |       |   |   |   |   test_generator_mt19937_regressions.py
+|   |       |   |   |   |   test_random.py
+|   |       |   |   |   |   test_randomstate.py
+|   |       |   |   |   |   test_randomstate_regression.py
+|   |       |   |   |   |   test_regression.py
+|   |       |   |   |   |   test_seed_sequence.py
+|   |       |   |   |   |   test_smoke.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---data
+|   |       |   |   |   |   |   mt19937-testset-1.csv
+|   |       |   |   |   |   |   mt19937-testset-2.csv
+|   |       |   |   |   |   |   pcg64-testset-1.csv
+|   |       |   |   |   |   |   pcg64-testset-2.csv
+|   |       |   |   |   |   |   pcg64dxsm-testset-1.csv
+|   |       |   |   |   |   |   pcg64dxsm-testset-2.csv
+|   |       |   |   |   |   |   philox-testset-1.csv
+|   |       |   |   |   |   |   philox-testset-2.csv
+|   |       |   |   |   |   |   sfc64-testset-1.csv
+|   |       |   |   |   |   |   sfc64-testset-2.csv
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_direct.cpython-39.pyc
+|   |       |   |   |           test_extending.cpython-39.pyc
+|   |       |   |   |           test_generator_mt19937.cpython-39.pyc
+|   |       |   |   |           test_generator_mt19937_regressions.cpython-39.pyc
+|   |       |   |   |           test_random.cpython-39.pyc
+|   |       |   |   |           test_randomstate.cpython-39.pyc
+|   |       |   |   |           test_randomstate_regression.cpython-39.pyc
+|   |       |   |   |           test_regression.cpython-39.pyc
+|   |       |   |   |           test_seed_sequence.cpython-39.pyc
+|   |       |   |   |           test_smoke.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---_examples
+|   |       |   |   |   +---cffi
+|   |       |   |   |   |   |   extending.py
+|   |       |   |   |   |   |   parse.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           extending.cpython-39.pyc
+|   |       |   |   |   |           parse.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---cython
+|   |       |   |   |   |   |   extending.pyx
+|   |       |   |   |   |   |   extending_distributions.pyx
+|   |       |   |   |   |   |   setup.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           setup.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---numba
+|   |       |   |   |       |   extending.py
+|   |       |   |   |       |   extending_distributions.py
+|   |       |   |   |       |   
+|   |       |   |   |       \---__pycache__
+|   |       |   |   |               extending.cpython-39.pyc
+|   |       |   |   |               extending_distributions.cpython-39.pyc
+|   |       |   |   |               
+|   |       |   |   \---__pycache__
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           _pickle.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---testing
+|   |       |   |   |   print_coercion_tables.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   __init__.pyi
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_doctesting.py
+|   |       |   |   |   |   test_utils.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_doctesting.cpython-39.pyc
+|   |       |   |   |           test_utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---_private
+|   |       |   |   |   |   decorators.py
+|   |       |   |   |   |   noseclasses.py
+|   |       |   |   |   |   nosetester.py
+|   |       |   |   |   |   parameterized.py
+|   |       |   |   |   |   utils.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           decorators.cpython-39.pyc
+|   |       |   |   |           noseclasses.cpython-39.pyc
+|   |       |   |   |           nosetester.cpython-39.pyc
+|   |       |   |   |           parameterized.cpython-39.pyc
+|   |       |   |   |           utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           print_coercion_tables.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           utils.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---tests
+|   |       |   |   |   test_ctypeslib.py
+|   |       |   |   |   test_matlib.py
+|   |       |   |   |   test_numpy_version.py
+|   |       |   |   |   test_public_api.py
+|   |       |   |   |   test_reloading.py
+|   |       |   |   |   test_scripts.py
+|   |       |   |   |   test_warnings.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           test_ctypeslib.cpython-39.pyc
+|   |       |   |           test_matlib.cpython-39.pyc
+|   |       |   |           test_numpy_version.cpython-39.pyc
+|   |       |   |           test_public_api.cpython-39.pyc
+|   |       |   |           test_reloading.cpython-39.pyc
+|   |       |   |           test_scripts.cpython-39.pyc
+|   |       |   |           test_warnings.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---typing
+|   |       |   |   |   mypy_plugin.py
+|   |       |   |   |   setup.py
+|   |       |   |   |   _add_docstring.py
+|   |       |   |   |   _array_like.py
+|   |       |   |   |   _callable.py
+|   |       |   |   |   _char_codes.py
+|   |       |   |   |   _dtype_like.py
+|   |       |   |   |   _extended_precision.py
+|   |       |   |   |   _generic_alias.py
+|   |       |   |   |   _nbit.py
+|   |       |   |   |   _scalars.py
+|   |       |   |   |   _shape.py
+|   |       |   |   |   _ufunc.pyi
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---tests
+|   |       |   |   |   |   test_generic_alias.py
+|   |       |   |   |   |   test_isfile.py
+|   |       |   |   |   |   test_runtime.py
+|   |       |   |   |   |   test_typing.py
+|   |       |   |   |   |   test_typing_extensions.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---data
+|   |       |   |   |   |   |   mypy.ini
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   +---fail
+|   |       |   |   |   |   |   |   arithmetic.py
+|   |       |   |   |   |   |   |   arrayprint.py
+|   |       |   |   |   |   |   |   arrayterator.py
+|   |       |   |   |   |   |   |   array_constructors.py
+|   |       |   |   |   |   |   |   array_like.py
+|   |       |   |   |   |   |   |   bitwise_ops.py
+|   |       |   |   |   |   |   |   comparisons.py
+|   |       |   |   |   |   |   |   constants.py
+|   |       |   |   |   |   |   |   datasource.py
+|   |       |   |   |   |   |   |   dtype.py
+|   |       |   |   |   |   |   |   einsumfunc.py
+|   |       |   |   |   |   |   |   flatiter.py
+|   |       |   |   |   |   |   |   fromnumeric.py
+|   |       |   |   |   |   |   |   index_tricks.py
+|   |       |   |   |   |   |   |   lib_utils.py
+|   |       |   |   |   |   |   |   lib_version.py
+|   |       |   |   |   |   |   |   modules.py
+|   |       |   |   |   |   |   |   ndarray.py
+|   |       |   |   |   |   |   |   ndarray_misc.py
+|   |       |   |   |   |   |   |   numerictypes.py
+|   |       |   |   |   |   |   |   random.py
+|   |       |   |   |   |   |   |   scalars.py
+|   |       |   |   |   |   |   |   ufunclike.py
+|   |       |   |   |   |   |   |   ufuncs.py
+|   |       |   |   |   |   |   |   ufunc_config.py
+|   |       |   |   |   |   |   |   warnings_and_errors.py
+|   |       |   |   |   |   |   |   
+|   |       |   |   |   |   |   \---__pycache__
+|   |       |   |   |   |   |           arithmetic.cpython-39.pyc
+|   |       |   |   |   |   |           arrayprint.cpython-39.pyc
+|   |       |   |   |   |   |           arrayterator.cpython-39.pyc
+|   |       |   |   |   |   |           array_constructors.cpython-39.pyc
+|   |       |   |   |   |   |           array_like.cpython-39.pyc
+|   |       |   |   |   |   |           bitwise_ops.cpython-39.pyc
+|   |       |   |   |   |   |           comparisons.cpython-39.pyc
+|   |       |   |   |   |   |           constants.cpython-39.pyc
+|   |       |   |   |   |   |           datasource.cpython-39.pyc
+|   |       |   |   |   |   |           dtype.cpython-39.pyc
+|   |       |   |   |   |   |           einsumfunc.cpython-39.pyc
+|   |       |   |   |   |   |           flatiter.cpython-39.pyc
+|   |       |   |   |   |   |           fromnumeric.cpython-39.pyc
+|   |       |   |   |   |   |           index_tricks.cpython-39.pyc
+|   |       |   |   |   |   |           lib_utils.cpython-39.pyc
+|   |       |   |   |   |   |           lib_version.cpython-39.pyc
+|   |       |   |   |   |   |           modules.cpython-39.pyc
+|   |       |   |   |   |   |           ndarray.cpython-39.pyc
+|   |       |   |   |   |   |           ndarray_misc.cpython-39.pyc
+|   |       |   |   |   |   |           numerictypes.cpython-39.pyc
+|   |       |   |   |   |   |           random.cpython-39.pyc
+|   |       |   |   |   |   |           scalars.cpython-39.pyc
+|   |       |   |   |   |   |           ufunclike.cpython-39.pyc
+|   |       |   |   |   |   |           ufuncs.cpython-39.pyc
+|   |       |   |   |   |   |           ufunc_config.cpython-39.pyc
+|   |       |   |   |   |   |           warnings_and_errors.cpython-39.pyc
+|   |       |   |   |   |   |           
+|   |       |   |   |   |   +---misc
+|   |       |   |   |   |   |   |   extended_precision.py
+|   |       |   |   |   |   |   |   
+|   |       |   |   |   |   |   \---__pycache__
+|   |       |   |   |   |   |           extended_precision.cpython-39.pyc
+|   |       |   |   |   |   |           
+|   |       |   |   |   |   +---pass
+|   |       |   |   |   |   |   |   arithmetic.py
+|   |       |   |   |   |   |   |   arrayprint.py
+|   |       |   |   |   |   |   |   arrayterator.py
+|   |       |   |   |   |   |   |   array_constructors.py
+|   |       |   |   |   |   |   |   array_like.py
+|   |       |   |   |   |   |   |   bitwise_ops.py
+|   |       |   |   |   |   |   |   comparisons.py
+|   |       |   |   |   |   |   |   dtype.py
+|   |       |   |   |   |   |   |   einsumfunc.py
+|   |       |   |   |   |   |   |   flatiter.py
+|   |       |   |   |   |   |   |   fromnumeric.py
+|   |       |   |   |   |   |   |   index_tricks.py
+|   |       |   |   |   |   |   |   lib_utils.py
+|   |       |   |   |   |   |   |   lib_version.py
+|   |       |   |   |   |   |   |   literal.py
+|   |       |   |   |   |   |   |   mod.py
+|   |       |   |   |   |   |   |   modules.py
+|   |       |   |   |   |   |   |   multiarray.py
+|   |       |   |   |   |   |   |   ndarray_conversion.py
+|   |       |   |   |   |   |   |   ndarray_misc.py
+|   |       |   |   |   |   |   |   ndarray_shape_manipulation.py
+|   |       |   |   |   |   |   |   numeric.py
+|   |       |   |   |   |   |   |   numerictypes.py
+|   |       |   |   |   |   |   |   random.py
+|   |       |   |   |   |   |   |   scalars.py
+|   |       |   |   |   |   |   |   simple.py
+|   |       |   |   |   |   |   |   simple_py3.py
+|   |       |   |   |   |   |   |   ufunclike.py
+|   |       |   |   |   |   |   |   ufuncs.py
+|   |       |   |   |   |   |   |   ufunc_config.py
+|   |       |   |   |   |   |   |   warnings_and_errors.py
+|   |       |   |   |   |   |   |   
+|   |       |   |   |   |   |   \---__pycache__
+|   |       |   |   |   |   |           arithmetic.cpython-39.pyc
+|   |       |   |   |   |   |           arrayprint.cpython-39.pyc
+|   |       |   |   |   |   |           arrayterator.cpython-39.pyc
+|   |       |   |   |   |   |           array_constructors.cpython-39.pyc
+|   |       |   |   |   |   |           array_like.cpython-39.pyc
+|   |       |   |   |   |   |           bitwise_ops.cpython-39.pyc
+|   |       |   |   |   |   |           comparisons.cpython-39.pyc
+|   |       |   |   |   |   |           dtype.cpython-39.pyc
+|   |       |   |   |   |   |           einsumfunc.cpython-39.pyc
+|   |       |   |   |   |   |           flatiter.cpython-39.pyc
+|   |       |   |   |   |   |           fromnumeric.cpython-39.pyc
+|   |       |   |   |   |   |           index_tricks.cpython-39.pyc
+|   |       |   |   |   |   |           lib_utils.cpython-39.pyc
+|   |       |   |   |   |   |           lib_version.cpython-39.pyc
+|   |       |   |   |   |   |           literal.cpython-39.pyc
+|   |       |   |   |   |   |           mod.cpython-39.pyc
+|   |       |   |   |   |   |           modules.cpython-39.pyc
+|   |       |   |   |   |   |           multiarray.cpython-39.pyc
+|   |       |   |   |   |   |           ndarray_conversion.cpython-39.pyc
+|   |       |   |   |   |   |           ndarray_misc.cpython-39.pyc
+|   |       |   |   |   |   |           ndarray_shape_manipulation.cpython-39.pyc
+|   |       |   |   |   |   |           numeric.cpython-39.pyc
+|   |       |   |   |   |   |           numerictypes.cpython-39.pyc
+|   |       |   |   |   |   |           random.cpython-39.pyc
+|   |       |   |   |   |   |           scalars.cpython-39.pyc
+|   |       |   |   |   |   |           simple.cpython-39.pyc
+|   |       |   |   |   |   |           simple_py3.cpython-39.pyc
+|   |       |   |   |   |   |           ufunclike.cpython-39.pyc
+|   |       |   |   |   |   |           ufuncs.cpython-39.pyc
+|   |       |   |   |   |   |           ufunc_config.cpython-39.pyc
+|   |       |   |   |   |   |           warnings_and_errors.cpython-39.pyc
+|   |       |   |   |   |   |           
+|   |       |   |   |   |   \---reveal
+|   |       |   |   |   |       |   arithmetic.py
+|   |       |   |   |   |       |   arrayprint.py
+|   |       |   |   |   |       |   arrayterator.py
+|   |       |   |   |   |       |   array_constructors.py
+|   |       |   |   |   |       |   bitwise_ops.py
+|   |       |   |   |   |       |   comparisons.py
+|   |       |   |   |   |       |   constants.py
+|   |       |   |   |   |       |   datasource.py
+|   |       |   |   |   |       |   dtype.py
+|   |       |   |   |   |       |   einsumfunc.py
+|   |       |   |   |   |       |   flatiter.py
+|   |       |   |   |   |       |   fromnumeric.py
+|   |       |   |   |   |       |   index_tricks.py
+|   |       |   |   |   |       |   lib_utils.py
+|   |       |   |   |   |       |   lib_version.py
+|   |       |   |   |   |       |   mod.py
+|   |       |   |   |   |       |   modules.py
+|   |       |   |   |   |       |   multiarray.py
+|   |       |   |   |   |       |   nbit_base_example.py
+|   |       |   |   |   |       |   ndarray_conversion.py
+|   |       |   |   |   |       |   ndarray_misc.py
+|   |       |   |   |   |       |   ndarray_shape_manipulation.py
+|   |       |   |   |   |       |   nditer.py
+|   |       |   |   |   |       |   numeric.py
+|   |       |   |   |   |       |   numerictypes.py
+|   |       |   |   |   |       |   random.py
+|   |       |   |   |   |       |   scalars.py
+|   |       |   |   |   |       |   ufunclike.py
+|   |       |   |   |   |       |   ufuncs.py
+|   |       |   |   |   |       |   ufunc_config.py
+|   |       |   |   |   |       |   warnings_and_errors.py
+|   |       |   |   |   |       |   
+|   |       |   |   |   |       \---__pycache__
+|   |       |   |   |   |               arithmetic.cpython-39.pyc
+|   |       |   |   |   |               arrayprint.cpython-39.pyc
+|   |       |   |   |   |               arrayterator.cpython-39.pyc
+|   |       |   |   |   |               array_constructors.cpython-39.pyc
+|   |       |   |   |   |               bitwise_ops.cpython-39.pyc
+|   |       |   |   |   |               comparisons.cpython-39.pyc
+|   |       |   |   |   |               constants.cpython-39.pyc
+|   |       |   |   |   |               datasource.cpython-39.pyc
+|   |       |   |   |   |               dtype.cpython-39.pyc
+|   |       |   |   |   |               einsumfunc.cpython-39.pyc
+|   |       |   |   |   |               flatiter.cpython-39.pyc
+|   |       |   |   |   |               fromnumeric.cpython-39.pyc
+|   |       |   |   |   |               index_tricks.cpython-39.pyc
+|   |       |   |   |   |               lib_utils.cpython-39.pyc
+|   |       |   |   |   |               lib_version.cpython-39.pyc
+|   |       |   |   |   |               mod.cpython-39.pyc
+|   |       |   |   |   |               modules.cpython-39.pyc
+|   |       |   |   |   |               multiarray.cpython-39.pyc
+|   |       |   |   |   |               nbit_base_example.cpython-39.pyc
+|   |       |   |   |   |               ndarray_conversion.cpython-39.pyc
+|   |       |   |   |   |               ndarray_misc.cpython-39.pyc
+|   |       |   |   |   |               ndarray_shape_manipulation.cpython-39.pyc
+|   |       |   |   |   |               nditer.cpython-39.pyc
+|   |       |   |   |   |               numeric.cpython-39.pyc
+|   |       |   |   |   |               numerictypes.cpython-39.pyc
+|   |       |   |   |   |               random.cpython-39.pyc
+|   |       |   |   |   |               scalars.cpython-39.pyc
+|   |       |   |   |   |               ufunclike.cpython-39.pyc
+|   |       |   |   |   |               ufuncs.cpython-39.pyc
+|   |       |   |   |   |               ufunc_config.cpython-39.pyc
+|   |       |   |   |   |               warnings_and_errors.cpython-39.pyc
+|   |       |   |   |   |               
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           test_generic_alias.cpython-39.pyc
+|   |       |   |   |           test_isfile.cpython-39.pyc
+|   |       |   |   |           test_runtime.cpython-39.pyc
+|   |       |   |   |           test_typing.cpython-39.pyc
+|   |       |   |   |           test_typing_extensions.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           mypy_plugin.cpython-39.pyc
+|   |       |   |           setup.cpython-39.pyc
+|   |       |   |           _add_docstring.cpython-39.pyc
+|   |       |   |           _array_like.cpython-39.pyc
+|   |       |   |           _callable.cpython-39.pyc
+|   |       |   |           _char_codes.cpython-39.pyc
+|   |       |   |           _dtype_like.cpython-39.pyc
+|   |       |   |           _extended_precision.cpython-39.pyc
+|   |       |   |           _generic_alias.cpython-39.pyc
+|   |       |   |           _nbit.cpython-39.pyc
+|   |       |   |           _scalars.cpython-39.pyc
+|   |       |   |           _shape.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           conftest.cpython-39.pyc
+|   |       |           ctypeslib.cpython-39.pyc
+|   |       |           dual.cpython-39.pyc
+|   |       |           matlib.cpython-39.pyc
+|   |       |           setup.cpython-39.pyc
+|   |       |           version.cpython-39.pyc
+|   |       |           _distributor_init.cpython-39.pyc
+|   |       |           _globals.cpython-39.pyc
+|   |       |           _pytesttester.cpython-39.pyc
+|   |       |           _version.cpython-39.pyc
+|   |       |           __config__.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---numpy-1.21.3.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE.txt
+|   |       |       LICENSES_bundled.txt
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       REQUESTED
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---opencv_python-4.5.4.58.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE-3RD-PARTY.txt
+|   |       |       LICENSE.txt
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       REQUESTED
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---PIL
+|   |       |   |   BdfFontFile.py
+|   |       |   |   BlpImagePlugin.py
+|   |       |   |   BmpImagePlugin.py
+|   |       |   |   BufrStubImagePlugin.py
+|   |       |   |   concrt140.dll
+|   |       |   |   ContainerIO.py
+|   |       |   |   CurImagePlugin.py
+|   |       |   |   DcxImagePlugin.py
+|   |       |   |   DdsImagePlugin.py
+|   |       |   |   EpsImagePlugin.py
+|   |       |   |   ExifTags.py
+|   |       |   |   features.py
+|   |       |   |   FitsStubImagePlugin.py
+|   |       |   |   FliImagePlugin.py
+|   |       |   |   FontFile.py
+|   |       |   |   FpxImagePlugin.py
+|   |       |   |   FtexImagePlugin.py
+|   |       |   |   GbrImagePlugin.py
+|   |       |   |   GdImageFile.py
+|   |       |   |   GifImagePlugin.py
+|   |       |   |   GimpGradientFile.py
+|   |       |   |   GimpPaletteFile.py
+|   |       |   |   GribStubImagePlugin.py
+|   |       |   |   Hdf5StubImagePlugin.py
+|   |       |   |   IcnsImagePlugin.py
+|   |       |   |   IcoImagePlugin.py
+|   |       |   |   Image.py
+|   |       |   |   ImageChops.py
+|   |       |   |   ImageCms.py
+|   |       |   |   ImageColor.py
+|   |       |   |   ImageDraw.py
+|   |       |   |   ImageDraw2.py
+|   |       |   |   ImageEnhance.py
+|   |       |   |   ImageFile.py
+|   |       |   |   ImageFilter.py
+|   |       |   |   ImageFont.py
+|   |       |   |   ImageGrab.py
+|   |       |   |   ImageMath.py
+|   |       |   |   ImageMode.py
+|   |       |   |   ImageMorph.py
+|   |       |   |   ImageOps.py
+|   |       |   |   ImagePalette.py
+|   |       |   |   ImagePath.py
+|   |       |   |   ImageQt.py
+|   |       |   |   ImageSequence.py
+|   |       |   |   ImageShow.py
+|   |       |   |   ImageStat.py
+|   |       |   |   ImageTk.py
+|   |       |   |   ImageTransform.py
+|   |       |   |   ImageWin.py
+|   |       |   |   ImImagePlugin.py
+|   |       |   |   ImtImagePlugin.py
+|   |       |   |   IptcImagePlugin.py
+|   |       |   |   Jpeg2KImagePlugin.py
+|   |       |   |   JpegImagePlugin.py
+|   |       |   |   JpegPresets.py
+|   |       |   |   McIdasImagePlugin.py
+|   |       |   |   MicImagePlugin.py
+|   |       |   |   MpegImagePlugin.py
+|   |       |   |   MpoImagePlugin.py
+|   |       |   |   MspImagePlugin.py
+|   |       |   |   msvcp140.dll
+|   |       |   |   msvcp140_1.dll
+|   |       |   |   msvcp140_2.dll
+|   |       |   |   PaletteFile.py
+|   |       |   |   PalmImagePlugin.py
+|   |       |   |   PcdImagePlugin.py
+|   |       |   |   PcfFontFile.py
+|   |       |   |   PcxImagePlugin.py
+|   |       |   |   PdfImagePlugin.py
+|   |       |   |   PdfParser.py
+|   |       |   |   PixarImagePlugin.py
+|   |       |   |   PngImagePlugin.py
+|   |       |   |   PpmImagePlugin.py
+|   |       |   |   PsdImagePlugin.py
+|   |       |   |   PSDraw.py
+|   |       |   |   PyAccess.py
+|   |       |   |   SgiImagePlugin.py
+|   |       |   |   SpiderImagePlugin.py
+|   |       |   |   SunImagePlugin.py
+|   |       |   |   TarIO.py
+|   |       |   |   TgaImagePlugin.py
+|   |       |   |   TiffImagePlugin.py
+|   |       |   |   TiffTags.py
+|   |       |   |   vccorlib140.dll
+|   |       |   |   vcruntime140.dll
+|   |       |   |   WalImageFile.py
+|   |       |   |   WebPImagePlugin.py
+|   |       |   |   WmfImagePlugin.py
+|   |       |   |   XbmImagePlugin.py
+|   |       |   |   XpmImagePlugin.py
+|   |       |   |   XVThumbImagePlugin.py
+|   |       |   |   _binary.py
+|   |       |   |   _imaging.cp39-win_amd64.pyd
+|   |       |   |   _imagingcms.cp39-win_amd64.pyd
+|   |       |   |   _imagingft.cp39-win_amd64.pyd
+|   |       |   |   _imagingmath.cp39-win_amd64.pyd
+|   |       |   |   _imagingmorph.cp39-win_amd64.pyd
+|   |       |   |   _imagingtk.cp39-win_amd64.pyd
+|   |       |   |   _tkinter_finder.py
+|   |       |   |   _util.py
+|   |       |   |   _version.py
+|   |       |   |   _webp.cp39-win_amd64.pyd
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           BdfFontFile.cpython-39.pyc
+|   |       |           BlpImagePlugin.cpython-39.pyc
+|   |       |           BmpImagePlugin.cpython-39.pyc
+|   |       |           BufrStubImagePlugin.cpython-39.pyc
+|   |       |           ContainerIO.cpython-39.pyc
+|   |       |           CurImagePlugin.cpython-39.pyc
+|   |       |           DcxImagePlugin.cpython-39.pyc
+|   |       |           DdsImagePlugin.cpython-39.pyc
+|   |       |           EpsImagePlugin.cpython-39.pyc
+|   |       |           ExifTags.cpython-39.pyc
+|   |       |           features.cpython-39.pyc
+|   |       |           FitsStubImagePlugin.cpython-39.pyc
+|   |       |           FliImagePlugin.cpython-39.pyc
+|   |       |           FontFile.cpython-39.pyc
+|   |       |           FpxImagePlugin.cpython-39.pyc
+|   |       |           FtexImagePlugin.cpython-39.pyc
+|   |       |           GbrImagePlugin.cpython-39.pyc
+|   |       |           GdImageFile.cpython-39.pyc
+|   |       |           GifImagePlugin.cpython-39.pyc
+|   |       |           GimpGradientFile.cpython-39.pyc
+|   |       |           GimpPaletteFile.cpython-39.pyc
+|   |       |           GribStubImagePlugin.cpython-39.pyc
+|   |       |           Hdf5StubImagePlugin.cpython-39.pyc
+|   |       |           IcnsImagePlugin.cpython-39.pyc
+|   |       |           IcoImagePlugin.cpython-39.pyc
+|   |       |           Image.cpython-39.pyc
+|   |       |           ImageChops.cpython-39.pyc
+|   |       |           ImageCms.cpython-39.pyc
+|   |       |           ImageColor.cpython-39.pyc
+|   |       |           ImageDraw.cpython-39.pyc
+|   |       |           ImageDraw2.cpython-39.pyc
+|   |       |           ImageEnhance.cpython-39.pyc
+|   |       |           ImageFile.cpython-39.pyc
+|   |       |           ImageFilter.cpython-39.pyc
+|   |       |           ImageFont.cpython-39.pyc
+|   |       |           ImageGrab.cpython-39.pyc
+|   |       |           ImageMath.cpython-39.pyc
+|   |       |           ImageMode.cpython-39.pyc
+|   |       |           ImageMorph.cpython-39.pyc
+|   |       |           ImageOps.cpython-39.pyc
+|   |       |           ImagePalette.cpython-39.pyc
+|   |       |           ImagePath.cpython-39.pyc
+|   |       |           ImageQt.cpython-39.pyc
+|   |       |           ImageSequence.cpython-39.pyc
+|   |       |           ImageShow.cpython-39.pyc
+|   |       |           ImageStat.cpython-39.pyc
+|   |       |           ImageTk.cpython-39.pyc
+|   |       |           ImageTransform.cpython-39.pyc
+|   |       |           ImageWin.cpython-39.pyc
+|   |       |           ImImagePlugin.cpython-39.pyc
+|   |       |           ImtImagePlugin.cpython-39.pyc
+|   |       |           IptcImagePlugin.cpython-39.pyc
+|   |       |           Jpeg2KImagePlugin.cpython-39.pyc
+|   |       |           JpegImagePlugin.cpython-39.pyc
+|   |       |           JpegPresets.cpython-39.pyc
+|   |       |           McIdasImagePlugin.cpython-39.pyc
+|   |       |           MicImagePlugin.cpython-39.pyc
+|   |       |           MpegImagePlugin.cpython-39.pyc
+|   |       |           MpoImagePlugin.cpython-39.pyc
+|   |       |           MspImagePlugin.cpython-39.pyc
+|   |       |           PaletteFile.cpython-39.pyc
+|   |       |           PalmImagePlugin.cpython-39.pyc
+|   |       |           PcdImagePlugin.cpython-39.pyc
+|   |       |           PcfFontFile.cpython-39.pyc
+|   |       |           PcxImagePlugin.cpython-39.pyc
+|   |       |           PdfImagePlugin.cpython-39.pyc
+|   |       |           PdfParser.cpython-39.pyc
+|   |       |           PixarImagePlugin.cpython-39.pyc
+|   |       |           PngImagePlugin.cpython-39.pyc
+|   |       |           PpmImagePlugin.cpython-39.pyc
+|   |       |           PsdImagePlugin.cpython-39.pyc
+|   |       |           PSDraw.cpython-39.pyc
+|   |       |           PyAccess.cpython-39.pyc
+|   |       |           SgiImagePlugin.cpython-39.pyc
+|   |       |           SpiderImagePlugin.cpython-39.pyc
+|   |       |           SunImagePlugin.cpython-39.pyc
+|   |       |           TarIO.cpython-39.pyc
+|   |       |           TgaImagePlugin.cpython-39.pyc
+|   |       |           TiffImagePlugin.cpython-39.pyc
+|   |       |           TiffTags.cpython-39.pyc
+|   |       |           WalImageFile.cpython-39.pyc
+|   |       |           WebPImagePlugin.cpython-39.pyc
+|   |       |           WmfImagePlugin.cpython-39.pyc
+|   |       |           XbmImagePlugin.cpython-39.pyc
+|   |       |           XpmImagePlugin.cpython-39.pyc
+|   |       |           XVThumbImagePlugin.cpython-39.pyc
+|   |       |           _binary.cpython-39.pyc
+|   |       |           _tkinter_finder.cpython-39.pyc
+|   |       |           _util.cpython-39.pyc
+|   |       |           _version.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           __main__.cpython-39.pyc
+|   |       |           
+|   |       +---Pillow-8.4.0.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       REQUESTED
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       zip-safe
+|   |       |       
+|   |       +---pip
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---_internal
+|   |       |   |   |   build_env.py
+|   |       |   |   |   cache.py
+|   |       |   |   |   configuration.py
+|   |       |   |   |   exceptions.py
+|   |       |   |   |   main.py
+|   |       |   |   |   pyproject.py
+|   |       |   |   |   self_outdated_check.py
+|   |       |   |   |   wheel_builder.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---cli
+|   |       |   |   |   |   autocompletion.py
+|   |       |   |   |   |   base_command.py
+|   |       |   |   |   |   cmdoptions.py
+|   |       |   |   |   |   command_context.py
+|   |       |   |   |   |   main.py
+|   |       |   |   |   |   main_parser.py
+|   |       |   |   |   |   parser.py
+|   |       |   |   |   |   progress_bars.py
+|   |       |   |   |   |   req_command.py
+|   |       |   |   |   |   spinners.py
+|   |       |   |   |   |   status_codes.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           autocompletion.cpython-39.pyc
+|   |       |   |   |           base_command.cpython-39.pyc
+|   |       |   |   |           cmdoptions.cpython-39.pyc
+|   |       |   |   |           command_context.cpython-39.pyc
+|   |       |   |   |           main.cpython-39.pyc
+|   |       |   |   |           main_parser.cpython-39.pyc
+|   |       |   |   |           parser.cpython-39.pyc
+|   |       |   |   |           progress_bars.cpython-39.pyc
+|   |       |   |   |           req_command.cpython-39.pyc
+|   |       |   |   |           spinners.cpython-39.pyc
+|   |       |   |   |           status_codes.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---commands
+|   |       |   |   |   |   cache.py
+|   |       |   |   |   |   check.py
+|   |       |   |   |   |   completion.py
+|   |       |   |   |   |   configuration.py
+|   |       |   |   |   |   debug.py
+|   |       |   |   |   |   download.py
+|   |       |   |   |   |   freeze.py
+|   |       |   |   |   |   hash.py
+|   |       |   |   |   |   help.py
+|   |       |   |   |   |   index.py
+|   |       |   |   |   |   install.py
+|   |       |   |   |   |   list.py
+|   |       |   |   |   |   search.py
+|   |       |   |   |   |   show.py
+|   |       |   |   |   |   uninstall.py
+|   |       |   |   |   |   wheel.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           freeze.cpython-39.pyc
+|   |       |   |   |           install.cpython-39.pyc
+|   |       |   |   |           list.cpython-39.pyc
+|   |       |   |   |           uninstall.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---distributions
+|   |       |   |   |   |   base.py
+|   |       |   |   |   |   installed.py
+|   |       |   |   |   |   sdist.py
+|   |       |   |   |   |   wheel.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           base.cpython-39.pyc
+|   |       |   |   |           installed.cpython-39.pyc
+|   |       |   |   |           sdist.cpython-39.pyc
+|   |       |   |   |           wheel.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---index
+|   |       |   |   |   |   collector.py
+|   |       |   |   |   |   package_finder.py
+|   |       |   |   |   |   sources.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           collector.cpython-39.pyc
+|   |       |   |   |           package_finder.cpython-39.pyc
+|   |       |   |   |           sources.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---locations
+|   |       |   |   |   |   base.py
+|   |       |   |   |   |   _distutils.py
+|   |       |   |   |   |   _sysconfig.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           base.cpython-39.pyc
+|   |       |   |   |           _distutils.cpython-39.pyc
+|   |       |   |   |           _sysconfig.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---metadata
+|   |       |   |   |   |   base.py
+|   |       |   |   |   |   pkg_resources.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           base.cpython-39.pyc
+|   |       |   |   |           pkg_resources.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---models
+|   |       |   |   |   |   candidate.py
+|   |       |   |   |   |   direct_url.py
+|   |       |   |   |   |   format_control.py
+|   |       |   |   |   |   index.py
+|   |       |   |   |   |   link.py
+|   |       |   |   |   |   scheme.py
+|   |       |   |   |   |   search_scope.py
+|   |       |   |   |   |   selection_prefs.py
+|   |       |   |   |   |   target_python.py
+|   |       |   |   |   |   wheel.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           candidate.cpython-39.pyc
+|   |       |   |   |           direct_url.cpython-39.pyc
+|   |       |   |   |           format_control.cpython-39.pyc
+|   |       |   |   |           index.cpython-39.pyc
+|   |       |   |   |           link.cpython-39.pyc
+|   |       |   |   |           scheme.cpython-39.pyc
+|   |       |   |   |           search_scope.cpython-39.pyc
+|   |       |   |   |           selection_prefs.cpython-39.pyc
+|   |       |   |   |           target_python.cpython-39.pyc
+|   |       |   |   |           wheel.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---network
+|   |       |   |   |   |   auth.py
+|   |       |   |   |   |   cache.py
+|   |       |   |   |   |   download.py
+|   |       |   |   |   |   lazy_wheel.py
+|   |       |   |   |   |   session.py
+|   |       |   |   |   |   utils.py
+|   |       |   |   |   |   xmlrpc.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           auth.cpython-39.pyc
+|   |       |   |   |           cache.cpython-39.pyc
+|   |       |   |   |           download.cpython-39.pyc
+|   |       |   |   |           lazy_wheel.cpython-39.pyc
+|   |       |   |   |           session.cpython-39.pyc
+|   |       |   |   |           utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---operations
+|   |       |   |   |   |   check.py
+|   |       |   |   |   |   freeze.py
+|   |       |   |   |   |   prepare.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---build
+|   |       |   |   |   |   |   metadata.py
+|   |       |   |   |   |   |   metadata_editable.py
+|   |       |   |   |   |   |   metadata_legacy.py
+|   |       |   |   |   |   |   wheel.py
+|   |       |   |   |   |   |   wheel_editable.py
+|   |       |   |   |   |   |   wheel_legacy.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           metadata.cpython-39.pyc
+|   |       |   |   |   |           metadata_editable.cpython-39.pyc
+|   |       |   |   |   |           metadata_legacy.cpython-39.pyc
+|   |       |   |   |   |           wheel.cpython-39.pyc
+|   |       |   |   |   |           wheel_editable.cpython-39.pyc
+|   |       |   |   |   |           wheel_legacy.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---install
+|   |       |   |   |   |   |   editable_legacy.py
+|   |       |   |   |   |   |   legacy.py
+|   |       |   |   |   |   |   wheel.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           editable_legacy.cpython-39.pyc
+|   |       |   |   |   |           legacy.cpython-39.pyc
+|   |       |   |   |   |           wheel.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           check.cpython-39.pyc
+|   |       |   |   |           freeze.cpython-39.pyc
+|   |       |   |   |           prepare.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---req
+|   |       |   |   |   |   constructors.py
+|   |       |   |   |   |   req_file.py
+|   |       |   |   |   |   req_install.py
+|   |       |   |   |   |   req_set.py
+|   |       |   |   |   |   req_tracker.py
+|   |       |   |   |   |   req_uninstall.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           constructors.cpython-39.pyc
+|   |       |   |   |           req_file.cpython-39.pyc
+|   |       |   |   |           req_install.cpython-39.pyc
+|   |       |   |   |           req_set.cpython-39.pyc
+|   |       |   |   |           req_tracker.cpython-39.pyc
+|   |       |   |   |           req_uninstall.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---resolution
+|   |       |   |   |   |   base.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---legacy
+|   |       |   |   |   |       resolver.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   +---resolvelib
+|   |       |   |   |   |   |   base.py
+|   |       |   |   |   |   |   candidates.py
+|   |       |   |   |   |   |   factory.py
+|   |       |   |   |   |   |   found_candidates.py
+|   |       |   |   |   |   |   provider.py
+|   |       |   |   |   |   |   reporter.py
+|   |       |   |   |   |   |   requirements.py
+|   |       |   |   |   |   |   resolver.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           base.cpython-39.pyc
+|   |       |   |   |   |           candidates.cpython-39.pyc
+|   |       |   |   |   |           factory.cpython-39.pyc
+|   |       |   |   |   |           found_candidates.cpython-39.pyc
+|   |       |   |   |   |           provider.cpython-39.pyc
+|   |       |   |   |   |           reporter.cpython-39.pyc
+|   |       |   |   |   |           requirements.cpython-39.pyc
+|   |       |   |   |   |           resolver.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           base.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---utils
+|   |       |   |   |   |   appdirs.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   compatibility_tags.py
+|   |       |   |   |   |   datetime.py
+|   |       |   |   |   |   deprecation.py
+|   |       |   |   |   |   direct_url_helpers.py
+|   |       |   |   |   |   distutils_args.py
+|   |       |   |   |   |   egg_link.py
+|   |       |   |   |   |   encoding.py
+|   |       |   |   |   |   entrypoints.py
+|   |       |   |   |   |   filesystem.py
+|   |       |   |   |   |   filetypes.py
+|   |       |   |   |   |   glibc.py
+|   |       |   |   |   |   hashes.py
+|   |       |   |   |   |   inject_securetransport.py
+|   |       |   |   |   |   logging.py
+|   |       |   |   |   |   misc.py
+|   |       |   |   |   |   models.py
+|   |       |   |   |   |   packaging.py
+|   |       |   |   |   |   parallel.py
+|   |       |   |   |   |   pkg_resources.py
+|   |       |   |   |   |   setuptools_build.py
+|   |       |   |   |   |   subprocess.py
+|   |       |   |   |   |   temp_dir.py
+|   |       |   |   |   |   unpacking.py
+|   |       |   |   |   |   urls.py
+|   |       |   |   |   |   virtualenv.py
+|   |       |   |   |   |   wheel.py
+|   |       |   |   |   |   _log.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           appdirs.cpython-39.pyc
+|   |       |   |   |           compat.cpython-39.pyc
+|   |       |   |   |           compatibility_tags.cpython-39.pyc
+|   |       |   |   |           deprecation.cpython-39.pyc
+|   |       |   |   |           direct_url_helpers.cpython-39.pyc
+|   |       |   |   |           distutils_args.cpython-39.pyc
+|   |       |   |   |           egg_link.cpython-39.pyc
+|   |       |   |   |           encoding.cpython-39.pyc
+|   |       |   |   |           filesystem.cpython-39.pyc
+|   |       |   |   |           filetypes.cpython-39.pyc
+|   |       |   |   |           glibc.cpython-39.pyc
+|   |       |   |   |           hashes.cpython-39.pyc
+|   |       |   |   |           inject_securetransport.cpython-39.pyc
+|   |       |   |   |           logging.cpython-39.pyc
+|   |       |   |   |           misc.cpython-39.pyc
+|   |       |   |   |           models.cpython-39.pyc
+|   |       |   |   |           packaging.cpython-39.pyc
+|   |       |   |   |           parallel.cpython-39.pyc
+|   |       |   |   |           pkg_resources.cpython-39.pyc
+|   |       |   |   |           setuptools_build.cpython-39.pyc
+|   |       |   |   |           subprocess.cpython-39.pyc
+|   |       |   |   |           temp_dir.cpython-39.pyc
+|   |       |   |   |           unpacking.cpython-39.pyc
+|   |       |   |   |           urls.cpython-39.pyc
+|   |       |   |   |           virtualenv.cpython-39.pyc
+|   |       |   |   |           wheel.cpython-39.pyc
+|   |       |   |   |           _log.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---vcs
+|   |       |   |   |   |   bazaar.py
+|   |       |   |   |   |   git.py
+|   |       |   |   |   |   mercurial.py
+|   |       |   |   |   |   subversion.py
+|   |       |   |   |   |   versioncontrol.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           bazaar.cpython-39.pyc
+|   |       |   |   |           git.cpython-39.pyc
+|   |       |   |   |           mercurial.cpython-39.pyc
+|   |       |   |   |           subversion.cpython-39.pyc
+|   |       |   |   |           versioncontrol.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           build_env.cpython-39.pyc
+|   |       |   |           cache.cpython-39.pyc
+|   |       |   |           configuration.cpython-39.pyc
+|   |       |   |           exceptions.cpython-39.pyc
+|   |       |   |           pyproject.cpython-39.pyc
+|   |       |   |           self_outdated_check.cpython-39.pyc
+|   |       |   |           wheel_builder.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---_vendor
+|   |       |   |   |   distro.py
+|   |       |   |   |   pyparsing.py
+|   |       |   |   |   six.py
+|   |       |   |   |   vendor.txt
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---cachecontrol
+|   |       |   |   |   |   adapter.py
+|   |       |   |   |   |   cache.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   controller.py
+|   |       |   |   |   |   filewrapper.py
+|   |       |   |   |   |   heuristics.py
+|   |       |   |   |   |   serialize.py
+|   |       |   |   |   |   wrapper.py
+|   |       |   |   |   |   _cmd.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---caches
+|   |       |   |   |   |   |   file_cache.py
+|   |       |   |   |   |   |   redis_cache.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           file_cache.cpython-39.pyc
+|   |       |   |   |   |           redis_cache.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           adapter.cpython-39.pyc
+|   |       |   |   |           cache.cpython-39.pyc
+|   |       |   |   |           compat.cpython-39.pyc
+|   |       |   |   |           controller.cpython-39.pyc
+|   |       |   |   |           filewrapper.cpython-39.pyc
+|   |       |   |   |           serialize.cpython-39.pyc
+|   |       |   |   |           wrapper.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---certifi
+|   |       |   |   |   |   cacert.pem
+|   |       |   |   |   |   core.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   __main__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           core.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---chardet
+|   |       |   |   |   |   big5freq.py
+|   |       |   |   |   |   big5prober.py
+|   |       |   |   |   |   chardistribution.py
+|   |       |   |   |   |   charsetgroupprober.py
+|   |       |   |   |   |   charsetprober.py
+|   |       |   |   |   |   codingstatemachine.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   cp949prober.py
+|   |       |   |   |   |   enums.py
+|   |       |   |   |   |   escprober.py
+|   |       |   |   |   |   escsm.py
+|   |       |   |   |   |   eucjpprober.py
+|   |       |   |   |   |   euckrfreq.py
+|   |       |   |   |   |   euckrprober.py
+|   |       |   |   |   |   euctwfreq.py
+|   |       |   |   |   |   euctwprober.py
+|   |       |   |   |   |   gb2312freq.py
+|   |       |   |   |   |   gb2312prober.py
+|   |       |   |   |   |   hebrewprober.py
+|   |       |   |   |   |   jisfreq.py
+|   |       |   |   |   |   jpcntx.py
+|   |       |   |   |   |   langbulgarianmodel.py
+|   |       |   |   |   |   langgreekmodel.py
+|   |       |   |   |   |   langhebrewmodel.py
+|   |       |   |   |   |   langhungarianmodel.py
+|   |       |   |   |   |   langrussianmodel.py
+|   |       |   |   |   |   langthaimodel.py
+|   |       |   |   |   |   langturkishmodel.py
+|   |       |   |   |   |   latin1prober.py
+|   |       |   |   |   |   mbcharsetprober.py
+|   |       |   |   |   |   mbcsgroupprober.py
+|   |       |   |   |   |   mbcssm.py
+|   |       |   |   |   |   sbcharsetprober.py
+|   |       |   |   |   |   sbcsgroupprober.py
+|   |       |   |   |   |   sjisprober.py
+|   |       |   |   |   |   universaldetector.py
+|   |       |   |   |   |   utf8prober.py
+|   |       |   |   |   |   version.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---cli
+|   |       |   |   |   |       chardetect.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   +---metadata
+|   |       |   |   |   |       languages.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           big5freq.cpython-39.pyc
+|   |       |   |   |           big5prober.cpython-39.pyc
+|   |       |   |   |           chardistribution.cpython-39.pyc
+|   |       |   |   |           charsetgroupprober.cpython-39.pyc
+|   |       |   |   |           charsetprober.cpython-39.pyc
+|   |       |   |   |           codingstatemachine.cpython-39.pyc
+|   |       |   |   |           cp949prober.cpython-39.pyc
+|   |       |   |   |           enums.cpython-39.pyc
+|   |       |   |   |           escprober.cpython-39.pyc
+|   |       |   |   |           escsm.cpython-39.pyc
+|   |       |   |   |           eucjpprober.cpython-39.pyc
+|   |       |   |   |           euckrfreq.cpython-39.pyc
+|   |       |   |   |           euckrprober.cpython-39.pyc
+|   |       |   |   |           euctwfreq.cpython-39.pyc
+|   |       |   |   |           euctwprober.cpython-39.pyc
+|   |       |   |   |           gb2312freq.cpython-39.pyc
+|   |       |   |   |           gb2312prober.cpython-39.pyc
+|   |       |   |   |           hebrewprober.cpython-39.pyc
+|   |       |   |   |           jisfreq.cpython-39.pyc
+|   |       |   |   |           jpcntx.cpython-39.pyc
+|   |       |   |   |           langbulgarianmodel.cpython-39.pyc
+|   |       |   |   |           langgreekmodel.cpython-39.pyc
+|   |       |   |   |           langhebrewmodel.cpython-39.pyc
+|   |       |   |   |           langrussianmodel.cpython-39.pyc
+|   |       |   |   |           langthaimodel.cpython-39.pyc
+|   |       |   |   |           langturkishmodel.cpython-39.pyc
+|   |       |   |   |           latin1prober.cpython-39.pyc
+|   |       |   |   |           mbcharsetprober.cpython-39.pyc
+|   |       |   |   |           mbcsgroupprober.cpython-39.pyc
+|   |       |   |   |           mbcssm.cpython-39.pyc
+|   |       |   |   |           sbcharsetprober.cpython-39.pyc
+|   |       |   |   |           sbcsgroupprober.cpython-39.pyc
+|   |       |   |   |           sjisprober.cpython-39.pyc
+|   |       |   |   |           universaldetector.cpython-39.pyc
+|   |       |   |   |           utf8prober.cpython-39.pyc
+|   |       |   |   |           version.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---colorama
+|   |       |   |   |   |   ansi.py
+|   |       |   |   |   |   ansitowin32.py
+|   |       |   |   |   |   initialise.py
+|   |       |   |   |   |   win32.py
+|   |       |   |   |   |   winterm.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           ansi.cpython-39.pyc
+|   |       |   |   |           ansitowin32.cpython-39.pyc
+|   |       |   |   |           initialise.cpython-39.pyc
+|   |       |   |   |           win32.cpython-39.pyc
+|   |       |   |   |           winterm.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---distlib
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   database.py
+|   |       |   |   |   |   index.py
+|   |       |   |   |   |   locators.py
+|   |       |   |   |   |   manifest.py
+|   |       |   |   |   |   markers.py
+|   |       |   |   |   |   metadata.py
+|   |       |   |   |   |   resources.py
+|   |       |   |   |   |   scripts.py
+|   |       |   |   |   |   t32.exe
+|   |       |   |   |   |   t64-arm.exe
+|   |       |   |   |   |   t64.exe
+|   |       |   |   |   |   util.py
+|   |       |   |   |   |   version.py
+|   |       |   |   |   |   w32.exe
+|   |       |   |   |   |   w64-arm.exe
+|   |       |   |   |   |   w64.exe
+|   |       |   |   |   |   wheel.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---_backport
+|   |       |   |   |   |       misc.py
+|   |       |   |   |   |       shutil.py
+|   |       |   |   |   |       sysconfig.cfg
+|   |       |   |   |   |       sysconfig.py
+|   |       |   |   |   |       tarfile.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           compat.cpython-39.pyc
+|   |       |   |   |           resources.cpython-39.pyc
+|   |       |   |   |           scripts.cpython-39.pyc
+|   |       |   |   |           util.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---html5lib
+|   |       |   |   |   |   constants.py
+|   |       |   |   |   |   html5parser.py
+|   |       |   |   |   |   serializer.py
+|   |       |   |   |   |   _ihatexml.py
+|   |       |   |   |   |   _inputstream.py
+|   |       |   |   |   |   _tokenizer.py
+|   |       |   |   |   |   _utils.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---filters
+|   |       |   |   |   |       alphabeticalattributes.py
+|   |       |   |   |   |       base.py
+|   |       |   |   |   |       inject_meta_charset.py
+|   |       |   |   |   |       lint.py
+|   |       |   |   |   |       optionaltags.py
+|   |       |   |   |   |       sanitizer.py
+|   |       |   |   |   |       whitespace.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   +---treeadapters
+|   |       |   |   |   |       genshi.py
+|   |       |   |   |   |       sax.py
+|   |       |   |   |   |       __init__.py
+|   |       |   |   |   |       
+|   |       |   |   |   +---treebuilders
+|   |       |   |   |   |   |   base.py
+|   |       |   |   |   |   |   dom.py
+|   |       |   |   |   |   |   etree.py
+|   |       |   |   |   |   |   etree_lxml.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           base.cpython-39.pyc
+|   |       |   |   |   |           etree.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---treewalkers
+|   |       |   |   |   |   |   base.py
+|   |       |   |   |   |   |   dom.py
+|   |       |   |   |   |   |   etree.py
+|   |       |   |   |   |   |   etree_lxml.py
+|   |       |   |   |   |   |   genshi.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---_trie
+|   |       |   |   |   |   |   py.py
+|   |       |   |   |   |   |   _base.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           py.cpython-39.pyc
+|   |       |   |   |   |           _base.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           constants.cpython-39.pyc
+|   |       |   |   |           html5parser.cpython-39.pyc
+|   |       |   |   |           serializer.cpython-39.pyc
+|   |       |   |   |           _ihatexml.cpython-39.pyc
+|   |       |   |   |           _inputstream.cpython-39.pyc
+|   |       |   |   |           _tokenizer.cpython-39.pyc
+|   |       |   |   |           _utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---idna
+|   |       |   |   |   |   codec.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   core.py
+|   |       |   |   |   |   idnadata.py
+|   |       |   |   |   |   intranges.py
+|   |       |   |   |   |   package_data.py
+|   |       |   |   |   |   uts46data.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           core.cpython-39.pyc
+|   |       |   |   |           idnadata.cpython-39.pyc
+|   |       |   |   |           intranges.cpython-39.pyc
+|   |       |   |   |           package_data.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---msgpack
+|   |       |   |   |   |   exceptions.py
+|   |       |   |   |   |   ext.py
+|   |       |   |   |   |   fallback.py
+|   |       |   |   |   |   _version.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           exceptions.cpython-39.pyc
+|   |       |   |   |           ext.cpython-39.pyc
+|   |       |   |   |           fallback.cpython-39.pyc
+|   |       |   |   |           _version.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---packaging
+|   |       |   |   |   |   markers.py
+|   |       |   |   |   |   requirements.py
+|   |       |   |   |   |   specifiers.py
+|   |       |   |   |   |   tags.py
+|   |       |   |   |   |   utils.py
+|   |       |   |   |   |   version.py
+|   |       |   |   |   |   _manylinux.py
+|   |       |   |   |   |   _musllinux.py
+|   |       |   |   |   |   _structures.py
+|   |       |   |   |   |   __about__.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           markers.cpython-39.pyc
+|   |       |   |   |           requirements.cpython-39.pyc
+|   |       |   |   |           specifiers.cpython-39.pyc
+|   |       |   |   |           tags.cpython-39.pyc
+|   |       |   |   |           utils.cpython-39.pyc
+|   |       |   |   |           version.cpython-39.pyc
+|   |       |   |   |           _manylinux.cpython-39.pyc
+|   |       |   |   |           _musllinux.cpython-39.pyc
+|   |       |   |   |           _structures.cpython-39.pyc
+|   |       |   |   |           __about__.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---pep517
+|   |       |   |   |   |   build.py
+|   |       |   |   |   |   check.py
+|   |       |   |   |   |   colorlog.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   dirtools.py
+|   |       |   |   |   |   envbuild.py
+|   |       |   |   |   |   meta.py
+|   |       |   |   |   |   wrappers.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---in_process
+|   |       |   |   |   |   |   _in_process.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           compat.cpython-39.pyc
+|   |       |   |   |           wrappers.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---pkg_resources
+|   |       |   |   |   |   py31compat.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           py31compat.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---platformdirs
+|   |       |   |   |   |   android.py
+|   |       |   |   |   |   api.py
+|   |       |   |   |   |   macos.py
+|   |       |   |   |   |   unix.py
+|   |       |   |   |   |   version.py
+|   |       |   |   |   |   windows.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   __main__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           api.cpython-39.pyc
+|   |       |   |   |           version.cpython-39.pyc
+|   |       |   |   |           windows.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---progress
+|   |       |   |   |   |   bar.py
+|   |       |   |   |   |   colors.py
+|   |       |   |   |   |   counter.py
+|   |       |   |   |   |   spinner.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           bar.cpython-39.pyc
+|   |       |   |   |           colors.cpython-39.pyc
+|   |       |   |   |           spinner.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---requests
+|   |       |   |   |   |   adapters.py
+|   |       |   |   |   |   api.py
+|   |       |   |   |   |   auth.py
+|   |       |   |   |   |   certs.py
+|   |       |   |   |   |   compat.py
+|   |       |   |   |   |   cookies.py
+|   |       |   |   |   |   exceptions.py
+|   |       |   |   |   |   help.py
+|   |       |   |   |   |   hooks.py
+|   |       |   |   |   |   models.py
+|   |       |   |   |   |   packages.py
+|   |       |   |   |   |   sessions.py
+|   |       |   |   |   |   status_codes.py
+|   |       |   |   |   |   structures.py
+|   |       |   |   |   |   utils.py
+|   |       |   |   |   |   _internal_utils.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   __version__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           adapters.cpython-39.pyc
+|   |       |   |   |           api.cpython-39.pyc
+|   |       |   |   |           auth.cpython-39.pyc
+|   |       |   |   |           certs.cpython-39.pyc
+|   |       |   |   |           compat.cpython-39.pyc
+|   |       |   |   |           cookies.cpython-39.pyc
+|   |       |   |   |           exceptions.cpython-39.pyc
+|   |       |   |   |           hooks.cpython-39.pyc
+|   |       |   |   |           models.cpython-39.pyc
+|   |       |   |   |           packages.cpython-39.pyc
+|   |       |   |   |           sessions.cpython-39.pyc
+|   |       |   |   |           status_codes.cpython-39.pyc
+|   |       |   |   |           structures.cpython-39.pyc
+|   |       |   |   |           utils.cpython-39.pyc
+|   |       |   |   |           _internal_utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           __version__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---resolvelib
+|   |       |   |   |   |   providers.py
+|   |       |   |   |   |   reporters.py
+|   |       |   |   |   |   resolvers.py
+|   |       |   |   |   |   structs.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---compat
+|   |       |   |   |   |   |   collections_abc.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           collections_abc.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           providers.cpython-39.pyc
+|   |       |   |   |           reporters.cpython-39.pyc
+|   |       |   |   |           resolvers.cpython-39.pyc
+|   |       |   |   |           structs.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---tenacity
+|   |       |   |   |   |   after.py
+|   |       |   |   |   |   before.py
+|   |       |   |   |   |   before_sleep.py
+|   |       |   |   |   |   nap.py
+|   |       |   |   |   |   retry.py
+|   |       |   |   |   |   stop.py
+|   |       |   |   |   |   tornadoweb.py
+|   |       |   |   |   |   wait.py
+|   |       |   |   |   |   _asyncio.py
+|   |       |   |   |   |   _utils.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           after.cpython-39.pyc
+|   |       |   |   |           before.cpython-39.pyc
+|   |       |   |   |           before_sleep.cpython-39.pyc
+|   |       |   |   |           nap.cpython-39.pyc
+|   |       |   |   |           retry.cpython-39.pyc
+|   |       |   |   |           stop.cpython-39.pyc
+|   |       |   |   |           wait.cpython-39.pyc
+|   |       |   |   |           _asyncio.cpython-39.pyc
+|   |       |   |   |           _utils.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---tomli
+|   |       |   |   |   |   _parser.py
+|   |       |   |   |   |   _re.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           _parser.cpython-39.pyc
+|   |       |   |   |           _re.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---urllib3
+|   |       |   |   |   |   connection.py
+|   |       |   |   |   |   connectionpool.py
+|   |       |   |   |   |   exceptions.py
+|   |       |   |   |   |   fields.py
+|   |       |   |   |   |   filepost.py
+|   |       |   |   |   |   poolmanager.py
+|   |       |   |   |   |   request.py
+|   |       |   |   |   |   response.py
+|   |       |   |   |   |   _collections.py
+|   |       |   |   |   |   _version.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   +---contrib
+|   |       |   |   |   |   |   appengine.py
+|   |       |   |   |   |   |   ntlmpool.py
+|   |       |   |   |   |   |   pyopenssl.py
+|   |       |   |   |   |   |   securetransport.py
+|   |       |   |   |   |   |   socks.py
+|   |       |   |   |   |   |   _appengine_environ.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   +---_securetransport
+|   |       |   |   |   |   |       bindings.py
+|   |       |   |   |   |   |       low_level.py
+|   |       |   |   |   |   |       __init__.py
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           socks.cpython-39.pyc
+|   |       |   |   |   |           _appengine_environ.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---packages
+|   |       |   |   |   |   |   six.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   +---backports
+|   |       |   |   |   |   |       makefile.py
+|   |       |   |   |   |   |       __init__.py
+|   |       |   |   |   |   |       
+|   |       |   |   |   |   +---ssl_match_hostname
+|   |       |   |   |   |   |   |   _implementation.py
+|   |       |   |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   |   
+|   |       |   |   |   |   |   \---__pycache__
+|   |       |   |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |   |           
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           six.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   +---util
+|   |       |   |   |   |   |   connection.py
+|   |       |   |   |   |   |   proxy.py
+|   |       |   |   |   |   |   queue.py
+|   |       |   |   |   |   |   request.py
+|   |       |   |   |   |   |   response.py
+|   |       |   |   |   |   |   retry.py
+|   |       |   |   |   |   |   ssltransport.py
+|   |       |   |   |   |   |   ssl_.py
+|   |       |   |   |   |   |   timeout.py
+|   |       |   |   |   |   |   url.py
+|   |       |   |   |   |   |   wait.py
+|   |       |   |   |   |   |   __init__.py
+|   |       |   |   |   |   |   
+|   |       |   |   |   |   \---__pycache__
+|   |       |   |   |   |           connection.cpython-39.pyc
+|   |       |   |   |   |           proxy.cpython-39.pyc
+|   |       |   |   |   |           queue.cpython-39.pyc
+|   |       |   |   |   |           request.cpython-39.pyc
+|   |       |   |   |   |           response.cpython-39.pyc
+|   |       |   |   |   |           retry.cpython-39.pyc
+|   |       |   |   |   |           ssltransport.cpython-39.pyc
+|   |       |   |   |   |           ssl_.cpython-39.pyc
+|   |       |   |   |   |           timeout.cpython-39.pyc
+|   |       |   |   |   |           url.cpython-39.pyc
+|   |       |   |   |   |           wait.cpython-39.pyc
+|   |       |   |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |   |           
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           connection.cpython-39.pyc
+|   |       |   |   |           connectionpool.cpython-39.pyc
+|   |       |   |   |           exceptions.cpython-39.pyc
+|   |       |   |   |           fields.cpython-39.pyc
+|   |       |   |   |           filepost.cpython-39.pyc
+|   |       |   |   |           poolmanager.cpython-39.pyc
+|   |       |   |   |           request.cpython-39.pyc
+|   |       |   |   |           response.cpython-39.pyc
+|   |       |   |   |           _collections.cpython-39.pyc
+|   |       |   |   |           _version.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   +---webencodings
+|   |       |   |   |   |   labels.py
+|   |       |   |   |   |   mklabels.py
+|   |       |   |   |   |   tests.py
+|   |       |   |   |   |   x_user_defined.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           labels.cpython-39.pyc
+|   |       |   |   |           __init__.cpython-39.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           pyparsing.cpython-39.pyc
+|   |       |   |           six.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           __init__.cpython-39.pyc
+|   |       |           __main__.cpython-39.pyc
+|   |       |           
+|   |       +---pip-21.3.1.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE.txt
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---pkg_resources
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---extern
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---tests
+|   |       |   |   \---data
+|   |       |   |       \---my-test-package-source
+|   |       |   |               setup.py
+|   |       |   |               
+|   |       |   \---_vendor
+|   |       |       |   appdirs.py
+|   |       |       |   pyparsing.py
+|   |       |       |   __init__.py
+|   |       |       |   
+|   |       |       \---packaging
+|   |       |               markers.py
+|   |       |               requirements.py
+|   |       |               specifiers.py
+|   |       |               tags.py
+|   |       |               utils.py
+|   |       |               version.py
+|   |       |               _compat.py
+|   |       |               _structures.py
+|   |       |               _typing.py
+|   |       |               __about__.py
+|   |       |               __init__.py
+|   |       |               
+|   |       +---setuptools
+|   |       |   |   archive_util.py
+|   |       |   |   build_meta.py
+|   |       |   |   cli-32.exe
+|   |       |   |   cli-64.exe
+|   |       |   |   cli-arm64.exe
+|   |       |   |   cli.exe
+|   |       |   |   config.py
+|   |       |   |   depends.py
+|   |       |   |   dep_util.py
+|   |       |   |   dist.py
+|   |       |   |   errors.py
+|   |       |   |   extension.py
+|   |       |   |   glob.py
+|   |       |   |   gui-32.exe
+|   |       |   |   gui-64.exe
+|   |       |   |   gui-arm64.exe
+|   |       |   |   gui.exe
+|   |       |   |   installer.py
+|   |       |   |   launch.py
+|   |       |   |   monkey.py
+|   |       |   |   msvc.py
+|   |       |   |   namespaces.py
+|   |       |   |   package_index.py
+|   |       |   |   py34compat.py
+|   |       |   |   sandbox.py
+|   |       |   |   script (dev).tmpl
+|   |       |   |   script.tmpl
+|   |       |   |   unicode_utils.py
+|   |       |   |   version.py
+|   |       |   |   wheel.py
+|   |       |   |   windows_support.py
+|   |       |   |   _deprecation_warning.py
+|   |       |   |   _imp.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---command
+|   |       |   |       alias.py
+|   |       |   |       bdist_egg.py
+|   |       |   |       bdist_rpm.py
+|   |       |   |       build_clib.py
+|   |       |   |       build_ext.py
+|   |       |   |       build_py.py
+|   |       |   |       develop.py
+|   |       |   |       dist_info.py
+|   |       |   |       easy_install.py
+|   |       |   |       egg_info.py
+|   |       |   |       install.py
+|   |       |   |       install_egg_info.py
+|   |       |   |       install_lib.py
+|   |       |   |       install_scripts.py
+|   |       |   |       launcher manifest.xml
+|   |       |   |       py36compat.py
+|   |       |   |       register.py
+|   |       |   |       rotate.py
+|   |       |   |       saveopts.py
+|   |       |   |       sdist.py
+|   |       |   |       setopt.py
+|   |       |   |       test.py
+|   |       |   |       upload.py
+|   |       |   |       upload_docs.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---extern
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_distutils
+|   |       |   |   |   archive_util.py
+|   |       |   |   |   bcppcompiler.py
+|   |       |   |   |   ccompiler.py
+|   |       |   |   |   cmd.py
+|   |       |   |   |   config.py
+|   |       |   |   |   core.py
+|   |       |   |   |   cygwinccompiler.py
+|   |       |   |   |   debug.py
+|   |       |   |   |   dep_util.py
+|   |       |   |   |   dir_util.py
+|   |       |   |   |   dist.py
+|   |       |   |   |   errors.py
+|   |       |   |   |   extension.py
+|   |       |   |   |   fancy_getopt.py
+|   |       |   |   |   filelist.py
+|   |       |   |   |   file_util.py
+|   |       |   |   |   log.py
+|   |       |   |   |   msvc9compiler.py
+|   |       |   |   |   msvccompiler.py
+|   |       |   |   |   py35compat.py
+|   |       |   |   |   py38compat.py
+|   |       |   |   |   spawn.py
+|   |       |   |   |   sysconfig.py
+|   |       |   |   |   text_file.py
+|   |       |   |   |   unixccompiler.py
+|   |       |   |   |   util.py
+|   |       |   |   |   version.py
+|   |       |   |   |   versionpredicate.py
+|   |       |   |   |   _msvccompiler.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---command
+|   |       |   |           bdist.py
+|   |       |   |           bdist_dumb.py
+|   |       |   |           bdist_msi.py
+|   |       |   |           bdist_rpm.py
+|   |       |   |           bdist_wininst.py
+|   |       |   |           build.py
+|   |       |   |           build_clib.py
+|   |       |   |           build_ext.py
+|   |       |   |           build_py.py
+|   |       |   |           build_scripts.py
+|   |       |   |           check.py
+|   |       |   |           clean.py
+|   |       |   |           config.py
+|   |       |   |           install.py
+|   |       |   |           install_data.py
+|   |       |   |           install_egg_info.py
+|   |       |   |           install_headers.py
+|   |       |   |           install_lib.py
+|   |       |   |           install_scripts.py
+|   |       |   |           py37compat.py
+|   |       |   |           register.py
+|   |       |   |           sdist.py
+|   |       |   |           upload.py
+|   |       |   |           __init__.py
+|   |       |   |           
+|   |       |   \---_vendor
+|   |       |       |   ordered_set.py
+|   |       |       |   pyparsing.py
+|   |       |       |   __init__.py
+|   |       |       |   
+|   |       |       +---more_itertools
+|   |       |       |       more.py
+|   |       |       |       recipes.py
+|   |       |       |       __init__.py
+|   |       |       |       
+|   |       |       \---packaging
+|   |       |               markers.py
+|   |       |               requirements.py
+|   |       |               specifiers.py
+|   |       |               tags.py
+|   |       |               utils.py
+|   |       |               version.py
+|   |       |               _compat.py
+|   |       |               _structures.py
+|   |       |               _typing.py
+|   |       |               __about__.py
+|   |       |               __init__.py
+|   |       |               
+|   |       +---setuptools-58.3.0.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---werkzeug
+|   |       |   |   datastructures.py
+|   |       |   |   datastructures.pyi
+|   |       |   |   exceptions.py
+|   |       |   |   filesystem.py
+|   |       |   |   formparser.py
+|   |       |   |   http.py
+|   |       |   |   local.py
+|   |       |   |   py.typed
+|   |       |   |   routing.py
+|   |       |   |   security.py
+|   |       |   |   serving.py
+|   |       |   |   test.py
+|   |       |   |   testapp.py
+|   |       |   |   urls.py
+|   |       |   |   useragents.py
+|   |       |   |   user_agent.py
+|   |       |   |   utils.py
+|   |       |   |   wsgi.py
+|   |       |   |   _internal.py
+|   |       |   |   _reloader.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---debug
+|   |       |   |   |   console.py
+|   |       |   |   |   repr.py
+|   |       |   |   |   tbtools.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---shared
+|   |       |   |   |       console.png
+|   |       |   |   |       debugger.js
+|   |       |   |   |       FONT_LICENSE
+|   |       |   |   |       ICON_LICENSE.md
+|   |       |   |   |       less.png
+|   |       |   |   |       more.png
+|   |       |   |   |       source.png
+|   |       |   |   |       style.css
+|   |       |   |   |       ubuntu.ttf
+|   |       |   |   |       
+|   |       |   |   \---__pycache__
+|   |       |   |           console.cpython-39.pyc
+|   |       |   |           repr.cpython-39.pyc
+|   |       |   |           tbtools.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   dispatcher.py
+|   |       |   |   |   http_proxy.py
+|   |       |   |   |   lint.py
+|   |       |   |   |   profiler.py
+|   |       |   |   |   proxy_fix.py
+|   |       |   |   |   shared_data.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           dispatcher.cpython-39.pyc
+|   |       |   |           http_proxy.cpython-39.pyc
+|   |       |   |           lint.cpython-39.pyc
+|   |       |   |           profiler.cpython-39.pyc
+|   |       |   |           proxy_fix.cpython-39.pyc
+|   |       |   |           shared_data.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---sansio
+|   |       |   |   |   multipart.py
+|   |       |   |   |   request.py
+|   |       |   |   |   response.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           multipart.cpython-39.pyc
+|   |       |   |           request.cpython-39.pyc
+|   |       |   |           response.cpython-39.pyc
+|   |       |   |           utils.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   +---wrappers
+|   |       |   |   |   accept.py
+|   |       |   |   |   auth.py
+|   |       |   |   |   base_request.py
+|   |       |   |   |   base_response.py
+|   |       |   |   |   common_descriptors.py
+|   |       |   |   |   cors.py
+|   |       |   |   |   etag.py
+|   |       |   |   |   json.py
+|   |       |   |   |   request.py
+|   |       |   |   |   response.py
+|   |       |   |   |   user_agent.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           accept.cpython-39.pyc
+|   |       |   |           auth.cpython-39.pyc
+|   |       |   |           base_request.cpython-39.pyc
+|   |       |   |           base_response.cpython-39.pyc
+|   |       |   |           common_descriptors.cpython-39.pyc
+|   |       |   |           cors.cpython-39.pyc
+|   |       |   |           etag.cpython-39.pyc
+|   |       |   |           json.cpython-39.pyc
+|   |       |   |           request.cpython-39.pyc
+|   |       |   |           response.cpython-39.pyc
+|   |       |   |           user_agent.cpython-39.pyc
+|   |       |   |           __init__.cpython-39.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           datastructures.cpython-39.pyc
+|   |       |           exceptions.cpython-39.pyc
+|   |       |           filesystem.cpython-39.pyc
+|   |       |           formparser.cpython-39.pyc
+|   |       |           http.cpython-39.pyc
+|   |       |           local.cpython-39.pyc
+|   |       |           routing.cpython-39.pyc
+|   |       |           security.cpython-39.pyc
+|   |       |           serving.cpython-39.pyc
+|   |       |           test.cpython-39.pyc
+|   |       |           testapp.cpython-39.pyc
+|   |       |           urls.cpython-39.pyc
+|   |       |           useragents.cpython-39.pyc
+|   |       |           user_agent.cpython-39.pyc
+|   |       |           utils.cpython-39.pyc
+|   |       |           wsgi.cpython-39.pyc
+|   |       |           _internal.cpython-39.pyc
+|   |       |           _reloader.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           
+|   |       +---Werkzeug-2.0.2.dist-info
+|   |       |       INSTALLER
+|   |       |       LICENSE.rst
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---wheel
+|   |       |   |   bdist_wheel.py
+|   |       |   |   macosx_libfile.py
+|   |       |   |   metadata.py
+|   |       |   |   pkginfo.py
+|   |       |   |   util.py
+|   |       |   |   wheelfile.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---cli
+|   |       |   |       convert.py
+|   |       |   |       pack.py
+|   |       |   |       unpack.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---vendored
+|   |       |       |   __init__.py
+|   |       |       |   
+|   |       |       \---packaging
+|   |       |               tags.py
+|   |       |               _typing.py
+|   |       |               __init__.py
+|   |       |               
+|   |       +---wheel-0.37.0.dist-info
+|   |       |       entry_points.txt
+|   |       |       INSTALLER
+|   |       |       LICENSE.txt
+|   |       |       METADATA
+|   |       |       RECORD
+|   |       |       top_level.txt
+|   |       |       WHEEL
+|   |       |       
+|   |       +---_distutils_hack
+|   |       |       override.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---__pycache__
+|   |       |       _virtualenv.cpython-39.pyc
+|   |       |       
+|   |       +---~il
+|   |       |   |   msvcp140.dll
+|   |       |   |   msvcp140_1.dll
+|   |       |   |   msvcp140_2.dll
+|   |       |   |   PaletteFile.py
+|   |       |   |   PalmImagePlugin.py
+|   |       |   |   PcdImagePlugin.py
+|   |       |   |   PcfFontFile.py
+|   |       |   |   PcxImagePlugin.py
+|   |       |   |   PdfImagePlugin.py
+|   |       |   |   PdfParser.py
+|   |       |   |   PixarImagePlugin.py
+|   |       |   |   PngImagePlugin.py
+|   |       |   |   PpmImagePlugin.py
+|   |       |   |   PsdImagePlugin.py
+|   |       |   |   PSDraw.py
+|   |       |   |   PyAccess.py
+|   |       |   |   SgiImagePlugin.py
+|   |       |   |   SpiderImagePlugin.py
+|   |       |   |   SunImagePlugin.py
+|   |       |   |   TarIO.py
+|   |       |   |   TgaImagePlugin.py
+|   |       |   |   TiffImagePlugin.py
+|   |       |   |   TiffTags.py
+|   |       |   |   vccorlib140.dll
+|   |       |   |   vcruntime140.dll
+|   |       |   |   WalImageFile.py
+|   |       |   |   WebPImagePlugin.py
+|   |       |   |   WmfImagePlugin.py
+|   |       |   |   XbmImagePlugin.py
+|   |       |   |   XpmImagePlugin.py
+|   |       |   |   XVThumbImagePlugin.py
+|   |       |   |   _binary.py
+|   |       |   |   _imaging.cp39-win_amd64.pyd
+|   |       |   |   _imagingcms.cp39-win_amd64.pyd
+|   |       |   |   _imagingft.cp39-win_amd64.pyd
+|   |       |   |   _imagingmath.cp39-win_amd64.pyd
+|   |       |   |   _imagingmorph.cp39-win_amd64.pyd
+|   |       |   |   _imagingtk.cp39-win_amd64.pyd
+|   |       |   |   _tkinter_finder.py
+|   |       |   |   _util.py
+|   |       |   |   _version.py
+|   |       |   |   _webp.cp39-win_amd64.pyd
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           BdfFontFile.cpython-39.pyc
+|   |       |           BlpImagePlugin.cpython-39.pyc
+|   |       |           BmpImagePlugin.cpython-39.pyc
+|   |       |           BufrStubImagePlugin.cpython-39.pyc
+|   |       |           ContainerIO.cpython-39.pyc
+|   |       |           CurImagePlugin.cpython-39.pyc
+|   |       |           DcxImagePlugin.cpython-39.pyc
+|   |       |           DdsImagePlugin.cpython-39.pyc
+|   |       |           EpsImagePlugin.cpython-39.pyc
+|   |       |           ExifTags.cpython-39.pyc
+|   |       |           features.cpython-39.pyc
+|   |       |           FitsStubImagePlugin.cpython-39.pyc
+|   |       |           FliImagePlugin.cpython-39.pyc
+|   |       |           FontFile.cpython-39.pyc
+|   |       |           FpxImagePlugin.cpython-39.pyc
+|   |       |           FtexImagePlugin.cpython-39.pyc
+|   |       |           GbrImagePlugin.cpython-39.pyc
+|   |       |           GdImageFile.cpython-39.pyc
+|   |       |           GifImagePlugin.cpython-39.pyc
+|   |       |           GimpGradientFile.cpython-39.pyc
+|   |       |           GimpPaletteFile.cpython-39.pyc
+|   |       |           GribStubImagePlugin.cpython-39.pyc
+|   |       |           Hdf5StubImagePlugin.cpython-39.pyc
+|   |       |           IcnsImagePlugin.cpython-39.pyc
+|   |       |           IcoImagePlugin.cpython-39.pyc
+|   |       |           Image.cpython-39.pyc
+|   |       |           ImageChops.cpython-39.pyc
+|   |       |           ImageCms.cpython-39.pyc
+|   |       |           ImageColor.cpython-39.pyc
+|   |       |           ImageDraw.cpython-39.pyc
+|   |       |           ImageDraw2.cpython-39.pyc
+|   |       |           ImageEnhance.cpython-39.pyc
+|   |       |           ImageFile.cpython-39.pyc
+|   |       |           ImageFilter.cpython-39.pyc
+|   |       |           ImageFont.cpython-39.pyc
+|   |       |           ImageGrab.cpython-39.pyc
+|   |       |           ImageMath.cpython-39.pyc
+|   |       |           ImageMode.cpython-39.pyc
+|   |       |           ImageMorph.cpython-39.pyc
+|   |       |           ImageOps.cpython-39.pyc
+|   |       |           ImagePalette.cpython-39.pyc
+|   |       |           ImagePath.cpython-39.pyc
+|   |       |           ImageQt.cpython-39.pyc
+|   |       |           ImageSequence.cpython-39.pyc
+|   |       |           ImageShow.cpython-39.pyc
+|   |       |           ImageStat.cpython-39.pyc
+|   |       |           ImageTk.cpython-39.pyc
+|   |       |           ImageTransform.cpython-39.pyc
+|   |       |           ImageWin.cpython-39.pyc
+|   |       |           ImImagePlugin.cpython-39.pyc
+|   |       |           ImtImagePlugin.cpython-39.pyc
+|   |       |           IptcImagePlugin.cpython-39.pyc
+|   |       |           Jpeg2KImagePlugin.cpython-39.pyc
+|   |       |           JpegImagePlugin.cpython-39.pyc
+|   |       |           JpegPresets.cpython-39.pyc
+|   |       |           McIdasImagePlugin.cpython-39.pyc
+|   |       |           MicImagePlugin.cpython-39.pyc
+|   |       |           MpegImagePlugin.cpython-39.pyc
+|   |       |           MpoImagePlugin.cpython-39.pyc
+|   |       |           MspImagePlugin.cpython-39.pyc
+|   |       |           PaletteFile.cpython-39.pyc
+|   |       |           PalmImagePlugin.cpython-39.pyc
+|   |       |           PcdImagePlugin.cpython-39.pyc
+|   |       |           PcfFontFile.cpython-39.pyc
+|   |       |           PcxImagePlugin.cpython-39.pyc
+|   |       |           PdfImagePlugin.cpython-39.pyc
+|   |       |           PdfParser.cpython-39.pyc
+|   |       |           PixarImagePlugin.cpython-39.pyc
+|   |       |           PngImagePlugin.cpython-39.pyc
+|   |       |           PpmImagePlugin.cpython-39.pyc
+|   |       |           PsdImagePlugin.cpython-39.pyc
+|   |       |           PSDraw.cpython-39.pyc
+|   |       |           PyAccess.cpython-39.pyc
+|   |       |           SgiImagePlugin.cpython-39.pyc
+|   |       |           SpiderImagePlugin.cpython-39.pyc
+|   |       |           SunImagePlugin.cpython-39.pyc
+|   |       |           TarIO.cpython-39.pyc
+|   |       |           TgaImagePlugin.cpython-39.pyc
+|   |       |           TiffImagePlugin.cpython-39.pyc
+|   |       |           TiffTags.cpython-39.pyc
+|   |       |           WalImageFile.cpython-39.pyc
+|   |       |           WebPImagePlugin.cpython-39.pyc
+|   |       |           WmfImagePlugin.cpython-39.pyc
+|   |       |           XbmImagePlugin.cpython-39.pyc
+|   |       |           XpmImagePlugin.cpython-39.pyc
+|   |       |           XVThumbImagePlugin.cpython-39.pyc
+|   |       |           _binary.cpython-39.pyc
+|   |       |           _tkinter_finder.cpython-39.pyc
+|   |       |           _util.cpython-39.pyc
+|   |       |           _version.cpython-39.pyc
+|   |       |           __init__.cpython-39.pyc
+|   |       |           __main__.cpython-39.pyc
+|   |       |           
+|   |       \---~illow-8.4.0.dist-info
+|   |               INSTALLER
+|   |               LICENSE
+|   |               METADATA
+|   |               RECORD
+|   |               REQUESTED
+|   |               top_level.txt
+|   |               WHEEL
+|   |               zip-safe
+|   |               
+|   +---Scripts
+|   |       activate
+|   |       activate.bat
+|   |       activate.fish
+|   |       activate.nu
+|   |       activate.ps1
+|   |       activate_this.py
+|   |       deactivate.bat
+|   |       deactivate.nu
+|   |       f2py.exe
+|   |       flask.exe
+|   |       pip-3.9.exe
+|   |       pip.exe
+|   |       pip3.9.exe
+|   |       pip3.exe
+|   |       pydoc.bat
+|   |       python.exe
+|   |       pythonw.exe
+|   |       wheel-3.9.exe
+|   |       wheel.exe
+|   |       wheel3.9.exe
+|   |       wheel3.exe
+|   |       
+|   \---share
+|       \---man
+\---Website
+    |   app.py
+    |   Eigen.py
+    |   SVD.py
+    |   
+    +---static
+    |   +---images
+    |   |       imageNotAvailable.png
+    |   |       logo.png
+    |   |       logoSmall.png
+    |   |       
+    |   \---styles
+    |           frontpage.css
+    |           
+    \---templates
+            frontpage.html
+            
