@@ -16,6 +16,7 @@ Pillow - 8.4.0 <br />
 * Lossless image saving
 
 ## Structures
+```bash
 |   output.txt
 |   README.md
 |   requirement.txt
@@ -36,3 +37,4 @@ Pillow - 8.4.0 <br />
     |           
     \---templates
             frontpage.html
+```
