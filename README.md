@@ -24,10 +24,9 @@ SVD is a method for factoring matrix into three submatrix (orthogonal matrix U, 
 * Lossless image saving
 
 ## Screenshots
-<center>![Front Page](./screenshots/1.png)</center>
+![Front Page](./screenshots/1.png)
 <center>Tampilan Front Page</center>
-<br/>
-<center>![View Page](./screenshots/2.png)</center>
+![View Page](./screenshots/2.png)
 <center>Tampilan View Page</center>
 
 ## Structures
