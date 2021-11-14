@@ -34,28 +34,76 @@ SVD is a method for factoring matrix into three submatrix (orthogonal matrix U, 
 ```bash
 .
 │   README.md
-│   requirement.txt
-│   
-└───Website
-    │   app.py
-    │   Eigen.py
-    │   SVD.py
-    │
-    ├───static
-    │   ├───images
-    │   │       imageNotAvailable.png
-    │   │       logo.png
-    │   │       logoSmall.png
+│   requirements.txt
+│
+├───src
+│   │   app.py
+│   │   Eigen.py
+│   │   SVD.py
+│   │
+│   ├───static
+│   │   ├───images
+│   │   │       imageNotAvailable.png
+│   │   │       logo.png
+│   │   │       logoSmall.png
+│   │   │
+│   │   └───styles
+│   │           frontpage.css
+│   │
+│   └───templates
+│           frontpage.html
+│
+└───test
+    ├───pdf
+    │   ├───1
+    │   │       100%_ori.jpg
+    │   │       2%.jpg
+    │   │       20%.jpg
+    │   │       40%.jpg
+    │   │       80%.jpg
     │   │
-    │   └───styles
-    │           frontpage.css
+    │   ├───2
+    │   │       100%_ori.jpg
+    │   │       2%.jpg
+    │   │       20%.jpg
+    │   │       40%.jpg
+    │   │       80%.jpg
+    │   │
+    │   ├───3
+    │   │       100%_ori.jpg
+    │   │       2%.jpg
+    │   │       20%.jpg
+    │   │       40%.jpg
+    │   │       80%.jpg
+    │   │
+    │   ├───4
+    │   │       100%_ori.jpg
+    │   │       2%.jpg
+    │   │       20%.jpg
+    │   │       40%.jpg
+    │   │       80%.jpg
+    │   │
+    │   ├───5
+    │   │       100%_ori.png
+    │   │       2%.png
+    │   │       20%.png
+    │   │       40%.png
+    │   │       80%.png
+    │   │
+    │   └───6
+    │           100%_ori.png
+    │           2%.png
+    │           20%.png
+    │           40%.png
+    │           80%.png
     │
-    └───templates
-            frontpage.html
+    └───website
+            1.png
+            2.png
 ```
 
 ## Setup
-1. Go to Website folder.
+1. Go to src folder.
 2. Create new virtual environment in that folder using `virtualenv venv`.
 3. Activate aforementioned environment using `venv/bin/activate` on Linux/OS X and `venv\scripts\activate` on Windows.
 4. Install all dependencies using `pip install -r requirements.txt`.
