@@ -1,65 +1,71 @@
-import cv2
-import numpy as np
-from PIL import Image
 from Eigen import simultaneous_power_iteration
+from PIL import Image
+import numpy as np
+import cv2
 
 def svd(matrix, k):
-    a = np.dot(np.transpose(matrix), matrix) # get A trans * A
-    eigVal, eigVec = simultaneous_power_iteration(a, k) #<-- ini kode kita, tp utk testing skrg pake library dulu
-    #eigVal, eigVec = np.linalg.eig(a) # find eig val and eig vec of A trans * A
+    """ Singular Value Decomposition
+    Decomposes a matrix into U, Sigma, and VTranspose.
+
+    :param matrix: A matrix to be processed
+    :param k: A scale for which the matrix size will be minimized
     
+    :return: Three minimized matrices of U, Sigma, and VTranspose 
+    """
+    # Find Eigen Vals and Eigen Vecs of AT.A
+    a = np.dot(np.transpose(matrix), matrix) 
+    eigVal, eigVec = simultaneous_power_iteration(a, k) 
+    
+    # Find Singular Val (sqrt of non-zero absolute Eigen Vals)
     singval = [] 
     for i in eigVal:
-        singval.append(np.sqrt(np.abs(i))) # get singular values from eig val (if sing val is negative make it absolute value)
+        singval.append(np.sqrt(np.abs(i))) 
     singval = np.array(singval)
     
-    # bagian di bawah ini apus aja kalo udah gapake library eigen
-    idx = singval.argsort()[::-1] # sort eigen value decreasing
+    # Sort Eigen Val & Corresponding Eigen Vecs (descending)
+    idx = singval.argsort()[::-1]
     singval = singval[idx]
     eigVec = eigVec[:, idx]
     singval = singval[singval != 0.0]
+
+    # Find V, VTranspose (k x n), and Sigma (k x k)
     v = eigVec
-    
     vt = (np.transpose(v))[:k, :]
-    sigma = (np.diag(singval))[:k, :k] # get sigma (diagnolized matrix with singular value)
+    sigma = (np.diag(singval))[:k, :k] 
+
+    # Find U (m x k)
     u = np.dot(matrix, v[:, :k])
-
-    for i in range(k): # dividing ui (column) with sigma[i]
-        u[:, i] = u[:, i] / singval[i] # get ui = A * vi / singular value i (v is sliced according to scale k, so that we get a sliced u matrix as well)
-
-    # for testing
-    #print(u.shape)
-    #print(sigma.shape)
-    #print(vt.shape)
+    for i in range(k): 
+        u[:, i] = u[:, i] / singval[i] 
 
     return u, sigma, vt
 
-def compress(img, percentage): #add img as param later
-    # just for testing -- delete this part later
-    #currDir = os.path.dirname(__file__)
-    #path = os.path.join(currDir, './static/images/bnw.jpg') # testing aja nnt apush
-    #tes = cv2.imread(path, cv2.IMREAD_UNCHANGED)
-    #cv2.imshow("yey", tes)
-    #cv2.waitKey()
-    img = img.astype(np.float32)
-    #print(img.shape)
-    # delete until here
+def compress(img, percentage):
+    """ Compression Function
+    Compresses an image using SVD with scale k depending on compression percentage.
 
-    # initialize rgb
+    :param img: An image to be processed in the form of 3D array
+    :param percentage: Compression percentage
+    
+    :return: Compressed image
+    """
+    # Convert image values to float32
+    img = img.astype(np.float32)
+
+    # Extract RGB/RGBA matrices
     b = img[:, :, 0]
     g = img[:, :, 1]
     r = img[:, :, 2]
     try: a = img[:, :, 3]
     except: pass
     
-    # make scale out of percentage
+    # Make scale k out of percentage
     m = img.shape[0]
     n = img.shape[1]
     percent = percentage / 100
     k = round((m * n) * percent / (m + n + 1))
 
-    # k = KALO MAU K MANUAL INPUT DISINI
-    # tes punya kita yang paling baru :V
+    # Scale RGB/RGBA matrices using SVD
     try: 
         ub, sb, vb = svd(b, k)
         bScaled = np.dot(ub, np.dot(sb, vb))
@@ -77,78 +83,21 @@ def compress(img, percentage): #add img as param later
         ua, sa, va = svd(a, k)
         aScaled = np.dot(ua, np.dot(sa, va))
     except: pass
-    #print(ub.shape)
-    #print(sb.shape)
-    #print(vb.shape)
 
-    # insert compressed r, g, b to matrix
+    # Make L image out of scaled RGB/RGBA matrices
     redImg = (Image.fromarray(rScaled)).convert("L")
     greenImg = (Image.fromarray(gScaled)).convert("L")
     blueImg = (Image.fromarray(bScaled)).convert("L")
     try: 
         alphaImg = (Image.fromarray(aScaled)).convert("L")
+        # Merge RGBA images into a single image
         imgScaled = Image.merge("RGBA" ,(redImg,greenImg,blueImg, alphaImg))
+        # Convert from RGBA to BGRA (PIL to OpenCV)
         opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGBA2BGRA)
     except: 
+        # Merge RGB images into a single image
         imgScaled = Image.merge("RGB" ,(redImg,greenImg,blueImg))
+        # Convert from RGB to BGR (PIL to OpenCV)
         opencvimg = cv2.cvtColor(np.array(imgScaled), cv2.COLOR_RGB2BGR)
 
-    # check for values outside of range of RGB (0-255)
-    #imgScaled[imgScaled > 255] = 255
-    #imgScaled[imgScaled < 0] = 0
-
-    #cv2.imwrite("yayoyo.png", opencvimg)
     return (opencvimg)
-    #opencvimg = opencvimg.astype(float) / 255
-    #cv2.imshow("INI PAKE SVD KITA BOUSZ", opencvimg)
-    #cv2.waitKey()
-'''
-# uncomment ini kalo mo bandingin jawaban pake svd linalg library
-    ur, sr, vr = np.linalg.svd(r)
-    ug, sg, vg = np.linalg.svd(g)
-    ub, sb, vb = np.linalg.svd(b)
-    ur, sr, vr = (ur[:, :k], np.diag(sr[:k]), vr[:k, :])
-    ug, sg, vg = (ug[:, :k], np.diag(sg[:k]), vg[:k, :])
-    ub, sb, vb = (ub[:, :k], np.diag(sb[:k]), vb[:k, :])
-    
-    # ini nanti apus
-    print(ur.shape)
-    print(sr.shape)
-    print(vr.shape) 
-    # make compressed r, g, b
-    rScaled = np.dot(ur, np.dot(sr, vr))
-    gScaled = np.dot(ug, np.dot(sg, vg))
-    bScaled = np.dot(ub, np.dot(sb, vb))
-
-    # insert compressed r, g, b to matrix
-    imgScaled = np.zeros(img.shape)
-    imgScaled[:, :, 0] = bScaled
-    imgScaled[:, :, 1] = gScaled
-    imgScaled[:, :, 2] = rScaled
-    # check for values outside of range of RGB (0-255)
-    imgScaled[imgScaled > 255] = 255
-    imgScaled[imgScaled < 0] = 0
-    return imgScaled
-    #imgScaled = imgScaled.astype(float) / 255
-    #cv2.imshow("INI PAKE SVD LIBRARY BOUSZ", imgScaled)
-    #cv2.waitKey()
-'''
-#compress(3)
-'''
-# ini buat ngetes SVD in general aja
-a = [[1.02650, 0.92840, 0.54947, 0.98317, 0.71226, 0.55847], [0.92889, 0.89021, 0.49605, 0.93776, 0.62066, 0.52473], [0.56184, 0.49148, 0.80378, 0.68346, 1.02731, 0.64579], [0.98074, 0.93973, 0.69170, 1.03432, 0.87043, 0.66371], [0.69890, 0.62694, 1.02294, 0.87822, 1.29713, 0.82905], [0.56636, 0.51884, 0.65096, 0.66109, 0.82531, 0.55098], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6], [1,2,3,4,5,6]] #ganti jadi matrix apapun itu
-print("A matrix")
-u, s, v = svd(a, 5)
-print("RESULT:\n")
-print("U matrix")
-print(u)
-print("S matrix")
-print(s)
-print("V matrix")
-print(v)
-print("End matrix")
-print(np.dot(u, np.dot(s, v)))
-
-print(np.dot(np.transpose(u), u))
-print(np.dot(v, np.transpose(v)))
-'''
